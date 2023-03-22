@@ -57,7 +57,7 @@ public class PlayerController : MonoBehaviour
 
     void Attack()
     {
-        if (Input.GetButton("Fire1"))
+        if (Input.GetButton("Fire1") && !fireFLG)
         {
             Instantiate(bullet, firePos.transform.position, firePos.transform.rotation);
             //生成するオブジェクト、生成するときの場所、生成した時の角度
