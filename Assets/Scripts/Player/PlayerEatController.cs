@@ -25,7 +25,7 @@ public class PlayerEatController : MonoBehaviour
                 Destroy(other.gameObject);
             }
 
-            if (other.transform.tag == "Air")
+            if (other.transform.tag == "Bubble")
             {
                 GameManager.Instance.AirGet();
             }
