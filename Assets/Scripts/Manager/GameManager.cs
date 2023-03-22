@@ -18,11 +18,14 @@ public class GameManager : Singleton<GameManager>
     public int airMax = 10;
     [System.NonSerialized] public bool airFLG = false;
     public float airHeal = 0.1f;
+    public float airBubble = 1;
     
     [Header("満腹ゲージ")]
-    public int eatCurrent;
+    public float eatCurrent;
     public int eatMax = 10;
-    
+    public float eatHeal = 1;
+    public float digestion = 0.1f;
+
     [Header("敵の撃破数")]
     public int killCurrent;
 
@@ -56,7 +59,13 @@ public class GameManager : Singleton<GameManager>
 
     void Update()
     {
-        if(airFLG == false)
+        //HPが0以下にならないように処理
+        //Clamp(引数…現在値,最小値,最大値)                
+        HPCurrent = Mathf.Clamp(HPCurrent, 0, HPMax);
+        airCurrent = Mathf.Clamp(airCurrent, 0, airMax);
+        eatCurrent = Mathf.Clamp(eatCurrent, 0, eatMax);
+
+        if (airFLG == false)
         {
             airCurrent -= airHeal * Time.deltaTime;
         }
@@ -64,6 +73,8 @@ public class GameManager : Singleton<GameManager>
         {
             airCurrent += airHeal * Time.deltaTime;
         }
+
+        eatCurrent -= digestion * Time.deltaTime;
     }
 
     public void AirFLG(bool flg)
@@ -73,11 +84,11 @@ public class GameManager : Singleton<GameManager>
 
     public void AirGet()
     {
-
+        airCurrent += airBubble;
     }
 
     public void Eat()
     {
-
+        eatCurrent += eatHeal;
     }
 }
