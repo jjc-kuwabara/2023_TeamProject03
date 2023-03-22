@@ -21,12 +21,13 @@ public class PlayerEatController : MonoBehaviour
         {
             if (other.transform.tag == "Fish")
             {
+                GameManager.Instance.Eat();
                 Destroy(other.gameObject);
             }
 
             if (other.transform.tag == "Air")
             {
-
+                GameManager.Instance.AirGet();
             }
         }
     }

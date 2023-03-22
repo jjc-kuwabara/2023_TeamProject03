@@ -7,7 +7,8 @@ using UnityEngine.UI;
 public class PlayerController : MonoBehaviour
 {
     [Header("ƒvƒŒƒCƒ„[‚ÌˆÚ“®‚ÉŠÖ‚·‚é•Ï”")]
-    public float m_speed;
+    public float m_speedStart;
+    public float m_speedCurrent;
     [SerializeField]
     Vector3 m_moveDirection;
     [SerializeField]
@@ -23,7 +24,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-
+        m_speedCurrent = m_speedStart;
     }
 
     void Update()
@@ -44,7 +45,7 @@ public class PlayerController : MonoBehaviour
             m_moveDirection = m_moveDirection.normalized;
         }
 
-        m_moveDistance = m_moveDirection * m_speed * Time.deltaTime;
+        m_moveDistance = m_moveDirection * m_speedCurrent * Time.deltaTime;
 
         this.transform.position += m_moveDistance;
     }

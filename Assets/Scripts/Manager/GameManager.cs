@@ -14,8 +14,10 @@ public class GameManager : Singleton<GameManager>
     public int HPMax = 10;
 
     [Header("Player‚Ì_‘f")]
-    public int airCurrent;
+    public float airCurrent;
     public int airMax = 10;
+    [System.NonSerialized] public bool airFLG = false;
+    public float airHeal = 0.1f;
     
     [Header("–• ƒQ[ƒW")]
     public int eatCurrent;
@@ -54,10 +56,27 @@ public class GameManager : Singleton<GameManager>
 
     void Update()
     {
-        
+        if(airFLG == false)
+        {
+            airCurrent -= airHeal * Time.deltaTime;
+        }
+        else
+        {
+            airCurrent += airHeal * Time.deltaTime;
+        }
+    }
+
+    public void AirFLG(bool flg)
+    {
+        airFLG = flg;
     }
 
     public void AirGet()
+    {
+
+    }
+
+    public void Eat()
     {
 
     }
