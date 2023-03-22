@@ -111,7 +111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ce8938b24d639b47933dfe7147e969e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletSpeed: 20
+  bulletSpeed: 30
   destoryTime: 3
   effectExp: {fileID: 0}
   effectAura: {fileID: 0}

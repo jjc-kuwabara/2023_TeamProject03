@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Fish
   - Bubble
+  - Eat
   layers:
   - Default
   - TransparentFX
