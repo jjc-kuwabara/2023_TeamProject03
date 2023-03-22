@@ -49,7 +49,7 @@ public class GameManager : Singleton<GameManager>
         airGauge.fillAmount = 1;
         
         //–• ƒQ[ƒW‚Ì‰Šúİ’è
-        eatCurrent = eatMax;
+        eatCurrent = eatMax / 2;
         eatGauge.fillAmount = 1;
 
         //Œ‚”j”‚Ì‰Šúİ’è
