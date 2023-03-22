@@ -31,8 +31,11 @@ public class Bullet : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        //Instantiate(effectExp, transform.position, transform.rotation);
+        if(collision.transform.tag != "Eat")
+        {
+            //Instantiate(effectExp, transform.position, transform.rotation);
 
-        Destroy(this.gameObject);
+            Destroy(this.gameObject);
+        }
     }
 }
