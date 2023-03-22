@@ -17,6 +17,9 @@ public class PlayerController : MonoBehaviour
     [Header("攻撃に関する変数")]
     public GameObject bullet;
     public GameObject firePos;
+    [SerializeField] float attackTime = 1;
+    float attackTimeCurrent;
+    bool fireFLG = false;
 
     CharacterController characon;  //CharacterControllerのコンポーネント取得用
 
@@ -29,6 +32,8 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        AttackTimeCount();
+
         Attack();
         Move();
     }
@@ -56,6 +61,21 @@ public class PlayerController : MonoBehaviour
         {
             Instantiate(bullet, firePos.transform.position, firePos.transform.rotation);
             //生成するオブジェクト、生成するときの場所、生成した時の角度
+            fireFLG = true;
+        }
+    }
+
+    void AttackTimeCount()
+    {
+        if (fireFLG)
+        {
+            attackTimeCurrent += Time.deltaTime;
+
+            if(attackTimeCurrent >= attackTime)
+            {
+                fireFLG = false;
+                attackTimeCurrent = 0;
+            }
         }
     }
 }
