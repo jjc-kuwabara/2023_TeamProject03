@@ -15,7 +15,7 @@ public class PlayerEatController : MonoBehaviour
     }
 
     //OnTrigger‚Å‚·‚è”²‚¯”»’è‚ðŽæ‚é
-    private void OnTriggerEnter(Collider other)
+    private void OnTrigger(Collider other)
     {
         if (Input.GetButton("Fire2"))
         {

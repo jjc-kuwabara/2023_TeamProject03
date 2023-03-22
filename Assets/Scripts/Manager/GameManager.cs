@@ -65,6 +65,14 @@ public class GameManager : Singleton<GameManager>
         airCurrent = Mathf.Clamp(airCurrent, 0, airMax);
         eatCurrent = Mathf.Clamp(eatCurrent, 0, eatMax);
 
+        airValue = (float)airCurrent / airMax;
+        //ゲージの更新
+        airGauge.fillAmount = airValue;
+        
+        eatValue = (float)eatCurrent / eatMax;
+        //ゲージの更新
+        eatGauge.fillAmount = eatValue;
+
         if (airFLG == false)
         {
             airCurrent -= airHeal * Time.deltaTime;
@@ -77,6 +85,15 @@ public class GameManager : Singleton<GameManager>
         eatCurrent -= digestion * Time.deltaTime;
     }
 
+    public void HPUpdate(int n)
+    {
+        HPCurrent -= n;
+
+        HPValue = (float)HPCurrent / HPMax;
+        //ゲージの更新
+        HPGauge.fillAmount = HPValue;
+    }
+
     public void AirFLG(bool flg)
     {
         airFLG = flg;
@@ -85,10 +102,24 @@ public class GameManager : Singleton<GameManager>
     public void AirGet()
     {
         airCurrent += airBubble;
+
+        airValue = (float)airCurrent / airMax;
+        //ゲージの更新
+        airGauge.fillAmount = airValue;
     }
 
     public void Eat()
     {
         eatCurrent += eatHeal;
+
+        eatValue = (float)eatCurrent / eatMax;
+        //ゲージの更新
+        eatGauge.fillAmount = eatValue;
+    }
+
+    public void Kill()
+    {
+        killCurrent++;
+        killText.text = killCurrent.ToString("00");
     }
 }
