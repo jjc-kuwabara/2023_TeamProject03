@@ -24,4 +24,4 @@ if( Test-Path $projectAssetsDirPath ){
 }
 
 [System.Environment]::SetEnvironmentVariable("PROJECT_ASSETS_LOCAL_DIR", $projectAssetsDirPath, "Machine")
-[System.Environment]::SetEnvironmentVariable("PROJECT_ASSETS_SERVER_DIR", "\\201a01\2023_TeamProject_Share\2023_TeamProject02", "Machine")
+[System.Environment]::SetEnvironmentVariable("PROJECT_ASSETS_SERVER_DIR", "\\201b05\ShareFolder\2023\2023_TeamProject03\ProjectAssets", "Machine")
