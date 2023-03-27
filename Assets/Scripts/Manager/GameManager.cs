@@ -38,6 +38,8 @@ public class GameManager : Singleton<GameManager>
     float eatValue;
     public TextMeshProUGUI killText;
 
+    [System.NonSerialized] public bool mainGameFLG = false;
+
     void Start()
     {
         //HPÇÃèâä˙ê›íË
@@ -83,6 +85,14 @@ public class GameManager : Singleton<GameManager>
         }
 
         eatCurrent -= digestion * Time.deltaTime;
+
+        if (!mainGameFLG)
+        {
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+                mainGameFLG = true;
+            }
+        }
     }
 
     public void HPUpdate(int n)

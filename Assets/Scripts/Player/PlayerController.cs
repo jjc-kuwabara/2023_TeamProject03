@@ -62,7 +62,7 @@ public class PlayerController : MonoBehaviour
         }
 
         m_moveDistance = m_moveDirection * m_speedCurrent;
-        /*
+        
         if(this.transform.position.x <= x_L || x_L_FLG)
         {
             if(x <= 0)
@@ -91,9 +91,9 @@ public class PlayerController : MonoBehaviour
             {
                 m_moveDistance.y = 0;
             }
-        }*/
+        }
+
         characon.Move(m_moveDistance * Time.deltaTime);
-        //this.transform.position += m_moveDistance;
     }
 
     public void FLGUpdate(int n, bool flg)
