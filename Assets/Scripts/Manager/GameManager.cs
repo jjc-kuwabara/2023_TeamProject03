@@ -40,6 +40,7 @@ public class GameManager : Singleton<GameManager>
 
     [System.NonSerialized] public bool mainGameFLG = false;
 
+    [Header("‰L”‚Ìˆ—")]
     [System.NonSerialized] public bool foundFLG = false;
 
     public float foundTime;
@@ -117,6 +118,11 @@ public class GameManager : Singleton<GameManager>
                 GameOver();
             }
         }
+    }
+
+    public void FoundFLG(bool flg)
+    {
+        foundFLG = flg;
     }
 
     public void HPUpdate(int n)

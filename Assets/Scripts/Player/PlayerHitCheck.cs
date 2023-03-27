@@ -30,6 +30,7 @@ public class PlayerHitCheck : MonoBehaviour
         if (other.transform.tag == "Air")
         {
             GameManager.Instance.AirFLG(true);
+            GameManager.Instance.FoundFLG(true);
         }
 
         //“G‚ÉÕ“Ë‚µ‚½‚Ìˆ—
@@ -51,6 +52,7 @@ public class PlayerHitCheck : MonoBehaviour
         if(other.transform.tag == "Air")
         {
             GameManager.Instance.AirFLG(false);
+            GameManager.Instance.FoundFLG(false);
         }
     }
 }
