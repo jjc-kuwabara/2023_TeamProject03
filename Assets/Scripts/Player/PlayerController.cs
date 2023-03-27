@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
         m_speedCurrent = m_speedStart;
     }
 
-    void Update()
+    void FixedUpdate()
     {
         AttackTimeCount();
 
