@@ -159,6 +159,7 @@ public class GameManager : Singleton<GameManager>
         eatValue = (float)eatCurrent / eatMax;
         //ゲージの更新
         eatGauge.fillAmount = eatValue;
+        Kill();
     }
 
     public void Kill()
