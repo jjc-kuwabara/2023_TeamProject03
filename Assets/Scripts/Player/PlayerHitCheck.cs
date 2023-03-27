@@ -24,7 +24,7 @@ public class PlayerHitCheck : MonoBehaviour
     {
         if (other.transform.tag == "Finish")
         {
-
+            GameManager.Instance.GameClear();
         }
 
         if (other.transform.tag == "Air")

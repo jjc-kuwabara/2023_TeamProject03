@@ -40,6 +40,11 @@ public class GameManager : Singleton<GameManager>
 
     [System.NonSerialized] public bool mainGameFLG = false;
 
+    [System.NonSerialized] public bool foundFLG = false;
+
+    public float foundTime;
+    float foundTimeCurrent;
+
     void Start()
     {
         //HPの初期設定
@@ -86,11 +91,30 @@ public class GameManager : Singleton<GameManager>
 
         eatCurrent -= digestion * Time.deltaTime;
 
+        Debug_mainGame();
+
+        Found();
+    }
+
+    void Debug_mainGame()
+    {
         if (!mainGameFLG)
         {
             if (Input.GetKeyDown(KeyCode.Q))
             {
                 mainGameFLG = true;
+            }
+        }
+    }
+
+    void Found()
+    {
+        if (foundFLG)
+        {
+            foundTimeCurrent += Time.deltaTime;
+            if(foundTimeCurrent >= foundTime)
+            {
+                GameOver();
             }
         }
     }
@@ -131,5 +155,17 @@ public class GameManager : Singleton<GameManager>
     {
         killCurrent++;
         killText.text = killCurrent.ToString("00");
+    }
+
+    public void GameClear()
+    {
+        mainGameFLG = false;
+        Debug.Log("ゲームクリア");
+    }
+
+    public void GameOver()
+    {
+        mainGameFLG = false;
+        Debug.Log("ゲームオーバー");
     }
 }
