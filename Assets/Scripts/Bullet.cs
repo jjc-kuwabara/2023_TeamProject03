@@ -31,7 +31,7 @@ public class Bullet : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.transform.tag != "Eat")
+        if(collision.transform.tag != "Eat" && collision.transform.tag != "Player")
         {
             //Instantiate(effectExp, transform.position, transform.rotation);
 
