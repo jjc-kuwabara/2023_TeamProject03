@@ -118,6 +118,10 @@ public class GameManager : Singleton<GameManager>
                 GameOver();
             }
         }
+        else
+        {
+            foundTimeCurrent = 0;
+        }
     }
 
     public void FoundFLG(bool flg)
