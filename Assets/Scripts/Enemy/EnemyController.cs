@@ -247,10 +247,10 @@ public class EnemyController : MonoBehaviour
             {
                 Destroy(this.gameObject);
             }
-        }
-        else
-        {
-            moveFLG = true;
+            else
+            {
+                moveFLG = true;
+            }
         }
     }
 }
