@@ -29,14 +29,7 @@ public class PlayerHitCheck : MonoBehaviour
 
         if (other.transform.tag == "Air")
         {
-            if (!GameManager.Instance.airFLG)
-            {
-                GameManager.Instance.AirFLG(true);
-            }
-        }
-        else if(GameManager.Instance.airFLG)
-        {
-            GameManager.Instance.AirFLG(false);
+            GameManager.Instance.AirFLG(true);
         }
 
         //敵に衝突した時の処理
@@ -51,21 +44,13 @@ public class PlayerHitCheck : MonoBehaviour
             //Instantiate(EffectManager.Instance.playerFX[0], transform.position, Quaternion.identity);
             //          生成物　　　　　　　　　　　　　　　生成する場所　　　　生成する角度
         }
+    }
 
-        if(other.transform.tag == "Obstacles")
+    private void OnTriggerExit(Collider other)
+    {
+        if(other.transform.tag == "Air")
         {
-            Quaternion rotarion = Quaternion.LookRotation(other.transform.position - transform.position);
-
-            rotarion = Quaternion.Euler(0f, rotarion.eulerAngles.y, 0f);
-
-            if (rotarion.eulerAngles.y > 180 && rotarion.eulerAngles.y < 360)
-            {
-                
-            }
-            else
-            {
-                
-            }
+            GameManager.Instance.AirFLG(false);
         }
     }
 }
