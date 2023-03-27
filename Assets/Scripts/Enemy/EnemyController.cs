@@ -234,6 +234,7 @@ public class EnemyController : MonoBehaviour
 
                     if (lifePoint <= 0)
                     {
+                        GameManager.Instance.Kill();
                         Destroy(gameObject);
                     }
                 }
