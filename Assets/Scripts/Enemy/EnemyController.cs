@@ -74,6 +74,8 @@ public class EnemyController : MonoBehaviour
     [Header("EnemySearch‚Ì”Ô†")]
     public int childNo = 1;
 
+    public int enemyATK = 1;
+
     void Start()
     {
         target = GameObject.FindGameObjectWithTag("Player");  //’ÇÕ‚µ‚½‚¢‘ÎÛ‚ğTag‚©‚çŒŸõ
