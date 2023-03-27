@@ -8,6 +8,7 @@ TagManager:
   - Bubble
   - Eat
   - PlayerAttack
+  - Enemy
   layers:
   - Default
   - TransparentFX
