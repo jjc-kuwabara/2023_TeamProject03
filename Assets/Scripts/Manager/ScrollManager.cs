@@ -32,6 +32,11 @@ public class ScrollManager : MonoBehaviour
         move = moveAngle * moveSpeed * Time.deltaTime;
         PC.x_L += move.x;
         PC.x_R += move.x;
+
+        if (PC.x_L >= PC.transform.position.x)
+        {
+            PC.Move_2(move);
+        }
         transform.Translate(move);
     }
 }

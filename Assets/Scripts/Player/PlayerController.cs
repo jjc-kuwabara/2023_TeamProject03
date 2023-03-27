@@ -141,4 +141,9 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
+
+    public void Move_2(Vector3 move)
+    {
+        characon.Move(move);
+    }
 }
