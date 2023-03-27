@@ -30,8 +30,8 @@ public class ScrollManager : MonoBehaviour
     void Scroll()
     {
         move = moveAngle * moveSpeed * Time.deltaTime;
-        PC.x_L += (int)move.x;
-        PC.x_R += (int)move.x;
+        PC.x_L += move.x;
+        PC.x_R += move.x;
         transform.Translate(move);
     }
 }

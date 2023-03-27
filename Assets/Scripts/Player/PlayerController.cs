@@ -14,10 +14,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     Vector3 m_moveDistance;
 
-    public int x_L = 0;
-    public int x_R = 0;
-    public int y_Up = 0;
-    public int y_Down = 0;
+    public float x_L = 0;
+    public float x_R = 0;
+    public float y_Up = 0;
+    public float y_Down = 0;
 
     bool x_L_FLG = false;
     bool x_R_FLG = false;
