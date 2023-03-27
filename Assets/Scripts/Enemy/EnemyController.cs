@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyMove : MonoBehaviour
+public class EnemyController : MonoBehaviour
 {
     //ˆÚ“®‚Ì•û–@
     enum MoveType
@@ -77,7 +77,7 @@ public class EnemyMove : MonoBehaviour
     void Start()
     {
         target = GameObject.FindGameObjectWithTag("Player");  //’ÇÕ‚µ‚½‚¢‘ÎÛ‚ğTag‚©‚çŒŸõ
-        search = transform.GetChild(1).GetComponent<EnemySearch>();
+        search = transform.GetChild(childNo).GetComponent<EnemySearch>();
         moveFLG = true;
     }
 
