@@ -7,6 +7,7 @@ TagManager:
   - Fish
   - Bubble
   - Eat
+  - PlayerAttack
   layers:
   - Default
   - TransparentFX
