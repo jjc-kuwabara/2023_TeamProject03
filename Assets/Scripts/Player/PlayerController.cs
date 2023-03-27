@@ -14,6 +14,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     Vector3 m_moveDistance;
 
+    int x_L = 0;
+    int x_R = 0;
+    int y_Up = 0;
+    int y_Down = 0;
+
     [Header("çUåÇÇ…ä÷Ç∑ÇÈïœêî")]
     public GameObject bullet;
     public GameObject firePos;
@@ -52,6 +57,15 @@ public class PlayerController : MonoBehaviour
 
         m_moveDistance = m_moveDirection * m_speedCurrent * Time.deltaTime;
 
+        if(this.transform.position.x <= x_L || this.transform.position.x >= x_R)
+        {
+            m_moveDistance.x = 0;
+        }
+
+        if(this.transform.position.y <= y_Down || this.transform.position.y >= y_Up)
+        {
+            m_moveDistance.y = 0;
+        }
         this.transform.position += m_moveDistance;
     }
 
