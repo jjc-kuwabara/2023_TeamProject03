@@ -57,15 +57,36 @@ public class PlayerController : MonoBehaviour
 
         m_moveDistance = m_moveDirection * m_speedCurrent * Time.deltaTime;
 
-        if(this.transform.position.x <= x_L || this.transform.position.x >= x_R)
+        if(this.transform.position.x <= x_L)
         {
-            m_moveDistance.x = 0;
+            if(x <= 0)
+            {
+                m_moveDistance.x = 0;
+            }
+        }
+        if(this.transform.position.x >= x_R)
+        {
+            if (x >= 0)
+            {
+                m_moveDistance.x = 0;
+            }
         }
 
-        if(this.transform.position.y <= y_Down || this.transform.position.y >= y_Up)
+        if(this.transform.position.y <= y_Down)
         {
-            m_moveDistance.y = 0;
+            if (y <= 0)
+            {
+                m_moveDistance.y = 0;
+            }
         }
+        if (this.transform.position.y >= y_Up)
+        {
+            if (y >= 0)
+            {
+                m_moveDistance.y = 0;
+            }
+        }
+
         this.transform.position += m_moveDistance;
     }
 
