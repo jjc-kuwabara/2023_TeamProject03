@@ -19,6 +19,11 @@ public class PlayerController : MonoBehaviour
     public int y_Up = 0;
     public int y_Down = 0;
 
+    bool x_L_FLG = false;
+    bool x_R_FLG = false;
+    bool y_Up_FLG = false;
+    bool y_Down_FLG = false;
+
     [Header("攻撃に関する変数")]
     public GameObject bullet;
     public GameObject firePos;
@@ -32,6 +37,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+        characon = GetComponent<CharacterController>();   //CharacterControllerのコンポーネント取得
         m_speedCurrent = m_speedStart;
     }
 
@@ -55,16 +61,16 @@ public class PlayerController : MonoBehaviour
             m_moveDirection = m_moveDirection.normalized;
         }
 
-        m_moveDistance = m_moveDirection * m_speedCurrent * Time.deltaTime;
-
-        if(this.transform.position.x <= x_L)
+        m_moveDistance = m_moveDirection * m_speedCurrent;
+        /*
+        if(this.transform.position.x <= x_L || x_L_FLG)
         {
             if(x <= 0)
             {
                 m_moveDistance.x = 0;
             }
         }
-        if(this.transform.position.x >= x_R)
+        if(this.transform.position.x >= x_R || x_R_FLG)
         {
             if (x >= 0)
             {
@@ -72,22 +78,44 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        if(this.transform.position.y <= y_Down)
+        if(this.transform.position.y <= y_Down || y_Down_FLG)
         {
             if (y <= 0)
             {
                 m_moveDistance.y = 0;
             }
         }
-        if (this.transform.position.y >= y_Up)
+        if (this.transform.position.y >= y_Up || y_Up_FLG)
         {
             if (y >= 0)
             {
                 m_moveDistance.y = 0;
             }
-        }
+        }*/
+        characon.Move(m_moveDistance * Time.deltaTime);
+        //this.transform.position += m_moveDistance;
+    }
 
-        this.transform.position += m_moveDistance;
+    public void FLGUpdate(int n, bool flg)
+    {
+        switch (n)
+        {
+            case 1:
+                x_L_FLG = flg;
+                break;
+
+            case 2:
+                x_R_FLG = flg;
+                break;
+
+            case 3:
+                y_Down_FLG = flg;
+                break;
+
+            case 4:
+                y_Up_FLG = flg;
+                break;
+        }
     }
 
     void Attack()

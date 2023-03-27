@@ -51,5 +51,21 @@ public class PlayerHitCheck : MonoBehaviour
             //Instantiate(EffectManager.Instance.playerFX[0], transform.position, Quaternion.identity);
             //          生成物　　　　　　　　　　　　　　　生成する場所　　　　生成する角度
         }
+
+        if(other.transform.tag == "Obstacles")
+        {
+            Quaternion rotarion = Quaternion.LookRotation(other.transform.position - transform.position);
+
+            rotarion = Quaternion.Euler(0f, rotarion.eulerAngles.y, 0f);
+
+            if (rotarion.eulerAngles.y > 180 && rotarion.eulerAngles.y < 360)
+            {
+                
+            }
+            else
+            {
+                
+            }
+        }
     }
 }
