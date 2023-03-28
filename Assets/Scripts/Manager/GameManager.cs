@@ -47,6 +47,8 @@ public class GameManager : Singleton<GameManager>
     public float foundTime;
     float foundTimeCurrent;
 
+    PlayerController controller;   //PlayerControllerのコンポーネント取得用
+
     void Start()
     {
         //HPの初期設定
@@ -64,6 +66,9 @@ public class GameManager : Singleton<GameManager>
         //撃破数の初期設定
         killCurrent = 0;
         killText.text = killCurrent.ToString("00");
+
+        //PlayerControllerのコンポーネント取得
+        controller = GetComponent<PlayerController>();
     }
 
     void Update()
@@ -158,6 +163,12 @@ public class GameManager : Singleton<GameManager>
         eatCurrent += eatHeal;
 
         eatValue = (float)eatCurrent / eatMax;
+
+        if(eatValue >= 0.8)
+        {
+            controller.MoveSpeedChenge((eatValue - 0.8f) / 2);
+        }
+
         //ゲージの更新
         eatGauge.fillAmount = eatValue;
         Kill();

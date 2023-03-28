@@ -143,4 +143,9 @@ public class PlayerController : MonoBehaviour
     {
         characon.Move(move);
     }
+
+    public void MoveSpeedChenge(float speed)
+    {
+        m_speedCurrent -= m_speedStart / 2 * speed;
+    }
 }
