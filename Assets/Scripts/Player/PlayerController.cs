@@ -56,10 +56,7 @@ public class PlayerController : MonoBehaviour
 
         m_moveDirection = new Vector3(x, y, 0);
 
-        if (m_moveDirection.magnitude > 1.0f)
-        {
-            m_moveDirection = m_moveDirection.normalized;
-        }
+        m_moveDirection = m_moveDirection.normalized;
 
         m_moveDistance = m_moveDirection * m_speedCurrent;
         
