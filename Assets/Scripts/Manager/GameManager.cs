@@ -105,19 +105,11 @@ public class GameManager : Singleton<GameManager>
     {
         eatValue = (float)eatCurrent / eatMax;
 
-        if (eatValue >= 0.7)
+        if (eatValue >= 0.8)
         {
-            if (eatValue < 0.8)
-            {
-                controller.MoveSpeedChenge((float)2.5);
-            }
-            else if (eatValue < 0.9)
+            if (eatValue < 0.9)
             {
                 controller.MoveSpeedChenge((float)5);
-            }
-            else if (eatValue < 1)
-            {
-                controller.MoveSpeedChenge((float)7.5);
             }
             else
             {
@@ -183,19 +175,11 @@ public class GameManager : Singleton<GameManager>
 
         eatValue = (float)eatCurrent / eatMax;
 
-        if(eatValue >= 0.7)
+        if (eatValue >= 0.8)
         {
-            if(eatValue < 0.8)
-            {
-                controller.MoveSpeedChenge((float)2.5);
-            }
-            else if(eatValue < 0.9)
+            if (eatValue < 0.9)
             {
                 controller.MoveSpeedChenge((float)5);
-            }
-            else if (eatValue < 1)
-            {
-                controller.MoveSpeedChenge((float)7.5);
             }
             else
             {
