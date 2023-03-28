@@ -35,7 +35,7 @@ public class PlayerHitCheck : MonoBehaviour
 
         //敵に衝突した時の処理
         //　敵と衝突したら　　　　　　　　かつ　無敵じゃないとき
-        if (other.transform.tag == "Enemy" && other.transform.tag == "Fish"/* && !controller.invincible*/)
+        if (other.transform.tag == "Enemy" || other.transform.tag == "Fish"/* && !controller.invincible*/)
         {
             enemy = other.GetComponent<EnemyController>();
 
