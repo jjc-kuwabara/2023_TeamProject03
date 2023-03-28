@@ -18,6 +18,7 @@ public class GameManager : Singleton<GameManager>
     public int airMax = 10;
     [System.NonSerialized] public bool airFLG = false;
     public float airHeal = 0.1f;
+    public float airMinus = 0.1f;
     public float airBubble = 1;
     
     [Header("ñûï†ÉQÅ[ÉW")]
@@ -83,7 +84,7 @@ public class GameManager : Singleton<GameManager>
 
         if (airFLG == false)
         {
-            airCurrent -= airHeal * Time.deltaTime;
+            airCurrent -= airMinus * Time.deltaTime;
         }
         else
         {
