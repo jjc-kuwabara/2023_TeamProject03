@@ -80,7 +80,6 @@ public class EnemyController : MonoBehaviour
     {
         target = GameObject.FindGameObjectWithTag("Player");  //’ÇÕ‚µ‚½‚¢‘ÎÛ‚ğTag‚©‚çŒŸõ
         search = transform.GetChild(childNo).GetComponent<EnemySearch>();
-        moveFLG = true;
     }
 
     void Update()
