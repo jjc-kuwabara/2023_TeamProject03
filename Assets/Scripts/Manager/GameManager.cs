@@ -153,7 +153,7 @@ public class GameManager : Singleton<GameManager>
 
         if(eatValue >= 0.8)
         {
-            controller.MoveSpeedChenge((eatValue - 0.8f) / 2);
+            controller.MoveSpeedChenge((eatValue - (float)0.8) / 2);
         }
 
         //ゲージの更新
