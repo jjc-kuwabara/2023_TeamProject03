@@ -97,21 +97,8 @@ public class GameManager : Singleton<GameManager>
         }
 
         eatCurrent -= digestion * Time.deltaTime;
-
-        Debug_mainGame();
-
+        
         Found();
-    }
-
-    void Debug_mainGame()
-    {
-        if (!mainGameFLG)
-        {
-            if (Input.GetKeyDown(KeyCode.Q))
-            {
-                mainGameFLG = true;
-            }
-        }
     }
 
     void Found()
