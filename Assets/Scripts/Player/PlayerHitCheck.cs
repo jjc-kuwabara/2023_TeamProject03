@@ -11,7 +11,7 @@ public class PlayerHitCheck : MonoBehaviour
 
     void Start()
     {
-        controller = GetComponent<PlayerController>();    //PlayerControllerのコンポーネント取得
+        //controller = GetComponent<PlayerController>();    //PlayerControllerのコンポーネント取得
     }
 
     void Update()
