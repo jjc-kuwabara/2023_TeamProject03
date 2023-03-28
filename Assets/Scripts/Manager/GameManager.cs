@@ -70,7 +70,7 @@ public class GameManager : Singleton<GameManager>
 
         player = GameObject.FindGameObjectWithTag("Player");
         //PlayerControllerのコンポーネント取得
-        controller = GetComponent<PlayerController>();
+        controller = player.GetComponent<PlayerController>();
     }
 
     void Update()
