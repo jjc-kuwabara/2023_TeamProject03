@@ -13,7 +13,7 @@ public class DebugManager : MonoBehaviour
     {
         Debug_mainGame();
 
-        
+        Debug_Eat();
     }
 
     void Debug_mainGame()
