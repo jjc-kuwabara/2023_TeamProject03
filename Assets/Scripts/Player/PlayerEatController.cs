@@ -19,6 +19,7 @@ public class PlayerEatController : MonoBehaviour
     {
         if (Input.GetButton("Fire2"))
         {
+            
             if (other.transform.tag == "Fish")
             {
                 GameManager.Instance.Eat();
