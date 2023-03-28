@@ -9,9 +9,23 @@ using UnityEngine.EventSystems;
 
 public class GameManager : Singleton<GameManager>
 {
+    [Header("ゲームの進行状況を示すフラグ")]
+    public bool gameStart = false;  //ゲーム開始前
+    public bool mainGameFLG = false;
+    public bool clearble = false;   //クリア可能状態
+    public bool gameClear = false;  //ゲームクリア
+    public bool gameOver = false;   //ゲームオーバー
+
+    public bool state_damage = false;  //ダメージ中
+
+    [Header("デモ演出")]
+    [SerializeField] PlayableDirector pd_gameStart;  //ゲームスタートのデモ演出
+    [SerializeField] PlayableDirector pd_gameClear;  //ゲームクリアのデモ演出
+    [SerializeField] PlayableDirector pd_gameOver;   //ゲームオーバーのデモ演出
+
     [Header("PlayerのHP")]
-    public int HPCurrent;
-    public int HPMax = 10;
+    public float HPCurrent;
+    public float HPMax = 10;
 
     [Header("Playerの酸素")]
     public float airCurrent;
@@ -20,12 +34,18 @@ public class GameManager : Singleton<GameManager>
     public float airHeal = 0.1f;
     public float airMinus = 0.1f;
     public float airBubble = 1;
+    public int airDamage = 10;
+    public float airDamageTime = 0;
+    float airDamageTimeCullent = 0;
     
     [Header("満腹ゲージ")]
     public float eatCurrent;
     public int eatMax = 10;
     public float eatHeal = 1;
     public float digestion = 0.1f;
+    public int eatDamage = 10;
+    public float eatDamageTime = 0;
+    public float eatDamageTimeCullent = 0;
 
     [Header("敵の撃破数")]
     public int killCurrent;
@@ -39,13 +59,31 @@ public class GameManager : Singleton<GameManager>
     float eatValue;
     public TextMeshProUGUI killText;
 
-    [System.NonSerialized] public bool mainGameFLG = false;
-
     [Header("鵜飼の処理")]
     [System.NonSerialized] public bool foundFLG = false;
 
     public float foundTime;
     float foundTimeCurrent;
+
+    [Header("スキップ時に必要な設定")]
+    [SerializeField] GameObject canvasMainGame;
+    [SerializeField] GameObject canvasStartDemo;
+    [SerializeField] GameObject canvasClearDemo;
+    [SerializeField] GameObject canvasOverDemo;
+    [SerializeField] GameObject pd_startParent;
+    [SerializeField] GameObject pd_clearParent;
+    [SerializeField] GameObject pd_overParent;
+    [SerializeField] GameObject mainCamera;
+    [SerializeField] int playBGMNo;
+    [SerializeField] GameObject focusClear;
+    [SerializeField] GameObject focusOver;
+
+    //フォーカスが外れないようにする処理用
+    GameObject currentFocus;   //現在
+    GameObject previousFocus;  //前フレーム
+    [SerializeField] GameObject[] focusMainMenu;  //初期カーソル位置
+
+    float fadeTime = 1;
 
     GameObject player;
     PlayerController controller;   //PlayerControllerのコンポーネント取得用
@@ -75,6 +113,12 @@ public class GameManager : Singleton<GameManager>
 
     void Update()
     {
+        //HPが0になったらゲームオーバー
+        if (HPCurrent <= 0 && !gameOver)
+        {
+            GameOver();
+        }
+
         //HPが0以下にならないように処理
         //Clamp(引数…現在値,最小値,最大値)                
         HPCurrent = Mathf.Clamp(HPCurrent, 0, HPMax);
@@ -97,7 +141,10 @@ public class GameManager : Singleton<GameManager>
         }
 
         eatCurrent -= digestion * Time.deltaTime;
-        
+
+        EatCheck();
+        AirCheck();
+
         Found();
     }
 
@@ -125,6 +172,47 @@ public class GameManager : Singleton<GameManager>
         eatGauge.fillAmount = eatValue;
     }
 
+    void EatCheck()
+    {
+        if(eatCurrent <= 0)
+        {
+            if (eatDamageTimeCullent >= eatDamageTime)
+            {
+                DTO(eatDamage);
+                eatDamageTimeCullent = 0;
+            }
+
+            eatDamageTimeCullent += Time.deltaTime;
+        }
+        else
+        {
+            eatDamageTimeCullent = 0;
+        }
+    }
+
+    void AirCheck()
+    {
+        if(airCurrent <= 0)
+        {
+            if (airDamageTimeCullent >= airDamageTime)
+            {
+                DTO(airDamage);
+                airDamageTimeCullent = 0;
+            }
+
+            airDamageTimeCullent += Time.deltaTime;
+        }
+        else
+        {
+            airDamageTimeCullent = 0;
+        }
+    }
+
+    void DTO(int mo)
+    {
+        HPUpdate(HPMax / 100 * mo);
+    }
+
     void Found()
     {
         if (foundFLG)
@@ -146,11 +234,11 @@ public class GameManager : Singleton<GameManager>
         foundFLG = flg;
     }
 
-    public void HPUpdate(int n)
+    public void HPUpdate(float n)
     {
         HPCurrent -= n;
 
-        HPValue = (float)HPCurrent / HPMax;
+        HPValue = HPCurrent / HPMax;
         //ゲージの更新
         HPGauge.fillAmount = HPValue;
     }
@@ -164,7 +252,7 @@ public class GameManager : Singleton<GameManager>
     {
         airCurrent += airBubble;
 
-        airValue = (float)airCurrent / airMax;
+        airValue = airCurrent / airMax;
         //ゲージの更新
         airGauge.fillAmount = airValue;
     }
@@ -205,12 +293,14 @@ public class GameManager : Singleton<GameManager>
     public void GameClear()
     {
         mainGameFLG = false;
+        gameClear = true;
         Debug.Log("ゲームクリア");
     }
 
     public void GameOver()
     {
         mainGameFLG = false;
+        gameOver = true;
         Debug.Log("ゲームオーバー");
     }
 }
