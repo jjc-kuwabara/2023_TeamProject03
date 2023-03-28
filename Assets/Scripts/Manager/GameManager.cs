@@ -84,10 +84,8 @@ public class GameManager : Singleton<GameManager>
         airValue = (float)airCurrent / airMax;
         //ゲージの更新
         airGauge.fillAmount = airValue;
-        
-        eatValue = (float)eatCurrent / eatMax;
-        //ゲージの更新
-        eatGauge.fillAmount = eatValue;
+
+        EatUpdate();
 
         if (airFLG == false)
         {
@@ -101,6 +99,38 @@ public class GameManager : Singleton<GameManager>
         eatCurrent -= digestion * Time.deltaTime;
         
         Found();
+    }
+
+    void EatUpdate()
+    {
+        eatValue = (float)eatCurrent / eatMax;
+
+        if (eatValue >= 0.7)
+        {
+            if (eatValue < 0.8)
+            {
+                controller.MoveSpeedChenge((float)2.5);
+            }
+            else if (eatValue < 0.9)
+            {
+                controller.MoveSpeedChenge((float)5);
+            }
+            else if (eatValue < 1)
+            {
+                controller.MoveSpeedChenge((float)7.5);
+            }
+            else
+            {
+                controller.MoveSpeedChenge((float)10);
+            }
+        }
+        else
+        {
+            controller.MoveSpeedChenge((float)0);
+        }
+
+        //ゲージの更新
+        eatGauge.fillAmount = eatValue;
     }
 
     void Found()
