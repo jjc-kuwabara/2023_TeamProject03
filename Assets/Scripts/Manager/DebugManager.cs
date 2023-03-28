@@ -22,7 +22,7 @@ public class DebugManager : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Q))
             {
-                GameManager.Instance.mainGameFLG = true;
+                GameManager.Instance.MainGameFLG(true);
             }
         }
     }

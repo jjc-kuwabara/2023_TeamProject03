@@ -243,6 +243,12 @@ public class GameManager : Singleton<GameManager>
         HPGauge.fillAmount = HPValue;
     }
 
+    //外部からメインゲームのフラグを操作
+    public void MainGameFLG(bool flg)
+    {
+        mainGameFLG = flg;
+    }
+
     public void AirFLG(bool flg)
     {
         airFLG = flg;
@@ -302,5 +308,62 @@ public class GameManager : Singleton<GameManager>
         mainGameFLG = false;
         gameOver = true;
         Debug.Log("ゲームオーバー");
+    }
+
+    //スタート演出のスキップ
+    void DemoSkip()
+    {
+        //演出の停止
+        pd_gameStart.Stop();
+
+        //初期状態の設定
+        canvasMainGame.SetActive(true);    //メインUI
+        canvasStartDemo.SetActive(false);  //デモ中UI
+        pd_startParent.SetActive(false);  //デモ中カメラ
+        mainCamera.SetActive(true);  //メインで使うカメラ
+
+        SoundManager.Instance.PlayBGM(playBGMNo);
+
+        mainGameFLG = true;
+    }
+
+    //クリア演出のスキップ
+    void DemoClearSkip()
+    {
+        //演出の停止
+        pd_gameClear.Stop();
+
+        canvasMainGame.SetActive(false);    //メインUI
+        canvasClearDemo.SetActive(true);  //デモ中UI
+        pd_clearParent.SetActive(true);  //デモ中カメラ
+    }
+
+    //ゲームオーバー演出のスキップ
+    void DemoOverSkip()
+    {
+        //演出の停止
+        pd_gameOver.Stop();
+
+        canvasMainGame.SetActive(false);    //メインUI
+        canvasOverDemo.SetActive(true);  //デモ中UI
+        pd_overParent.SetActive(true);  //デモ中カメラ
+    }
+
+    //シーン遷移
+    public void SceneMove(int sceneNo)
+    {
+        FadeManager.Instance.LoadSceneIndex(sceneNo, fadeTime);
+    }
+
+    public void NextScene()
+    {
+        int sceneNo = SceneManager.GetActiveScene().buildIndex + 1;
+        FadeManager.Instance.LoadSceneIndex(sceneNo, fadeTime);
+    }
+
+    //シーンリセット
+    public void SceneReset()
+    {
+        FadeManager.Instance.LoadScene(SceneManager.GetActiveScene().name, fadeTime);
     }
 }
