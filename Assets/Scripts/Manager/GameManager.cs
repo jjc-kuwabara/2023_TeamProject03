@@ -47,6 +47,7 @@ public class GameManager : Singleton<GameManager>
     public float foundTime;
     float foundTimeCurrent;
 
+    GameObject player;
     PlayerController controller;   //PlayerControllerのコンポーネント取得用
 
     void Start()
@@ -67,6 +68,7 @@ public class GameManager : Singleton<GameManager>
         killCurrent = 0;
         killText.text = killCurrent.ToString("00");
 
+        player = GameObject.FindGameObjectWithTag("Player");
         //PlayerControllerのコンポーネント取得
         controller = GetComponent<PlayerController>();
     }
