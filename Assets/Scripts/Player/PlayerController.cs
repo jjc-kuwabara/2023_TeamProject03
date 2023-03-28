@@ -31,6 +31,8 @@ public class PlayerController : MonoBehaviour
     float attackTimeCurrent;
     bool fireFLG = false;
 
+    bool inputFLG = false;
+
     CharacterController characon;  //CharacterControllerのコンポーネント取得用
 
     Animator animator;  //Animatorのコンポーネント取得用
@@ -43,10 +45,27 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        AttackTimeCount();
+        InputCheck();
 
-        Attack();
-        Move();
+        if (inputFLG)
+        {
+            AttackTimeCount();
+
+            Attack();
+            Move();
+        }
+    }
+
+    void InputCheck()
+    {
+        if (GameManager.Instance.mainGameFLG)
+        {
+            inputFLG = true;
+        }
+        else
+        {
+            inputFLG = false;
+        }
     }
 
     void Move()

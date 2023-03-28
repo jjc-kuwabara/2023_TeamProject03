@@ -113,39 +113,44 @@ public class GameManager : Singleton<GameManager>
 
     void Update()
     {
-        //HPが0になったらゲームオーバー
-        if (HPCurrent <= 0 && !gameOver)
+        if (mainGameFLG)
         {
-            GameOver();
+            //HPが0になったらゲームオーバー
+            if (HPCurrent <= 0 && !gameOver)
+            {
+                GameOver();
+            }
+
+            //HPが0以下にならないように処理
+            //Clamp(引数…現在値,最小値,最大値)                
+            HPCurrent = Mathf.Clamp(HPCurrent, 0, HPMax);
+            airCurrent = Mathf.Clamp(airCurrent, 0, airMax);
+            eatCurrent = Mathf.Clamp(eatCurrent, 0, eatMax);
+
+            airValue = (float)airCurrent / airMax;
+            //ゲージの更新
+            airGauge.fillAmount = airValue;
+
+            EatUpdate();
+
+            if (airFLG == false)
+            {
+                airCurrent -= airMinus * Time.deltaTime;
+            }
+            else
+            {
+                airCurrent += airHeal * Time.deltaTime;
+            }
+
+            eatCurrent -= digestion * Time.deltaTime;
+
+            EatCheck();
+            AirCheck();
+
+            Found();
         }
 
-        //HPが0以下にならないように処理
-        //Clamp(引数…現在値,最小値,最大値)                
-        HPCurrent = Mathf.Clamp(HPCurrent, 0, HPMax);
-        airCurrent = Mathf.Clamp(airCurrent, 0, airMax);
-        eatCurrent = Mathf.Clamp(eatCurrent, 0, eatMax);
-
-        airValue = (float)airCurrent / airMax;
-        //ゲージの更新
-        airGauge.fillAmount = airValue;
-
-        EatUpdate();
-
-        if (airFLG == false)
-        {
-            airCurrent -= airMinus * Time.deltaTime;
-        }
-        else
-        {
-            airCurrent += airHeal * Time.deltaTime;
-        }
-
-        eatCurrent -= digestion * Time.deltaTime;
-
-        EatCheck();
-        AirCheck();
-
-        Found();
+        
     }
 
     void EatUpdate()

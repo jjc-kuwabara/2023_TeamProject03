@@ -17,7 +17,7 @@ public class PlayerEatController : MonoBehaviour
     //OnTrigger‚Å‚·‚è”²‚¯”»’è‚ðŽæ‚é
     private void OnTriggerStay(Collider other)
     {
-        if (Input.GetButton("Fire2"))
+        if (Input.GetButton("Fire2") && GameManager.Instance.mainGameFLG)
         {
             
             if (other.transform.tag == "Fish")

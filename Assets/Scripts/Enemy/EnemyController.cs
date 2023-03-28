@@ -88,11 +88,11 @@ public class EnemyController : MonoBehaviour
         MovePattern();
         
         RotatePattern();
-        /*
-        if(GameManager.Instance.mainGame && !moveFLG)
+        
+        if(GameManager.Instance.mainGameFLG && !moveFLG)
         {
             moveFLG = true;
-        }*/
+        }
     }
 
     public void MovePattern()
