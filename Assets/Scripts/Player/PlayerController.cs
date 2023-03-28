@@ -146,6 +146,7 @@ public class PlayerController : MonoBehaviour
 
     public void MoveSpeedChenge(float speed)
     {
+        speed = (speed - (float)0.8) / 2;
         m_speedCurrent -= m_speedStart / 2 * speed;
     }
 }
