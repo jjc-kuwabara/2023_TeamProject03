@@ -90,6 +90,9 @@ public class GameManager : Singleton<GameManager>
 
     void Start()
     {
+        //スタートデモを再生
+        pd_gameStart.Play();
+
         //HPの初期設定
         HPCurrent = HPMax;
         HPGauge.fillAmount = 1;
@@ -150,7 +153,23 @@ public class GameManager : Singleton<GameManager>
             Found();
         }
 
-        
+        //スタートデモ中にキーを押したら演出スキップ
+        if (pd_gameStart.state == PlayState.Playing && Input.GetButtonDown("Jump") && !mainGameFLG)
+        {
+            DemoSkip();  //スキップ処理
+        }
+        /*
+        //ゲームクリアデモ中にキーを押したら演出スキップ
+        if (pd_gameClear.state == PlayState.Playing && Input.GetButtonDown("Jump") && !mainGameFLG)
+        {
+            DemoClearSkip();  //スキップ処理
+        }
+
+        //ゲームオーバーデモ中にキーを押したら演出スキップ
+        if (pd_gameOver.state == PlayState.Playing && Input.GetButtonDown("Jump") && !mainGameFLG)
+        {
+            DemoOverSkip();  //スキップ処理
+        }*/
     }
 
     void EatUpdate()
@@ -324,10 +343,10 @@ public class GameManager : Singleton<GameManager>
         //初期状態の設定
         canvasMainGame.SetActive(true);    //メインUI
         canvasStartDemo.SetActive(false);  //デモ中UI
-        pd_startParent.SetActive(false);  //デモ中カメラ
-        mainCamera.SetActive(true);  //メインで使うカメラ
+        //pd_startParent.SetActive(false);  //デモ中カメラ
+        //mainCamera.SetActive(true);  //メインで使うカメラ
 
-        SoundManager.Instance.PlayBGM(playBGMNo);
+        //SoundManager.Instance.PlayBGM(playBGMNo);
 
         mainGameFLG = true;
     }
