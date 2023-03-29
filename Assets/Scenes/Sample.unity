@@ -7571,6 +7571,7 @@ GameObject:
   - component: {fileID: 1465929213}
   - component: {fileID: 1465929215}
   - component: {fileID: 1465929214}
+  - component: {fileID: 1465929216}
   m_Layer: 0
   m_Name: New Timeline
   m_TagString: Untagged
@@ -7648,6 +7649,8 @@ PlayableDirector:
     value: {fileID: 125016717}
   - key: {fileID: 2497795065749750903, guid: dd48c12dfe20b914c926c1c13a2503d8, type: 2}
     value: {fileID: 2049142799}
+  - key: {fileID: -8937986379108056264, guid: dd48c12dfe20b914c926c1c13a2503d8, type: 2}
+    value: {fileID: 1465929216}
   m_ExposedReferences:
     m_References:
     - 3289960c9d617ab4e8aee101fae99067: {fileID: 0}
@@ -7658,6 +7661,36 @@ PlayableDirector:
     - 1d923bcf81fa83e47a38322112c464f4: {fileID: 0}
     - 8189987e5f2f9a44a815e43df2b5e84b: {fileID: 4611670734777039104}
     - c123935156d8e754ca7aba8a4b97b916: {fileID: 0}
+--- !u!114 &1465929216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465929212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 89445c54e9626df49aff277d0ba88a3e, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1384527215}
+          m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+          m_MethodName: MainGameFLG
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
 --- !u!1 &1472459740
 GameObject:
   m_ObjectHideFlags: 0
@@ -10689,6 +10722,7 @@ GameObject:
   - component: {fileID: 2049142801}
   - component: {fileID: 2049142800}
   - component: {fileID: 2049142803}
+  - component: {fileID: 2049142805}
   m_Layer: 0
   m_Name: Quad
   m_TagString: Untagged
@@ -10796,6 +10830,36 @@ Transform:
   m_Father: {fileID: 2026530809}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2049142805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2049142799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 89445c54e9626df49aff277d0ba88a3e, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1384527215}
+          m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+          m_MethodName: MainGameFLG
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
 --- !u!1 &2081059664
 GameObject:
   m_ObjectHideFlags: 0
