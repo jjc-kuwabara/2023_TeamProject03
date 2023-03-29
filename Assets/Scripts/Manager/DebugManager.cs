@@ -11,20 +11,7 @@ public class DebugManager : MonoBehaviour
 
     void Update()
     {
-        Debug_mainGame();
-
         Debug_Eat();
-    }
-
-    void Debug_mainGame()
-    {
-        if (!GameManager.Instance.mainGameFLG)
-        {
-            if (Input.GetKeyDown(KeyCode.Q))
-            {
-                GameManager.Instance.MainGameFLG(true);
-            }
-        }
     }
 
     void Debug_Eat()
