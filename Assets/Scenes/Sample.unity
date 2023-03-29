@@ -9437,7 +9437,7 @@ MonoBehaviour:
   gameClear: 0
   gameOver: 0
   state_damage: 0
-  pd_gameStart: {fileID: 0}
+  pd_gameStart: {fileID: 1465929215}
   pd_gameClear: {fileID: 0}
   pd_gameOver: {fileID: 0}
   HPCurrent: 0
@@ -9462,8 +9462,11 @@ MonoBehaviour:
   eatGauge: {fileID: 1166558905}
   killText: {fileID: 1108208964}
   foundTime: 5
-  canvasMainGame: {fileID: 0}
-  canvasStartDemo: {fileID: 0}
+  canvasMainGame: {fileID: 2109593933}
+  canvasStartDemo: {fileID: 569029650}
+  startDemoUsed:
+  - {fileID: 4610368998780381605}
+  - {fileID: 2049142799}
   canvasClearDemo: {fileID: 0}
   canvasOverDemo: {fileID: 0}
   pd_startParent: {fileID: 0}
@@ -10270,7 +10273,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1465929213}
   - component: {fileID: 1465929215}
-  - component: {fileID: 1465929214}
   - component: {fileID: 1465929216}
   m_Layer: 0
   m_Name: New Timeline
@@ -10294,18 +10296,6 @@ Transform:
   m_Father: {fileID: 2026530809}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1465929214
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1465929212}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa70724bb925d3d40afc174cdcf95f8d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!320 &1465929215
 PlayableDirector:
   m_ObjectHideFlags: 0
