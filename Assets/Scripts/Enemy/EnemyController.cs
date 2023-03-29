@@ -14,6 +14,7 @@ public class EnemyController : MonoBehaviour
         巡回と追跡,
         プレイヤーから逃げる,
         反復運動,
+        波形の移動,
     }
 
     [SerializeField] private MoveType moveType;
@@ -48,7 +49,12 @@ public class EnemyController : MonoBehaviour
     [SerializeField] private ActionType actionType;
 
     [Header("移動にかかわる変数")]
-    public Vector3 pos;  //移動の方向を決める変数
+    //移動の方向を決める変数
+    public Vector3 pos_Go;
+    Vector3 pos_Chase;
+    Vector3 pos_Patrol;
+    Vector3 pos_Escape;
+    public Vector3 pos_Iteration;
 
     public Vector3 rot;  //回転の方向を決める変数
 
@@ -56,7 +62,9 @@ public class EnemyController : MonoBehaviour
 
     public float time;  //動く時間を入力する変数
 
-    int direction = 1;  //移動の正負を判定する変数
+    //移動の正負を判定する変数
+    int direction = 1;
+    int direction_Iteration = 1;
 
     [Header("HP")]
     public int lifePoint;
@@ -90,7 +98,15 @@ public class EnemyController : MonoBehaviour
         
         if(GameManager.Instance.mainGameFLG && !moveFLG)
         {
-            moveFLG = true;
+            switch (awakeType)
+            {
+                case AwakeType.ゲーム開始時:
+                    moveFLG = true;
+                    break;
+
+                case AwakeType.プレイヤーが近づいたとき:
+                    break;
+            }
         }
     }
 
@@ -125,15 +141,11 @@ public class EnemyController : MonoBehaviour
                     break;
 
                 case MoveType.反復運動:
-                    transform.Translate(pos * direction * Time.deltaTime);
+                    Iteration();
+                    break;
 
-                    timeCount += Time.deltaTime;
-
-                    if (timeCount > time)
-                    {
-                        timeCount = 0;  //時間をリセット
-                        direction *= -1;  //反対方向の移動にする
-                    }
+                case MoveType.波形の移動:
+                    Wave();
                     break;
             }
         }
@@ -141,18 +153,18 @@ public class EnemyController : MonoBehaviour
 
     void Go()
     {
-        transform.Translate(pos * direction * Time.deltaTime);
+        transform.Translate(pos_Go * direction * Time.deltaTime);
     }
 
     void Chase()
     {
-        pos = target.transform.position;
-        transform.Translate(pos * direction * Time.deltaTime);
+        pos_Chase = target.transform.position;
+        transform.Translate(pos_Chase * direction * Time.deltaTime);
     }
 
     void Patrol()
     {
-        if(pos.magnitude - this.transform.position.magnitude <= 0.5f)
+        if(pos_Patrol.magnitude - this.transform.position.magnitude <= 0.5f)
         {
             pointer++;
             if(pointer >= movePointer.Length)
@@ -161,9 +173,9 @@ public class EnemyController : MonoBehaviour
             }
         }
 
-        pos = movePointer[pointer].transform.position;
+        pos_Patrol = movePointer[pointer].transform.position;
 
-        transform.Translate(pos * direction * Time.deltaTime);
+        transform.Translate(pos_Patrol * direction * Time.deltaTime);
     }
 
     void Patrol_or_Chase()
@@ -190,14 +202,33 @@ public class EnemyController : MonoBehaviour
     {
         if (search.playerOn)
         {
-            pos = target.transform.position;
-            transform.Translate(-pos * direction * Time.deltaTime);
+            pos_Escape = target.transform.position;
+            transform.Translate(-pos_Escape * direction * Time.deltaTime);
         }
         else
         {
-            pos = this.transform.position;
-            transform.Translate(pos * direction * Time.deltaTime);
+            pos_Escape = this.transform.position;
+            transform.Translate(pos_Escape * direction * Time.deltaTime);
         }
+    }
+
+    void Iteration()
+    {
+        transform.Translate(pos_Iteration * direction_Iteration * Time.deltaTime);
+
+        timeCount += Time.deltaTime;
+
+        if (timeCount > time)
+        {
+            timeCount = 0;  //時間をリセット
+            direction_Iteration *= -1;  //反対方向の移動にする
+        }
+    }
+
+    void Wave()
+    {
+        Go();
+        Iteration();
     }
 
     public void RotatePattern()
