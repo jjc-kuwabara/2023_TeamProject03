@@ -38,7 +38,7 @@ public class DebugManager : MonoBehaviour
 
     void Debug_Air()
     {
-        if (Input.GetKeyDown(KeyCode.B))
+        if (Input.GetKey(KeyCode.B))
         {
             GameManager.Instance.AirGet();
         }
@@ -46,7 +46,7 @@ public class DebugManager : MonoBehaviour
 
     void Debug_Eat()
     {
-        if (Input.GetKeyDown(KeyCode.N))
+        if (Input.GetKey(KeyCode.N))
         {
             GameManager.Instance.Eat();
         }
