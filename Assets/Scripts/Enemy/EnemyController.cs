@@ -31,6 +31,8 @@ public class EnemyController : MonoBehaviour
     {
         なし,
         ダメージを受ける,
+        弱点だけダメージを受ける,
+        弱点に当てるとダメージ上昇,
     }
     [SerializeField] private DamageType damageType;
 
@@ -77,7 +79,8 @@ public class EnemyController : MonoBehaviour
     int direction_Iteration = 1;
 
     [Header("HP")]
-    public int lifePoint;
+    public float lifePoint;
+    public float damage = 1;
 
     [Header("移動するポイント")]
     public GameObject[] movePointer;
@@ -86,6 +89,10 @@ public class EnemyController : MonoBehaviour
     GameObject target;
 
     bool moveFLG = false;
+
+    [Header("弱点関係")]
+    public GameObject WeakPoint;
+    public float weakMagnification;
 
     EnemySearch search;
     EnemyPattern_Attack attack;
@@ -102,6 +109,18 @@ public class EnemyController : MonoBehaviour
         {
             case MoveType.巡回と追跡:
                 search = transform.GetChild(childNo).GetComponent<EnemySearch>();
+                break;
+
+            default:
+                break;
+        }
+
+        switch (damageType)
+        {
+            case DamageType.弱点だけダメージを受ける:
+                break;
+
+            case DamageType.弱点に当てるとダメージ上昇:
                 break;
 
             default:
@@ -137,6 +156,8 @@ public class EnemyController : MonoBehaviour
         MovePattern();
         
         RotatePattern();
+
+        DamagePattern();
 
         AttackPattern();
         
@@ -294,6 +315,26 @@ public class EnemyController : MonoBehaviour
         }
     }
 
+    void DamagePattern()
+    {
+        switch (damageType)
+        {
+            case DamageType.弱点だけダメージを受ける:
+                if (damage > 1)
+                {
+                    Damage(damage);
+                }
+                break;
+
+            case DamageType.弱点に当てるとダメージ上昇:
+                if (damage> 1)
+                {
+                    Damage(damage * weakMagnification);
+                }
+                break;
+        }
+    }
+
     void AttackPattern()
     {
         switch (attackType)
@@ -325,25 +366,11 @@ public class EnemyController : MonoBehaviour
             case DamageType.ダメージを受ける:
                 if (other.gameObject.tag == "PlayerAttack")
                 {
-                    lifePoint -= 1;
-
-                    if (lifePoint <= 0)
-                    {
-                        GameManager.Instance.Kill();
-
-                        switch (actionType)
-                        {
-                            case ActionType.死んだら爆発する:
-                                attack.SpreadAttack();
-                                break;
-
-                            default:
-                                break;
-                        }
-
-                        Destroy(gameObject);
-                    }
+                    Damage(damage);
                 }
+                break;
+
+            default:
                 break;
         }
 
@@ -358,6 +385,27 @@ public class EnemyController : MonoBehaviour
             {
                 moveFLG = true;
             }
+        }
+    }
+
+    void Damage(float damage)
+    {
+        lifePoint -= damage;
+
+        if (lifePoint <= 0)
+        {
+            GameManager.Instance.Kill();
+
+            switch (actionType)
+            {
+                case ActionType.死んだら爆発する:
+                    attack.SpreadAttack();
+                    break;
+
+                default:
+                    break;
+            }
+            Destroy(gameObject);
         }
     }
 }

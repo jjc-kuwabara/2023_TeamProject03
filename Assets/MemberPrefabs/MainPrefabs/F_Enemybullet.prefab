@@ -139,7 +139,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 0
+  damage: 0
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 1
   enemyATK: 1
 --- !u!54 &4045631052651543280

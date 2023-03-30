@@ -45,7 +45,7 @@ public class EnemyPattern_Attack : MonoBehaviour
         {
             for (int c = 0; c < 360; c += angle)
             {
-                Instantiate(bullet, firePos.transform.position, firePos.transform.rotation * Quaternion.Euler(0, 0, (float)c));
+                Instantiate(bullet, firePos.transform.position, firePos.transform.rotation.normalized * Quaternion.Euler(c, 0, 0));
             }
             
             //生成するオブジェクト、生成するときの場所、生成した時の角度
