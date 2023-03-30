@@ -50,6 +50,7 @@ public class EnemyHitCheck : MonoBehaviour
         if(bullet != null)
         {
             Destroy(bullet);
+            HitFLG = false;
         }
     }
 }
