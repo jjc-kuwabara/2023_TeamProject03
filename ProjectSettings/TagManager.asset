@@ -10,7 +10,7 @@ TagManager:
   - PlayerAttack
   - Enemy
   - Air
-  - EnemyATK
+  - DeadArea
   layers:
   - Default
   - TransparentFX
