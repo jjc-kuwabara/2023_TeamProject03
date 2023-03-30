@@ -70,6 +70,15 @@ public class PlayerController : MonoBehaviour
 
     void Move()
     {
+        if (Input.GetKeyDown(KeyCode.LeftShift)){
+            m_speedCurrent /= 2;
+        }
+
+        if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            m_speedCurrent *= 2;
+        }
+
         float x = Input.GetAxis("Horizontal");
         float y = Input.GetAxis("Vertical");
 
