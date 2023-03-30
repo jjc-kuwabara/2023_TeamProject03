@@ -112,8 +112,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c10d306598c35584e9f726a347888875, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletSpeed: 50
-  destoryTime: 1
+  bulletSpeed: 30
+  destoryTime: 1.5
   effectExp: {fileID: 0}
   effectAura: {fileID: 0}
 --- !u!114 &7224525479347256305
@@ -141,7 +141,7 @@ MonoBehaviour:
   lifePoint: 0
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 1
   enemyATK: 1
