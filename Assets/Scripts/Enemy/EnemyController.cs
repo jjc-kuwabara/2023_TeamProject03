@@ -325,6 +325,7 @@ public class EnemyController : MonoBehaviour
             case DamageType.弱点だけダメージを受ける:
                 if (hitCheck.HitFLG)
                 {
+                    hitCheck.BulletDelete();
                     Damage(damage);
                 }
                 break;
@@ -332,6 +333,7 @@ public class EnemyController : MonoBehaviour
             case DamageType.弱点に当てるとダメージ上昇:
                 if (hitCheck.HitFLG)
                 {
+                    hitCheck.BulletDelete();
                     Damage(damage * weakMagnification);
                 }
                 break;
@@ -415,6 +417,7 @@ public class EnemyController : MonoBehaviour
                 default:
                     break;
             }
+
             Destroy(gameObject);
         }
     }

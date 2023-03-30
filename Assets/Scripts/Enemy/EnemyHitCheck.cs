@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyHitCheck : MonoBehaviour
 {
     public bool HitFLG;
+    public GameObject bullet;
 
     void Start()
     {
@@ -22,6 +23,8 @@ public class EnemyHitCheck : MonoBehaviour
         //íeÇ…è’ìÀÇµÇΩéûÇÃèàóù
         if (other.transform.tag == "PlayerAttack")
         {
+            bullet = other.gameObject;
+
             HitFLG = true;
 
             //SoundManager.Instance.PlaySE_Game(8);
@@ -34,7 +37,19 @@ public class EnemyHitCheck : MonoBehaviour
     {
         if (other.transform.tag == "PlayerAttack")
         {
+            Destroy(other.gameObject);
+
+            bullet = null;
+
             HitFLG = false;
+        }
+    }
+
+    public void BulletDelete()
+    {
+        if(bullet != null)
+        {
+            Destroy(bullet);
         }
     }
 }
