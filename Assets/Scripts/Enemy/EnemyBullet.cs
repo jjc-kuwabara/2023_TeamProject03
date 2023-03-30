@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
+public class EnemyBullet : MonoBehaviour
 {
     public float bulletSpeed = 10;
     public float destoryTime = 3;
@@ -23,7 +23,7 @@ public class Bullet : MonoBehaviour
 
     private void Update()
     {
-        if(effectAura != null)
+        if (effectAura != null)
         {
             Instantiate(effectAura, transform.position, transform.rotation);
         }
@@ -31,7 +31,7 @@ public class Bullet : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.transform.tag != "Eat" && collision.transform.tag != "Player")
+        if (collision.transform.tag != "Eat" && collision.transform.tag != "Fish")
         {
             //Instantiate(effectExp, transform.position, transform.rotation);
 
