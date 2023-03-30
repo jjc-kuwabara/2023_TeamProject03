@@ -196,6 +196,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -598,6 +599,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -1415,6 +1417,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -1561,6 +1564,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -1820,6 +1824,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -2118,6 +2123,7 @@ MonoBehaviour:
   moveType: 7
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -2259,6 +2265,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -2400,6 +2407,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -2767,6 +2775,7 @@ MonoBehaviour:
   moveType: 7
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -3586,6 +3595,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -4168,6 +4178,7 @@ MonoBehaviour:
   moveType: 7
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -4309,6 +4320,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -4676,6 +4688,7 @@ MonoBehaviour:
   moveType: 7
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -4914,6 +4927,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -5055,6 +5069,7 @@ MonoBehaviour:
   moveType: 0
   rotateType: 0
   damageType: 0
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: 0, y: 0, z: 0}
@@ -5309,6 +5324,7 @@ MonoBehaviour:
   moveType: 0
   rotateType: 0
   damageType: 0
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: 0, y: 0, z: 0}
@@ -5450,6 +5466,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -5817,6 +5834,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -6298,6 +6316,7 @@ MonoBehaviour:
   moveType: 7
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -6439,6 +6458,7 @@ MonoBehaviour:
   moveType: 0
   rotateType: 0
   damageType: 0
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: 0, y: 0, z: 0}
@@ -7602,6 +7622,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -8195,6 +8216,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -8546,6 +8568,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -8697,6 +8720,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -9289,6 +9313,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -9735,6 +9760,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -9876,6 +9902,7 @@ MonoBehaviour:
   moveType: 7
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -10017,6 +10044,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -10158,6 +10186,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -10417,6 +10446,7 @@ MonoBehaviour:
   moveType: 0
   rotateType: 0
   damageType: 0
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: 0, y: 0, z: 0}
@@ -10558,6 +10588,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -11043,6 +11074,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -11601,6 +11633,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -11855,6 +11888,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -12073,6 +12107,7 @@ MonoBehaviour:
   moveType: 7
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -12214,6 +12249,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -12612,6 +12648,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -12837,6 +12874,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -13091,6 +13129,7 @@ MonoBehaviour:
   moveType: 7
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -13232,6 +13271,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -13486,6 +13526,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -13627,6 +13668,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -13700,6 +13742,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 944175411}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &944439546
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 944439547}
+  m_Layer: 0
+  m_Name: EFirePos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &944439547
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 944439546}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -1.43, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1494371394}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -14062,6 +14135,7 @@ GameObject:
   - component: {fileID: 976548101}
   - component: {fileID: 976548100}
   - component: {fileID: 976548099}
+  - component: {fileID: 976548103}
   - component: {fileID: 976548098}
   m_Layer: 0
   m_Name: EnemyFish (1)
@@ -14083,6 +14157,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1595695492}
+  - {fileID: 1423639267}
   m_Father: {fileID: 1856913072}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14117,8 +14192,9 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
-  actionType: 0
+  actionType: 2
   pos_Go: {x: -30, y: 0, z: 0}
   pos_Iteration: {x: 0, y: -10, z: 0}
   rot: {x: 0, y: 0, z: 0}
@@ -14190,6 +14266,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 976548096}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &976548103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 976548096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dae2bd0419110a04eaaac10ebfd04acd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 4610340539835770293, guid: 64db5ea5915d348468099cb7d2606415, type: 3}
+  firePos: {fileID: 1423639266}
+  attackTime: 1
+  angle: 30
 --- !u!1 &977576566
 GameObject:
   m_ObjectHideFlags: 0
@@ -14484,6 +14576,7 @@ MonoBehaviour:
   moveType: 7
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -14630,6 +14723,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -15032,6 +15126,7 @@ MonoBehaviour:
   moveType: 0
   rotateType: 0
   damageType: 0
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: 0, y: 0, z: 0}
@@ -15173,6 +15268,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -15437,6 +15533,7 @@ MonoBehaviour:
   moveType: 7
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -15986,6 +16083,7 @@ MonoBehaviour:
   moveType: 7
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -16255,6 +16353,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -16472,6 +16571,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -16879,6 +16979,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -17133,6 +17234,7 @@ MonoBehaviour:
   moveType: 7
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -17371,6 +17473,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -17630,6 +17733,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -17771,6 +17875,7 @@ MonoBehaviour:
   moveType: 7
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -17950,6 +18055,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -18209,6 +18315,7 @@ MonoBehaviour:
   moveType: 0
   rotateType: 0
   damageType: 0
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: 0, y: 0, z: 0}
@@ -18350,6 +18457,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -18604,6 +18712,7 @@ MonoBehaviour:
   moveType: 7
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -18906,6 +19015,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -19047,6 +19157,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -19125,6 +19236,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4891049361556014, guid: d7689380619fd894c8508730e2bed11f, type: 3}
   m_PrefabInstance: {fileID: 4610368996848270998}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1423639266
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1423639267}
+  m_Layer: 0
+  m_Name: EFirePos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1423639267
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1423639266}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -1, y: 0, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 976548097}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1 &1431194200
 GameObject:
   m_ObjectHideFlags: 0
@@ -19277,6 +19419,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -19418,6 +19561,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -19672,6 +19816,7 @@ MonoBehaviour:
   moveType: 7
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -19926,6 +20071,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -20190,6 +20336,7 @@ MonoBehaviour:
   moveType: 7
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -20805,6 +20952,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -21004,6 +21152,7 @@ GameObject:
   - component: {fileID: 1494371392}
   - component: {fileID: 1494371391}
   - component: {fileID: 1494371395}
+  - component: {fileID: 1494371397}
   - component: {fileID: 1494371396}
   m_Layer: 0
   m_Name: EnemyFish
@@ -21088,6 +21237,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1614045260}
+  - {fileID: 944439547}
   m_Father: {fileID: 1856913072}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -21106,6 +21256,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 1
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -21132,6 +21283,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1494371397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1494371390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dae2bd0419110a04eaaac10ebfd04acd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 4610340539835770293, guid: f81dd5e18855c3841aabd6a7dfc33e7e, type: 3}
+  firePos: {fileID: 944439546}
+  attackTime: 1
+  angle: 30
 --- !u!4 &1495650072 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4891049361556014, guid: d7689380619fd894c8508730e2bed11f, type: 3}
@@ -21436,6 +21603,7 @@ MonoBehaviour:
   moveType: 0
   rotateType: 0
   damageType: 0
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: 0, y: 0, z: 0}
@@ -21577,6 +21745,7 @@ MonoBehaviour:
   moveType: 7
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -22089,6 +22258,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -22343,6 +22513,7 @@ MonoBehaviour:
   moveType: 7
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -22717,6 +22888,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -23430,6 +23602,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -23770,6 +23943,7 @@ MonoBehaviour:
   moveType: 7
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -23982,6 +24156,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -24236,6 +24411,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -24377,6 +24553,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -24744,6 +24921,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -24895,6 +25073,7 @@ MonoBehaviour:
   moveType: 0
   rotateType: 0
   damageType: 0
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: 0, y: 0, z: 0}
@@ -25149,6 +25328,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -25452,6 +25632,7 @@ MonoBehaviour:
   moveType: 7
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -25593,6 +25774,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -26111,6 +26293,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -26257,6 +26440,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -26516,6 +26700,7 @@ MonoBehaviour:
   moveType: 7
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -26657,6 +26842,7 @@ MonoBehaviour:
   moveType: 0
   rotateType: 0
   damageType: 0
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: 0, y: 0, z: 0}
@@ -26798,6 +26984,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -27016,6 +27203,7 @@ MonoBehaviour:
   moveType: 7
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -27233,6 +27421,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -27374,6 +27563,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -27663,6 +27853,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -28421,6 +28612,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -28562,6 +28754,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -28703,6 +28896,7 @@ MonoBehaviour:
   moveType: 7
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -29139,6 +29333,7 @@ MonoBehaviour:
   moveType: 0
   rotateType: 0
   damageType: 0
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: 0, y: 0, z: 0}
@@ -29393,6 +29588,7 @@ MonoBehaviour:
   moveType: 0
   rotateType: 0
   damageType: 0
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: 0, y: 0, z: 0}
@@ -29592,6 +29788,7 @@ MonoBehaviour:
   moveType: 7
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
@@ -29733,6 +29930,7 @@ MonoBehaviour:
   moveType: 1
   rotateType: 0
   damageType: 1
+  attackType: 0
   awakeType: 0
   actionType: 0
   pos_Go: {x: -30, y: 0, z: 0}
