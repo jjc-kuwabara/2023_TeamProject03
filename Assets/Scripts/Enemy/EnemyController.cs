@@ -34,6 +34,14 @@ public class EnemyController : MonoBehaviour
     }
     [SerializeField] private DamageType damageType;
 
+    enum AttackType
+    {
+        なし,
+        前方に向かって攻撃する,
+        プレイヤーに向かって攻撃する,
+    }
+    [SerializeField] private AttackType attackType;
+
     enum AwakeType
     {
         ゲーム開始時,
@@ -78,16 +86,35 @@ public class EnemyController : MonoBehaviour
     bool moveFLG = false;
 
     EnemySearch search;
+    EnemyPattern_Attack attack;
     bool patrolFLG = false;
     [Header("EnemySearchの番号")]
     public int childNo = 1;
-
     public int enemyATK = 1;
 
     void Start()
     {
         target = GameObject.FindGameObjectWithTag("Player");  //追跡したい対象をTagから検索
-        search = transform.GetChild(childNo).GetComponent<EnemySearch>();
+
+        switch (moveType)
+        {
+            case MoveType.巡回と追跡:
+                search = transform.GetChild(childNo).GetComponent<EnemySearch>();
+                break;
+
+            default:
+                break;
+        }
+
+        switch (attackType)
+        {
+            case AttackType.なし:
+                break;
+
+            default:
+                attack = GetComponent<EnemyPattern_Attack>();
+                break;
+        }
     }
 
     void Update()
@@ -95,6 +122,8 @@ public class EnemyController : MonoBehaviour
         MovePattern();
         
         RotatePattern();
+
+        AttackPattern();
         
         if(GameManager.Instance.mainGameFLG && !moveFLG)
         {
@@ -246,6 +275,23 @@ public class EnemyController : MonoBehaviour
 
             case RotateType.プレイヤーを見る:
                 transform.LookAt(target.transform);
+                break;
+        }
+    }
+
+    void AttackPattern()
+    {
+        switch (attackType)
+        {
+            case AttackType.なし:
+                break;
+
+            case AttackType.前方に向かって攻撃する:
+                attack.FrontAttack();
+                break;
+
+            case AttackType.プレイヤーに向かって攻撃する:
+                attack.PlayerAttack(target);
                 break;
         }
     }
