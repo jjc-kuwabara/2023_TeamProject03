@@ -91,7 +91,8 @@ public class EnemyController : MonoBehaviour
     bool moveFLG = false;
 
     [Header("弱点関係")]
-    public GameObject WeakPoint;
+    public GameObject weakPoint;
+    EnemyHitCheck hitCheck;
     public float weakMagnification;
 
     EnemySearch search;
@@ -118,9 +119,11 @@ public class EnemyController : MonoBehaviour
         switch (damageType)
         {
             case DamageType.弱点だけダメージを受ける:
+                hitCheck = weakPoint.transform.GetComponent<EnemyHitCheck>();
                 break;
 
             case DamageType.弱点に当てるとダメージ上昇:
+                hitCheck = weakPoint.transform.GetComponent<EnemyHitCheck>();
                 break;
 
             default:
@@ -320,14 +323,14 @@ public class EnemyController : MonoBehaviour
         switch (damageType)
         {
             case DamageType.弱点だけダメージを受ける:
-                if (damage > 1)
+                if (hitCheck.HitFLG)
                 {
                     Damage(damage);
                 }
                 break;
 
             case DamageType.弱点に当てるとダメージ上昇:
-                if (damage> 1)
+                if (hitCheck.HitFLG)
                 {
                     Damage(damage * weakMagnification);
                 }
@@ -364,6 +367,13 @@ public class EnemyController : MonoBehaviour
                 break;
 
             case DamageType.ダメージを受ける:
+                if (other.gameObject.tag == "PlayerAttack")
+                {
+                    Damage(damage);
+                }
+                break;
+
+            case DamageType.弱点に当てるとダメージ上昇:
                 if (other.gameObject.tag == "PlayerAttack")
                 {
                     Damage(damage);

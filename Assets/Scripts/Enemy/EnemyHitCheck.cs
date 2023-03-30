@@ -35,10 +35,6 @@ public class EnemyHitCheck : MonoBehaviour
         if (other.transform.tag == "PlayerAttack")
         {
             HitFLG = false;
-
-            //SoundManager.Instance.PlaySE_Game(8);
-            //Instantiate(EffectManager.Instance.playerFX[0], transform.position, Quaternion.identity);
-            //          生成物　　　　　　　　　　　　　　　生成する場所　　　　生成する角度
         }
     }
 }
