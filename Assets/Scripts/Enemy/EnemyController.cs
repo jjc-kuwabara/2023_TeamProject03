@@ -38,6 +38,7 @@ public class EnemyController : MonoBehaviour
     {
         なし,
         前方に向かって攻撃する,
+        全方位に攻撃する,
         プレイヤーに向かって攻撃する,
     }
     [SerializeField] private AttackType attackType;
@@ -53,6 +54,7 @@ public class EnemyController : MonoBehaviour
     {
         なし,
         プレイヤーに当たったら消える,
+        死んだら爆発する,
     }
     [SerializeField] private ActionType actionType;
 
@@ -113,6 +115,19 @@ public class EnemyController : MonoBehaviour
 
             default:
                 attack = GetComponent<EnemyPattern_Attack>();
+                break;
+        }
+
+        switch (actionType)
+        {
+            case ActionType.死んだら爆発する:
+                if(attack == null)
+                {
+                    attack = GetComponent<EnemyPattern_Attack>();
+                }
+                break;
+
+            default:
                 break;
         }
     }
@@ -290,6 +305,10 @@ public class EnemyController : MonoBehaviour
                 attack.FrontAttack();
                 break;
 
+            case AttackType.全方位に攻撃する:
+                attack.SpreadAttack();
+                break;
+
             case AttackType.プレイヤーに向かって攻撃する:
                 attack.PlayerAttack(target);
                 break;
@@ -311,6 +330,17 @@ public class EnemyController : MonoBehaviour
                     if (lifePoint <= 0)
                     {
                         GameManager.Instance.Kill();
+
+                        switch (actionType)
+                        {
+                            case ActionType.死んだら爆発する:
+                                attack.SpreadAttack();
+                                break;
+
+                            default:
+                                break;
+                        }
+
                         Destroy(gameObject);
                     }
                 }

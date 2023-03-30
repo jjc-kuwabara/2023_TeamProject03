@@ -10,11 +10,13 @@ public class EnemyPattern_Attack : MonoBehaviour
     [SerializeField] float attackTime = 1;
     float attackTimeCurrent;
 
+    public int angle = 30;
+
     GameObject target;
 
     void Start()
     {
-        
+        attackTimeCurrent = attackTime;
     }
 
     void Update()
@@ -27,6 +29,25 @@ public class EnemyPattern_Attack : MonoBehaviour
         if(attackTimeCurrent >= attackTime)
         {
             Instantiate(bullet, firePos.transform.position, firePos.transform.rotation);
+            //生成するオブジェクト、生成するときの場所、生成した時の角度
+
+            attackTimeCurrent = 0;
+        }
+        else
+        {
+            attackTimeCurrent += Time.deltaTime;
+        }
+    }
+
+    public void SpreadAttack()
+    {
+        if (attackTimeCurrent >= attackTime)
+        {
+            for (int c = 0; c < 360; c += angle)
+            {
+                Instantiate(bullet, firePos.transform.position, firePos.transform.rotation * Quaternion.Euler(0, 0, (float)c));
+            }
+            
             //生成するオブジェクト、生成するときの場所、生成した時の角度
 
             attackTimeCurrent = 0;
