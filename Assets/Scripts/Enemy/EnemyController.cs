@@ -374,7 +374,7 @@ public class EnemyController : MonoBehaviour
                 break;
 
             case DamageType.弱点に当てるとダメージ上昇:
-                if (other.gameObject.tag == "PlayerAttack")
+                if (other.gameObject.tag == "PlayerAttack" && !hitCheck.HitFLG)
                 {
                     Damage(damage);
                 }
