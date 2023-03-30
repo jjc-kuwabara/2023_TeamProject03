@@ -68,6 +68,7 @@ public class GameManager : Singleton<GameManager>
     [Header("スキップ時に必要な設定")]
     [SerializeField] GameObject canvasMainGame;
     [SerializeField] GameObject canvasStartDemo;
+    [SerializeField] GameObject[] startDemoUsed;
     [SerializeField] GameObject canvasClearDemo;
     [SerializeField] GameObject canvasOverDemo;
     [SerializeField] GameObject pd_startParent;
@@ -90,6 +91,8 @@ public class GameManager : Singleton<GameManager>
 
     void Start()
     {
+        pd_gameStart.Play();
+
         //HPの初期設定
         HPCurrent = HPMax;
         HPGauge.fillAmount = 1;
@@ -150,7 +153,20 @@ public class GameManager : Singleton<GameManager>
             Found();
         }
 
-        
+        if (pd_gameStart.state == PlayState.Playing && Input.GetButtonDown("Jump") && !mainGameFLG)
+        {
+            DemoSkip();
+        }
+        /*
+        if (pd_gameClear.state == PlayState.Playing && Input.GetButtonDown("Jump") && !mainGameFLG)
+        {
+            DemoClearSkip();
+        }
+
+        if (pd_gameOver.state == PlayState.Playing && Input.GetButtonDown("Jump") && !mainGameFLG)
+        {
+            DemoOverSkip();
+        }*/
     }
 
     void EatUpdate()
@@ -324,10 +340,18 @@ public class GameManager : Singleton<GameManager>
         //初期状態の設定
         canvasMainGame.SetActive(true);    //メインUI
         canvasStartDemo.SetActive(false);  //デモ中UI
-        pd_startParent.SetActive(false);  //デモ中カメラ
-        mainCamera.SetActive(true);  //メインで使うカメラ
+        //pd_startParent.SetActive(false);  //デモ中カメラ
+        //mainCamera.SetActive(true);  //メインで使うカメラ
 
-        SoundManager.Instance.PlayBGM(playBGMNo);
+        if(startDemoUsed.Length > 0)
+        {
+            for(int i = 0; i < startDemoUsed.Length; i++)
+            {
+                startDemoUsed[i].SetActive(false);
+            }
+        }
+
+        //SoundManager.Instance.PlayBGM(playBGMNo);
 
         mainGameFLG = true;
     }

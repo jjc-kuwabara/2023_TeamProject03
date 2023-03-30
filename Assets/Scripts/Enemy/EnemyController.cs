@@ -14,6 +14,7 @@ public class EnemyController : MonoBehaviour
         巡回と追跡,
         プレイヤーから逃げる,
         反復運動,
+        波形の移動,
     }
 
     [SerializeField] private MoveType moveType;
@@ -30,8 +31,19 @@ public class EnemyController : MonoBehaviour
     {
         なし,
         ダメージを受ける,
+        弱点だけダメージを受ける,
+        弱点に当てるとダメージ上昇,
     }
     [SerializeField] private DamageType damageType;
+
+    enum AttackType
+    {
+        なし,
+        前方に向かって攻撃する,
+        全方位に攻撃する,
+        プレイヤーに向かって攻撃する,
+    }
+    [SerializeField] private AttackType attackType;
 
     enum AwakeType
     {
@@ -44,11 +56,17 @@ public class EnemyController : MonoBehaviour
     {
         なし,
         プレイヤーに当たったら消える,
+        死んだら爆発する,
     }
     [SerializeField] private ActionType actionType;
 
     [Header("移動にかかわる変数")]
-    public Vector3 pos;  //移動の方向を決める変数
+    //移動の方向を決める変数
+    public Vector3 pos_Go;
+    Vector3 pos_Chase;
+    Vector3 pos_Patrol;
+    Vector3 pos_Escape;
+    public Vector3 pos_Iteration;
 
     public Vector3 rot;  //回転の方向を決める変数
 
@@ -56,10 +74,13 @@ public class EnemyController : MonoBehaviour
 
     public float time;  //動く時間を入力する変数
 
-    int direction = 1;  //移動の正負を判定する変数
+    //移動の正負を判定する変数
+    int direction = 1;
+    int direction_Iteration = 1;
 
     [Header("HP")]
-    public int lifePoint;
+    public float lifePoint;
+    public float damage = 1;
 
     [Header("移動するポイント")]
     public GameObject[] movePointer;
@@ -69,17 +90,68 @@ public class EnemyController : MonoBehaviour
 
     bool moveFLG = false;
 
+    [Header("弱点関係")]
+    public GameObject weakPoint;
+    EnemyHitCheck hitCheck;
+    public float weakMagnification;
+
     EnemySearch search;
+    EnemyPattern_Attack attack;
     bool patrolFLG = false;
     [Header("EnemySearchの番号")]
     public int childNo = 1;
-
     public int enemyATK = 1;
 
     void Start()
     {
         target = GameObject.FindGameObjectWithTag("Player");  //追跡したい対象をTagから検索
-        search = transform.GetChild(childNo).GetComponent<EnemySearch>();
+
+        switch (moveType)
+        {
+            case MoveType.巡回と追跡:
+                search = transform.GetChild(childNo).GetComponent<EnemySearch>();
+                break;
+
+            default:
+                break;
+        }
+
+        switch (damageType)
+        {
+            case DamageType.弱点だけダメージを受ける:
+                hitCheck = weakPoint.transform.GetComponent<EnemyHitCheck>();
+                break;
+
+            case DamageType.弱点に当てるとダメージ上昇:
+                hitCheck = weakPoint.transform.GetComponent<EnemyHitCheck>();
+                break;
+
+            default:
+                break;
+        }
+
+        switch (attackType)
+        {
+            case AttackType.なし:
+                break;
+
+            default:
+                attack = GetComponent<EnemyPattern_Attack>();
+                break;
+        }
+
+        switch (actionType)
+        {
+            case ActionType.死んだら爆発する:
+                if(attack == null)
+                {
+                    attack = GetComponent<EnemyPattern_Attack>();
+                }
+                break;
+
+            default:
+                break;
+        }
     }
 
     void Update()
@@ -87,10 +159,22 @@ public class EnemyController : MonoBehaviour
         MovePattern();
         
         RotatePattern();
+
+        DamagePattern();
+
+        AttackPattern();
         
         if(GameManager.Instance.mainGameFLG && !moveFLG)
         {
-            moveFLG = true;
+            switch (awakeType)
+            {
+                case AwakeType.ゲーム開始時:
+                    moveFLG = true;
+                    break;
+
+                case AwakeType.プレイヤーが近づいたとき:
+                    break;
+            }
         }
     }
 
@@ -125,15 +209,11 @@ public class EnemyController : MonoBehaviour
                     break;
 
                 case MoveType.反復運動:
-                    transform.Translate(pos * direction * Time.deltaTime);
+                    Iteration();
+                    break;
 
-                    timeCount += Time.deltaTime;
-
-                    if (timeCount > time)
-                    {
-                        timeCount = 0;  //時間をリセット
-                        direction *= -1;  //反対方向の移動にする
-                    }
+                case MoveType.波形の移動:
+                    Wave();
                     break;
             }
         }
@@ -141,18 +221,18 @@ public class EnemyController : MonoBehaviour
 
     void Go()
     {
-        transform.Translate(pos * direction * Time.deltaTime);
+        transform.Translate(pos_Go * direction * Time.deltaTime);
     }
 
     void Chase()
     {
-        pos = target.transform.position;
-        transform.Translate(pos * direction * Time.deltaTime);
+        pos_Chase = target.transform.position;
+        transform.Translate(pos_Chase * direction * Time.deltaTime);
     }
 
     void Patrol()
     {
-        if(pos.magnitude - this.transform.position.magnitude <= 0.5f)
+        if(pos_Patrol.magnitude - this.transform.position.magnitude <= 0.5f)
         {
             pointer++;
             if(pointer >= movePointer.Length)
@@ -161,9 +241,9 @@ public class EnemyController : MonoBehaviour
             }
         }
 
-        pos = movePointer[pointer].transform.position;
+        pos_Patrol = movePointer[pointer].transform.position;
 
-        transform.Translate(pos * direction * Time.deltaTime);
+        transform.Translate(pos_Patrol * direction * Time.deltaTime);
     }
 
     void Patrol_or_Chase()
@@ -190,14 +270,33 @@ public class EnemyController : MonoBehaviour
     {
         if (search.playerOn)
         {
-            pos = target.transform.position;
-            transform.Translate(-pos * direction * Time.deltaTime);
+            pos_Escape = target.transform.position;
+            transform.Translate(-pos_Escape * direction * Time.deltaTime);
         }
         else
         {
-            pos = this.transform.position;
-            transform.Translate(pos * direction * Time.deltaTime);
+            pos_Escape = this.transform.position;
+            transform.Translate(pos_Escape * direction * Time.deltaTime);
         }
+    }
+
+    void Iteration()
+    {
+        transform.Translate(pos_Iteration * direction_Iteration * Time.deltaTime);
+
+        timeCount += Time.deltaTime;
+
+        if (timeCount > time)
+        {
+            timeCount = 0;  //時間をリセット
+            direction_Iteration *= -1;  //反対方向の移動にする
+        }
+    }
+
+    void Wave()
+    {
+        Go();
+        Iteration();
     }
 
     public void RotatePattern()
@@ -219,6 +318,49 @@ public class EnemyController : MonoBehaviour
         }
     }
 
+    void DamagePattern()
+    {
+        switch (damageType)
+        {
+            case DamageType.弱点だけダメージを受ける:
+                if (hitCheck.HitFLG)
+                {
+                    hitCheck.BulletDelete();
+                    Damage(damage);
+                }
+                break;
+
+            case DamageType.弱点に当てるとダメージ上昇:
+                if (hitCheck.HitFLG)
+                {
+                    hitCheck.BulletDelete();
+                    Damage(damage * weakMagnification);
+                }
+                break;
+        }
+    }
+
+    void AttackPattern()
+    {
+        switch (attackType)
+        {
+            case AttackType.なし:
+                break;
+
+            case AttackType.前方に向かって攻撃する:
+                attack.FrontAttack();
+                break;
+
+            case AttackType.全方位に攻撃する:
+                attack.SpreadAttack();
+                break;
+
+            case AttackType.プレイヤーに向かって攻撃する:
+                attack.PlayerAttack(target);
+                break;
+        }
+    }
+
     private void OnCollisionEnter(Collision other)
     {
         switch (damageType)
@@ -229,14 +371,18 @@ public class EnemyController : MonoBehaviour
             case DamageType.ダメージを受ける:
                 if (other.gameObject.tag == "PlayerAttack")
                 {
-                    lifePoint -= 1;
-
-                    if (lifePoint <= 0)
-                    {
-                        GameManager.Instance.Kill();
-                        Destroy(gameObject);
-                    }
+                    Damage(damage);
                 }
+                break;
+
+            case DamageType.弱点に当てるとダメージ上昇:
+                if (other.gameObject.tag == "PlayerAttack" && !hitCheck.HitFLG)
+                {
+                    Damage(damage);
+                }
+                break;
+
+            default:
                 break;
         }
 
@@ -251,6 +397,28 @@ public class EnemyController : MonoBehaviour
             {
                 moveFLG = true;
             }
+        }
+    }
+
+    void Damage(float damage)
+    {
+        lifePoint -= damage;
+
+        if (lifePoint <= 0)
+        {
+            GameManager.Instance.Kill();
+
+            switch (actionType)
+            {
+                case ActionType.死んだら爆発する:
+                    attack.SpreadAttack();
+                    break;
+
+                default:
+                    break;
+            }
+
+            Destroy(gameObject);
         }
     }
 }
