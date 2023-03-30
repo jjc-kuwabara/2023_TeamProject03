@@ -102,9 +102,12 @@ public class EnemyController : MonoBehaviour
     public int childNo = 1;
     public int enemyATK = 1;
 
+    PlayerController controller;
+
     void Start()
     {
         target = GameObject.FindGameObjectWithTag("Player");  //追跡したい対象をTagから検索
+        controller = target.transform.GetComponent<PlayerController>();
 
         switch (moveType)
         {
@@ -156,13 +159,16 @@ public class EnemyController : MonoBehaviour
 
     void Update()
     {
-        MovePattern();
-        
-        RotatePattern();
+        if (moveFLG)
+        {
+            MovePattern();
 
-        DamagePattern();
+            RotatePattern();
 
-        AttackPattern();
+            DamagePattern();
+
+            AttackPattern();
+        }
         
         if(GameManager.Instance.mainGameFLG && !moveFLG)
         {
@@ -173,49 +179,55 @@ public class EnemyController : MonoBehaviour
                     break;
 
                 case AwakeType.プレイヤーが近づいたとき:
+                    MoveCheck();
                     break;
             }
         }
     }
 
+    void MoveCheck()
+    {
+        if(this.transform.position.x <= controller.x_R)
+        {
+            moveFLG = true;
+        }
+    }
+
     public void MovePattern()
     {
-        if (moveFLG)
+        switch (moveType)
         {
-            switch (moveType)
-            {
-                case MoveType.なし:
-                    //何もしない
-                    break;
+            case MoveType.なし:
+                //何もしない
+                break;
 
-                case MoveType.まっすぐ進む:
-                    Go();
-                    break;
+            case MoveType.まっすぐ進む:
+                Go();
+                break;
 
-                case MoveType.プレイヤーを追跡:
-                    Chase();
-                    break;
+            case MoveType.プレイヤーを追跡:
+                Chase();
+                break;
 
-                case MoveType.ルートを巡回:
-                    Patrol();
-                    break;
+            case MoveType.ルートを巡回:
+                Patrol();
+                break;
 
-                case MoveType.巡回と追跡:
-                    Patrol_or_Chase();
-                    break;
+            case MoveType.巡回と追跡:
+                Patrol_or_Chase();
+                break;
 
-                case MoveType.プレイヤーから逃げる:
-                    Escape();
-                    break;
+            case MoveType.プレイヤーから逃げる:
+                Escape();
+                break;
 
-                case MoveType.反復運動:
-                    Iteration();
-                    break;
+            case MoveType.反復運動:
+                Iteration();
+                break;
 
-                case MoveType.波形の移動:
-                    Wave();
-                    break;
-            }
+            case MoveType.波形の移動:
+                Wave();
+                break;
         }
     }
 
