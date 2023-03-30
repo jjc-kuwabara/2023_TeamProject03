@@ -187,7 +187,7 @@ public class EnemyController : MonoBehaviour
 
     void MoveCheck()
     {
-        if(this.transform.position.x <= controller.x_R)
+        if(this.transform.position.x <= controller.x_R +2)
         {
             moveFLG = true;
         }
