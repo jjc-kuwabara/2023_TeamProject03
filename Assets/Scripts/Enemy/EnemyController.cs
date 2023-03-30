@@ -187,7 +187,7 @@ public class EnemyController : MonoBehaviour
 
     void MoveCheck()
     {
-        if(this.transform.position.x <= controller.x_R +2)
+        if(this.transform.position.x <= controller.x_R + 3)
         {
             moveFLG = true;
         }
@@ -409,6 +409,11 @@ public class EnemyController : MonoBehaviour
             {
                 moveFLG = true;
             }
+        }
+
+        if(other.gameObject.tag == "DeadArea")
+        {
+            Destroy(this.gameObject);
         }
     }
 
