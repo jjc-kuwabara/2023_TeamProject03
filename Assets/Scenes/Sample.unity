@@ -204,7 +204,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &3024067
@@ -607,7 +610,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &50128442
@@ -1425,7 +1431,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &98776148
@@ -1572,7 +1581,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &100012775
@@ -1832,7 +1844,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &107686321
@@ -2131,7 +2146,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &139275947
@@ -2273,7 +2291,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &145706075
@@ -2415,7 +2436,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &152129516
@@ -2783,7 +2807,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &194952409
@@ -3603,7 +3630,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &238370699
@@ -4186,7 +4216,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &252498040
@@ -4328,7 +4361,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &256676553
@@ -4696,7 +4732,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &266715223
@@ -4780,7 +4819,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &271323315
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4789,7 +4828,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 271323314}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -4935,7 +4974,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &275343624
@@ -5077,7 +5119,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 0
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 0
 --- !u!65 &280480271
@@ -5332,7 +5377,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 0
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 0
 --- !u!65 &287236751
@@ -5474,7 +5522,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &289332504
@@ -5842,7 +5893,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &295313879
@@ -6324,7 +6378,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &341089937
@@ -6466,7 +6523,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 0
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 0
 --- !u!65 &350121995
@@ -7630,7 +7690,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &428194360
@@ -8224,7 +8287,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &468687658
@@ -8576,7 +8642,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &527874472
@@ -8728,7 +8797,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &540242870
@@ -9321,7 +9393,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &577741955
@@ -9768,7 +9843,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &601241557
@@ -9910,7 +9988,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &611394622
@@ -10052,7 +10133,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &612056372
@@ -10194,7 +10278,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &612625636
@@ -10454,7 +10541,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 0
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &640953119
@@ -10596,7 +10686,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &646698595
@@ -11082,7 +11175,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &692307987
@@ -11166,7 +11262,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &699317844
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11175,7 +11271,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 699317843}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -11641,7 +11737,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &711894566
@@ -11896,7 +11995,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &724959618
@@ -12115,7 +12217,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &819887283
@@ -12257,7 +12362,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &824645589
@@ -12656,7 +12764,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &874989095
@@ -12882,7 +12993,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &893143610
@@ -13137,7 +13251,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &907434480
@@ -13279,7 +13396,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &929454127
@@ -13534,7 +13654,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &935371233
@@ -13676,7 +13799,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &944175415
@@ -14114,6 +14240,8 @@ Transform:
   m_Children:
   - {fileID: 1384527216}
   - {fileID: 1612668733}
+  - {fileID: 1520734951}
+  - {fileID: 2125692384}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14200,7 +14328,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &976548100
@@ -14584,7 +14715,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &999858583
@@ -14731,7 +14865,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &1017902994
@@ -15134,7 +15271,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 0
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 0
 --- !u!65 &1041378661
@@ -15276,7 +15416,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &1042794736
@@ -15541,7 +15684,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &1089159871
@@ -16091,7 +16237,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &1132652187
@@ -16361,7 +16510,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &1147836571
@@ -16579,7 +16731,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &1177976503
@@ -16987,7 +17142,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &1215379225
@@ -17242,7 +17400,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &1219581571
@@ -17481,7 +17642,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &1224449185
@@ -17741,7 +17905,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &1256002655
@@ -17883,7 +18050,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &1259352478
@@ -18063,7 +18233,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &1298809003
@@ -18323,7 +18496,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 0
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 0
 --- !u!65 &1327716906
@@ -18465,7 +18641,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &1346667160
@@ -18720,7 +18899,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &1365472992
@@ -19023,7 +19205,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &1403509724
@@ -19165,7 +19350,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &1404678916
@@ -19427,7 +19615,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &1438277369
@@ -19569,7 +19760,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &1440238191
@@ -19824,7 +20018,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &1454131320
@@ -20079,7 +20276,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &1457602057
@@ -20344,7 +20544,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &1469047721
@@ -20960,7 +21163,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &1490231790
@@ -21264,7 +21470,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!54 &1494371396
@@ -21417,6 +21626,51 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1502747429}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1520734950
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1520734951}
+  - component: {fileID: 1520734952}
+  m_Layer: 0
+  m_Name: FadeManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1520734951
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520734950}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 965014656}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1520734952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520734950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 315975da679fc5941820fa5d4cf2761c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!4 &1521599198 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4891049361556014, guid: d7689380619fd894c8508730e2bed11f, type: 3}
@@ -21611,7 +21865,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 0
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 0
 --- !u!65 &1529679254
@@ -21753,7 +22010,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &1542325958
@@ -22266,7 +22526,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &1590388138
@@ -22521,7 +22784,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &1608034487
@@ -22896,7 +23162,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &1615879296
@@ -23610,7 +23879,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &1686270211
@@ -23951,7 +24223,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &1760650079
@@ -24164,7 +24439,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &1774137491
@@ -24419,7 +24697,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &1778625118
@@ -24561,7 +24842,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &1780534382
@@ -24929,7 +25213,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &1785672707
@@ -25081,7 +25368,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 0
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &1789122127
@@ -25336,7 +25626,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &1799505828
@@ -25640,7 +25933,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &1834549190
@@ -25782,7 +26078,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &1835345839
@@ -26301,7 +26600,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &1861893673
@@ -26448,7 +26750,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &1877814029
@@ -26708,7 +27013,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &1894364460
@@ -26850,7 +27158,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 0
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &1908969793
@@ -26992,7 +27303,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &1911166621
@@ -27211,7 +27525,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &1923423214
@@ -27429,7 +27746,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &1974397942
@@ -27571,7 +27891,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &1979516762
@@ -27861,7 +28184,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &1993853726
@@ -28620,7 +28946,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &2057115781
@@ -28762,7 +29091,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &2070773930
@@ -28904,7 +29236,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &2080034842
@@ -29341,7 +29676,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 0
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 0
 --- !u!54 &2083399033
@@ -29596,7 +29934,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 0
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!54 &2092504986
@@ -29796,7 +30137,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &2116873411
@@ -29862,6 +30206,57 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2116873407}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &2125692383
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2125692384}
+  - component: {fileID: 2125692385}
+  m_Layer: 0
+  m_Name: SoundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2125692384
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2125692383}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 965014656}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2125692385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2125692383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01a6bb2e573af204da59962549acdfc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mixer: {fileID: 0}
+  MasterGroup: {fileID: 0}
+  BGMGroup: {fileID: 0}
+  SEGroup: {fileID: 0}
+  bgmClip: []
+  se_SysClip: []
+  se_GameClip: []
 --- !u!1 &2129854567
 GameObject:
   m_ObjectHideFlags: 0
@@ -29938,7 +30333,10 @@ MonoBehaviour:
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 1
+  damage: 1
   movePointer: []
+  WeakPoint: {fileID: 0}
+  weakMagnification: 0
   childNo: 0
   enemyATK: 1
 --- !u!65 &2129854571
