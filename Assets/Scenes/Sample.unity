@@ -199,14 +199,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -605,14 +605,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -1426,14 +1426,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -1576,14 +1576,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -1839,14 +1839,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -2148,7 +2148,7 @@ MonoBehaviour:
   lifePoint: 1
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -2286,14 +2286,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -2431,14 +2431,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -2809,7 +2809,7 @@ MonoBehaviour:
   lifePoint: 1
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -3102,6 +3102,119 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 205078944}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &206269263
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 206269264}
+  - component: {fileID: 206269268}
+  - component: {fileID: 206269267}
+  - component: {fileID: 206269266}
+  - component: {fileID: 206269265}
+  m_Layer: 0
+  m_Name: Sphere
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &206269264
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 206269263}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 517544733}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &206269265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 206269263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 552739238bcc423408ce9c7d71f54f79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerOn: 0
+  radiusChase: 0.1
+  radiusPatrol: 0.1
+--- !u!135 &206269266
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 206269263}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &206269267
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 206269263}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &206269268
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 206269263}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &207377946
 GameObject:
   m_ObjectHideFlags: 0
@@ -3215,6 +3328,120 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 207377946}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &207672330
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 207672331}
+  - component: {fileID: 207672335}
+  - component: {fileID: 207672334}
+  - component: {fileID: 207672333}
+  - component: {fileID: 207672332}
+  m_Layer: 0
+  m_Name: Destroy (1)
+  m_TagString: PlayerAttack
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &207672331
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207672330}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -114, y: 0, z: 0}
+  m_LocalScale: {x: 20, y: 100, z: 30}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1802116852}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &207672332
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207672330}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!65 &207672333
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207672330}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &207672334
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207672330}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &207672335
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207672330}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &208876432
 GameObject:
   m_ObjectHideFlags: 0
@@ -3625,14 +3852,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -4218,7 +4445,7 @@ MonoBehaviour:
   lifePoint: 1
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -4356,14 +4583,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -4734,7 +4961,7 @@ MonoBehaviour:
   lifePoint: 1
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -4819,7 +5046,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &271323315
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4969,14 +5196,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -5121,7 +5348,7 @@ MonoBehaviour:
   lifePoint: 0
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 0
@@ -5379,7 +5606,7 @@ MonoBehaviour:
   lifePoint: 0
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 0
@@ -5517,14 +5744,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -5888,14 +6115,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -6152,6 +6379,169 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 319911235}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &323618539
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 323618540}
+  - component: {fileID: 323618546}
+  - component: {fileID: 323618545}
+  - component: {fileID: 323618544}
+  - component: {fileID: 323618543}
+  - component: {fileID: 323618542}
+  - component: {fileID: 323618541}
+  m_Layer: 0
+  m_Name: Cannon
+  m_TagString: Fish
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &323618540
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323618539}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 150.3, y: -19.6, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1044982809}
+  - {fileID: 1384158161}
+  m_Father: {fileID: 1856913072}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &323618541
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323618539}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &323618542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323618539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dae2bd0419110a04eaaac10ebfd04acd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 4610340539835770293, guid: f81dd5e18855c3841aabd6a7dfc33e7e, type: 3}
+  firePos: {fileID: 1384158160}
+  attackTime: 0.5
+  angle: 30
+--- !u!114 &323618543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323618539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87989599762e5b94ea6313910758ab8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 1
+  rotateType: 0
+  damageType: 0
+  attackType: 1
+  awakeType: 0
+  actionType: 0
+  pos_Go: {x: -5, y: 0, z: 0}
+  pos_Iteration: {x: 0, y: -10, z: 0}
+  rot: {x: 0, y: 0, z: 0}
+  time: 0.5
+  lifePoint: 3
+  damage: 1
+  movePointer: []
+  weakPoint: {fileID: 0}
+  weakMagnification: 0
+  childNo: 0
+  enemyATK: 1
+--- !u!65 &323618544
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323618539}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &323618545
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323618539}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &323618546
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323618539}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &329772165
 GameObject:
   m_ObjectHideFlags: 0
@@ -6187,7 +6577,7 @@ Transform:
   - {fileID: 2139896167}
   - {fileID: 1983988729}
   m_Father: {fileID: 1856913072}
-  m_RootOrder: 5
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &331350311
 GameObject:
@@ -6380,7 +6770,7 @@ MonoBehaviour:
   lifePoint: 1
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -6525,7 +6915,7 @@ MonoBehaviour:
   lifePoint: 0
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 0
@@ -7685,14 +8075,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -8282,14 +8672,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -8453,6 +8843,151 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4891049361556014, guid: d7689380619fd894c8508730e2bed11f, type: 3}
   m_PrefabInstance: {fileID: 4610368997662250605}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &517544732
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 517544733}
+  - component: {fileID: 517544738}
+  - component: {fileID: 517544737}
+  - component: {fileID: 517544736}
+  - component: {fileID: 517544735}
+  - component: {fileID: 517544734}
+  m_Layer: 0
+  m_Name: BackFish
+  m_TagString: Fish
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &517544733
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 517544732}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -74.2, y: 1.1, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 206269264}
+  m_Father: {fileID: 1856913072}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &517544734
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 517544732}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &517544735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 517544732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87989599762e5b94ea6313910758ab8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 1
+  rotateType: 0
+  damageType: 1
+  attackType: 0
+  awakeType: 0
+  actionType: 0
+  pos_Go: {x: 20, y: 0, z: 0}
+  pos_Iteration: {x: 0, y: -10, z: 0}
+  rot: {x: 0, y: 0, z: 0}
+  time: 0.5
+  lifePoint: 3
+  damage: 1
+  movePointer: []
+  weakPoint: {fileID: 0}
+  weakMagnification: 0
+  childNo: 0
+  enemyATK: 1
+--- !u!65 &517544736
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 517544732}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &517544737
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 517544732}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &517544738
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 517544732}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &522691124
 GameObject:
   m_ObjectHideFlags: 0
@@ -8637,14 +9172,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -8792,14 +9327,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -9388,14 +9923,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -9838,14 +10373,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -9990,7 +10525,7 @@ MonoBehaviour:
   lifePoint: 1
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -10128,14 +10663,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -10273,14 +10808,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -10543,7 +11078,7 @@ MonoBehaviour:
   lifePoint: 0
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -10681,14 +11216,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -11134,7 +11669,7 @@ Transform:
   m_Children:
   - {fileID: 376952819}
   m_Father: {fileID: 1856913072}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &692307985
 Rigidbody:
@@ -11170,14 +11705,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: -10, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -11262,7 +11797,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &699317844
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11732,14 +12267,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -11990,14 +12525,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -12063,6 +12598,151 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 724959614}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &752136612
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 752136613}
+  - component: {fileID: 752136618}
+  - component: {fileID: 752136617}
+  - component: {fileID: 752136616}
+  - component: {fileID: 752136615}
+  - component: {fileID: 752136614}
+  m_Layer: 0
+  m_Name: SimpleFish
+  m_TagString: Fish
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &752136613
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 752136612}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 231.7, y: -14.6, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2057089845}
+  m_Father: {fileID: 1856913072}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &752136614
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 752136612}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &752136615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 752136612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87989599762e5b94ea6313910758ab8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 1
+  rotateType: 0
+  damageType: 1
+  attackType: 0
+  awakeType: 0
+  actionType: 0
+  pos_Go: {x: -20, y: 0, z: 0}
+  pos_Iteration: {x: 0, y: -10, z: 0}
+  rot: {x: 0, y: 0, z: 0}
+  time: 0.5
+  lifePoint: 3
+  damage: 1
+  movePointer: []
+  weakPoint: {fileID: 0}
+  weakMagnification: 0
+  childNo: 0
+  enemyATK: 1
+--- !u!65 &752136616
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 752136612}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &752136617
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 752136612}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &752136618
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 752136612}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &803809975
 GameObject:
@@ -12219,7 +12899,7 @@ MonoBehaviour:
   lifePoint: 1
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -12357,14 +13037,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -12759,14 +13439,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -12988,14 +13668,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -13253,7 +13933,7 @@ MonoBehaviour:
   lifePoint: 1
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -13391,14 +14071,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -13649,14 +14329,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -13794,14 +14474,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -14287,7 +14967,7 @@ Transform:
   - {fileID: 1595695492}
   - {fileID: 1423639267}
   m_Father: {fileID: 1856913072}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &976548098
 Rigidbody:
@@ -14323,14 +15003,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 2
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: -10, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -14717,7 +15397,7 @@ MonoBehaviour:
   lifePoint: 1
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -14860,14 +15540,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -14933,6 +15613,120 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1017902990}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1026312101
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1026312102}
+  - component: {fileID: 1026312106}
+  - component: {fileID: 1026312105}
+  - component: {fileID: 1026312104}
+  - component: {fileID: 1026312103}
+  m_Layer: 0
+  m_Name: Destroy (4)
+  m_TagString: PlayerAttack
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1026312102
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1026312101}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -155, y: 0, z: 0}
+  m_LocalScale: {x: 20, y: 100, z: 30}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1802116852}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &1026312103
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1026312101}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!65 &1026312104
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1026312101}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1026312105
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1026312101}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1026312106
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1026312101}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1027717643
 GameObject:
@@ -15273,7 +16067,7 @@ MonoBehaviour:
   lifePoint: 0
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 0
@@ -15411,14 +16205,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -15485,6 +16279,119 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1042794732}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1044982808
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1044982809}
+  - component: {fileID: 1044982813}
+  - component: {fileID: 1044982812}
+  - component: {fileID: 1044982811}
+  - component: {fileID: 1044982810}
+  m_Layer: 0
+  m_Name: Sphere
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1044982809
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044982808}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 323618540}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1044982810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044982808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 552739238bcc423408ce9c7d71f54f79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerOn: 0
+  radiusChase: 0.1
+  radiusPatrol: 0.1
+--- !u!135 &1044982811
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044982808}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1044982812
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044982808}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1044982813
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044982808}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1062703352
 GameObject:
   m_ObjectHideFlags: 0
@@ -15686,7 +16593,7 @@ MonoBehaviour:
   lifePoint: 1
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -16239,7 +17146,7 @@ MonoBehaviour:
   lifePoint: 1
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -16505,14 +17412,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -16726,14 +17633,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -16948,6 +17855,119 @@ Transform:
   m_Father: {fileID: 329772166}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1194384476
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1194384477}
+  - component: {fileID: 1194384481}
+  - component: {fileID: 1194384480}
+  - component: {fileID: 1194384479}
+  - component: {fileID: 1194384478}
+  m_Layer: 0
+  m_Name: Sphere
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1194384477
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1194384476}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2032533408}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1194384478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1194384476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 552739238bcc423408ce9c7d71f54f79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerOn: 0
+  radiusChase: 0.1
+  radiusPatrol: 0.1
+--- !u!135 &1194384479
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1194384476}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1194384480
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1194384476}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1194384481
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1194384476}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1198955736
 GameObject:
   m_ObjectHideFlags: 0
@@ -17137,14 +18157,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -17402,7 +18422,7 @@ MonoBehaviour:
   lifePoint: 1
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -17637,14 +18657,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -17710,6 +18730,120 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1224449181}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1230655634
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1230655635}
+  - component: {fileID: 1230655639}
+  - component: {fileID: 1230655638}
+  - component: {fileID: 1230655637}
+  - component: {fileID: 1230655636}
+  m_Layer: 0
+  m_Name: Destroy (3)
+  m_TagString: PlayerAttack
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1230655635
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1230655634}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -139.3, y: 0, z: 0}
+  m_LocalScale: {x: 20, y: 100, z: 30}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1802116852}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &1230655636
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1230655634}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!65 &1230655637
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1230655634}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1230655638
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1230655634}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1230655639
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1230655634}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1254321485
 GameObject:
@@ -17900,14 +19034,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -18052,7 +19186,7 @@ MonoBehaviour:
   lifePoint: 1
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -18228,14 +19362,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -18498,7 +19632,7 @@ MonoBehaviour:
   lifePoint: 0
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 0
@@ -18636,14 +19770,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -18901,7 +20035,7 @@ MonoBehaviour:
   lifePoint: 1
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -19039,6 +20173,37 @@ Transform:
   m_Father: {fileID: 329772166}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1384158160
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1384158161}
+  m_Layer: 0
+  m_Name: EFirePos (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1384158161
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384158160}
+  m_LocalRotation: {x: -0.5, y: -0.5, z: -0.5, w: 0.5}
+  m_LocalPosition: {x: 0, y: 0.87, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 323618540}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: -90, y: -90, z: 0}
 --- !u!1 &1384527214
 GameObject:
   m_ObjectHideFlags: 0
@@ -19200,14 +20365,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -19345,14 +20510,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -19610,14 +20775,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -19755,14 +20920,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -20020,7 +21185,7 @@ MonoBehaviour:
   lifePoint: 1
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -20271,14 +21436,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -20546,7 +21711,7 @@ MonoBehaviour:
   lifePoint: 1
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -20613,6 +21778,118 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1469047717}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1469214523
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1469214524}
+  - component: {fileID: 1469214528}
+  - component: {fileID: 1469214527}
+  - component: {fileID: 1469214526}
+  - component: {fileID: 1469214525}
+  m_Layer: 0
+  m_Name: WeekPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1469214524
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1469214523}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.67, y: 0.06, z: 0}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1979516759}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &1469214525
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1469214523}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1469214526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1469214523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b1dd30823aec4d4683d542e92f09d3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HitFLG: 0
+  bullet: {fileID: 0}
+--- !u!23 &1469214527
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1469214523}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 0b6aebfa5e68a5c4a92b9ed13e2cd4cc, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1469214528
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1469214523}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1472459740
 GameObject:
   m_ObjectHideFlags: 0
@@ -21158,14 +22435,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -21445,7 +22722,7 @@ Transform:
   - {fileID: 1614045260}
   - {fileID: 944439547}
   m_Father: {fileID: 1856913072}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1494371395
 MonoBehaviour:
@@ -21465,14 +22742,14 @@ MonoBehaviour:
   attackType: 1
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: -10, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -21789,6 +23066,120 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1525478501}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1527339611
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1527339616}
+  - component: {fileID: 1527339615}
+  - component: {fileID: 1527339614}
+  - component: {fileID: 1527339613}
+  - component: {fileID: 1527339612}
+  m_Layer: 0
+  m_Name: DownLimit (1)
+  m_TagString: PlayerAttack
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!54 &1527339612
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1527339611}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!65 &1527339613
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1527339611}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1527339614
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1527339611}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1527339615
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1527339611}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1527339616
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1527339611}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2400, y: -36, z: 0}
+  m_LocalScale: {x: 5000, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1529679250
 GameObject:
   m_ObjectHideFlags: 0
@@ -21867,7 +23258,7 @@ MonoBehaviour:
   lifePoint: 0
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 0
@@ -21934,6 +23325,120 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1529679250}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1539210359
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1539210360}
+  - component: {fileID: 1539210363}
+  - component: {fileID: 1539210362}
+  - component: {fileID: 1539210361}
+  - component: {fileID: 1539210364}
+  m_Layer: 0
+  m_Name: Destroy
+  m_TagString: PlayerAttack
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1539210360
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539210359}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -107.4, y: 0, z: 0}
+  m_LocalScale: {x: 20, y: 100, z: 30}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1802116852}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1539210361
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539210359}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1539210362
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539210359}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1539210363
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539210359}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &1539210364
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539210359}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &1542325954
 GameObject:
   m_ObjectHideFlags: 0
@@ -22012,7 +23517,7 @@ MonoBehaviour:
   lifePoint: 1
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -22521,14 +24026,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -22786,7 +24291,7 @@ MonoBehaviour:
   lifePoint: 1
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -23157,14 +24662,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -23344,6 +24849,169 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1632655148}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1635223274
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1635223275}
+  - component: {fileID: 1635223281}
+  - component: {fileID: 1635223280}
+  - component: {fileID: 1635223279}
+  - component: {fileID: 1635223278}
+  - component: {fileID: 1635223277}
+  - component: {fileID: 1635223276}
+  m_Layer: 0
+  m_Name: WallFish
+  m_TagString: Fish
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1635223275
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635223274}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 240.6, y: 20.8, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2066219842}
+  - {fileID: 2042819897}
+  m_Father: {fileID: 1856913072}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &1635223276
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635223274}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &1635223277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635223274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dae2bd0419110a04eaaac10ebfd04acd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 2809936247190682250, guid: e170020b34718294f96cca9da8bb3374, type: 3}
+  firePos: {fileID: 2042819896}
+  attackTime: 1
+  angle: 30
+--- !u!114 &1635223278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635223274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87989599762e5b94ea6313910758ab8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 1
+  rotateType: 0
+  damageType: 1
+  attackType: 1
+  awakeType: 0
+  actionType: 0
+  pos_Go: {x: 0, y: -5, z: 0}
+  pos_Iteration: {x: 0, y: -10, z: 0}
+  rot: {x: 0, y: 0, z: 0}
+  time: 0.5
+  lifePoint: 1
+  damage: 1
+  movePointer: []
+  weakPoint: {fileID: 0}
+  weakMagnification: 0
+  childNo: 0
+  enemyATK: 1
+--- !u!65 &1635223279
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635223274}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1635223280
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635223274}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1635223281
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635223274}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1653597361
 GameObject:
   m_ObjectHideFlags: 0
@@ -23874,14 +25542,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -24225,7 +25893,7 @@ MonoBehaviour:
   lifePoint: 1
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -24434,14 +26102,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -24692,14 +26360,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -24837,14 +26505,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -25208,14 +26876,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -25370,7 +27038,7 @@ MonoBehaviour:
   lifePoint: 0
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -25621,14 +27289,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -25727,6 +27395,11 @@ Transform:
   - {fileID: 1761194281}
   - {fileID: 5928032687832076978}
   - {fileID: 1222896981}
+  - {fileID: 1539210360}
+  - {fileID: 207672331}
+  - {fileID: 1809741171}
+  - {fileID: 1230655635}
+  - {fileID: 1026312102}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -25744,6 +27417,120 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   moveAngle: {x: 1, y: 0, z: 0}
+--- !u!1 &1809741170
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1809741171}
+  - component: {fileID: 1809741175}
+  - component: {fileID: 1809741174}
+  - component: {fileID: 1809741173}
+  - component: {fileID: 1809741172}
+  m_Layer: 0
+  m_Name: Destroy (2)
+  m_TagString: PlayerAttack
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1809741171
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1809741170}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -123.7, y: 0, z: 0}
+  m_LocalScale: {x: 20, y: 100, z: 30}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1802116852}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &1809741172
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1809741170}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!65 &1809741173
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1809741170}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1809741174
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1809741170}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1809741175
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1809741170}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1810455629
 GameObject:
   m_ObjectHideFlags: 0
@@ -25935,7 +27722,7 @@ MonoBehaviour:
   lifePoint: 1
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -26073,14 +27860,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -26401,13 +28188,18 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 752136613}
   - {fileID: 1494371394}
   - {fileID: 976548097}
   - {fileID: 692307984}
   - {fileID: 1979516759}
   - {fileID: 1861893670}
+  - {fileID: 517544733}
+  - {fileID: 1635223275}
+  - {fileID: 323618540}
   - {fileID: 329772166}
   - {fileID: 2004525300}
+  - {fileID: 2032533408}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -26559,7 +28351,7 @@ Transform:
   m_Children:
   - {fileID: 1632655149}
   m_Father: {fileID: 1856913072}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &1861893671
 Rigidbody:
@@ -26595,14 +28387,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: -10, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -26745,14 +28537,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -27015,7 +28807,7 @@ MonoBehaviour:
   lifePoint: 1
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -27160,7 +28952,7 @@ MonoBehaviour:
   lifePoint: 0
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -27298,14 +29090,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -27527,7 +29319,7 @@ MonoBehaviour:
   lifePoint: 1
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -27741,14 +29533,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -27845,12 +29637,13 @@ Transform:
   m_GameObject: {fileID: 1979516758}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 185.7, y: 1.3, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1502747430}
+  - {fileID: 1469214524}
   m_Father: {fileID: 1856913072}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &1979516760
 Rigidbody:
@@ -27882,19 +29675,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveType: 1
   rotateType: 0
-  damageType: 1
+  damageType: 3
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: -10, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
-  weakMagnification: 0
+  weakPoint: {fileID: 1469214523}
+  weakMagnification: 2
   childNo: 0
   enemyATK: 1
 --- !u!65 &1979516762
@@ -28179,14 +29972,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -28569,7 +30362,7 @@ Transform:
   - {fileID: 1177976500}
   - {fileID: 1785672704}
   m_Father: {fileID: 1856913072}
-  m_RootOrder: 6
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2026530808
 GameObject:
@@ -28605,6 +30398,182 @@ Transform:
   - {fileID: 1465929213}
   m_Father: {fileID: 0}
   m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2032533407
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2032533408}
+  - component: {fileID: 2032533413}
+  - component: {fileID: 2032533412}
+  - component: {fileID: 2032533411}
+  - component: {fileID: 2032533410}
+  - component: {fileID: 2032533409}
+  m_Layer: 0
+  m_Name: SimpleFish (1)
+  m_TagString: Fish
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2032533408
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032533407}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -45.8, y: -14.6, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1194384477}
+  m_Father: {fileID: 1856913072}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &2032533409
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032533407}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &2032533410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032533407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87989599762e5b94ea6313910758ab8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 1
+  rotateType: 0
+  damageType: 1
+  attackType: 0
+  awakeType: 0
+  actionType: 0
+  pos_Go: {x: -20, y: 0, z: 0}
+  pos_Iteration: {x: 0, y: -10, z: 0}
+  rot: {x: 0, y: 0, z: 0}
+  time: 0.5
+  lifePoint: 1
+  damage: 1
+  movePointer: []
+  weakPoint: {fileID: 0}
+  weakMagnification: 0
+  childNo: 0
+  enemyATK: 1
+--- !u!65 &2032533411
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032533407}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &2032533412
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032533407}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &2032533413
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032533407}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &2042819896
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2042819897}
+  m_Layer: 0
+  m_Name: EFirePos (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2042819897
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2042819896}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.73, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1635223275}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2045095014
 GameObject:
@@ -28870,6 +30839,119 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
+--- !u!1 &2057089844
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2057089845}
+  - component: {fileID: 2057089849}
+  - component: {fileID: 2057089848}
+  - component: {fileID: 2057089847}
+  - component: {fileID: 2057089846}
+  m_Layer: 0
+  m_Name: Sphere
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2057089845
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2057089844}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 752136613}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2057089846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2057089844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 552739238bcc423408ce9c7d71f54f79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerOn: 0
+  radiusChase: 0.1
+  radiusPatrol: 0.1
+--- !u!135 &2057089847
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2057089844}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &2057089848
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2057089844}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &2057089849
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2057089844}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &2057115777
 GameObject:
   m_ObjectHideFlags: 0
@@ -28941,14 +31023,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -29015,6 +31097,119 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2057115777}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &2066219841
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2066219842}
+  - component: {fileID: 2066219846}
+  - component: {fileID: 2066219845}
+  - component: {fileID: 2066219844}
+  - component: {fileID: 2066219843}
+  m_Layer: 0
+  m_Name: Sphere
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2066219842
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2066219841}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1635223275}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2066219843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2066219841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 552739238bcc423408ce9c7d71f54f79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerOn: 0
+  radiusChase: 0.1
+  radiusPatrol: 0.1
+--- !u!135 &2066219844
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2066219841}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &2066219845
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2066219841}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &2066219846
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2066219841}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &2070773926
 GameObject:
   m_ObjectHideFlags: 0
@@ -29086,14 +31281,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -29238,7 +31433,7 @@ MonoBehaviour:
   lifePoint: 1
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -29678,7 +31873,7 @@ MonoBehaviour:
   lifePoint: 0
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 0
@@ -29936,7 +32131,7 @@ MonoBehaviour:
   lifePoint: 0
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -30139,7 +32334,7 @@ MonoBehaviour:
   lifePoint: 1
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
@@ -30328,14 +32523,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
-  pos_Go: {x: -30, y: 0, z: 0}
+  pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
-  lifePoint: 1
+  lifePoint: 3
   damage: 1
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
   childNo: 0
   enemyATK: 1
