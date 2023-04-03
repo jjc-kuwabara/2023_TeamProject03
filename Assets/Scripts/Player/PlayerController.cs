@@ -77,7 +77,7 @@ public class PlayerController : MonoBehaviour
             shiftFLG = true;
             Debug.Log("b");
         }
-        else if(shiftFLG)
+        else if(!Input.GetButton("Fire3") && shiftFLG)
         {
             m_speedCurrent *= 2;
             shiftFLG = false;
@@ -179,6 +179,13 @@ public class PlayerController : MonoBehaviour
 
     public void MoveSpeedChenge(float speed)
     {
+        if (shiftFLG)
+        {
+            m_speedCurrent = m_speedStart;
+            m_speedCurrent -= speed;
+            m_speedCurrent /= 2;
+            return;
+        }
         m_speedCurrent = m_speedStart;
         m_speedCurrent -= speed;
     }
