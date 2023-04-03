@@ -86,6 +86,14 @@ public class GameManager : Singleton<GameManager>
 
     float fadeTime = 1;
 
+    [Header("リザルトデータ")]
+    int result = 0;
+    [SerializeField]
+    int resultHP = 100;
+    int resultAir = 100;
+    int resultEat = 100;
+    int resultKill = 1000;
+
     GameObject player;
     PlayerController controller;   //PlayerControllerのコンポーネント取得用
 
@@ -321,7 +329,12 @@ public class GameManager : Singleton<GameManager>
     {
         mainGameFLG = false;
         gameClear = true;
+
+        result = (int)(HPCurrent * resultHP) + (int)(airCurrent * resultAir)
+                  + (int)(eatCurrent * resultEat) + (killCurrent * resultKill);
+
         Debug.Log("ゲームクリア");
+        Debug.Log(result);
     }
 
     public void GameOver()

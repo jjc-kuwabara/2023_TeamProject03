@@ -24,6 +24,8 @@ public class PlayerController : MonoBehaviour
     bool y_Up_FLG = false;
     bool y_Down_FLG = false;
 
+    bool shiftFLG = false;
+
     [Header("çUåÇÇ…ä÷Ç∑ÇÈïœêî")]
     public GameObject bullet;
     public GameObject firePos;
@@ -70,13 +72,16 @@ public class PlayerController : MonoBehaviour
 
     void Move()
     {
-        if (Input.GetKeyDown(KeyCode.LeftShift)){
+        if (Input.GetButton("Fire3") && !shiftFLG){
             m_speedCurrent /= 2;
+            shiftFLG = true;
+            Debug.Log("b");
         }
-
-        if (Input.GetKeyUp(KeyCode.LeftShift))
+        else if(shiftFLG)
         {
             m_speedCurrent *= 2;
+            shiftFLG = false;
+            Debug.Log("a");
         }
 
         float x = Input.GetAxis("Horizontal");
