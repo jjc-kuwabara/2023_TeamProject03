@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
     public GameObject firePos;
     [SerializeField] float attackTime = 1;
     float attackTimeCurrent;
-    bool fireFLG = false;
+    public bool fireFLG = false;
 
     bool inputFLG = false;
 

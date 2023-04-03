@@ -4,9 +4,14 @@ using UnityEngine;
 
 public class PlayerEatController : MonoBehaviour
 {
+    GameObject player;
+    PlayerController controller;   //PlayerControllerのコンポーネント取得用
+
     void Start()
     {
-        
+        player = GameObject.FindGameObjectWithTag("Player");
+        //PlayerControllerのコンポーネント取得
+        controller = player.GetComponent<PlayerController>();
     }
 
     void Update()
@@ -17,19 +22,22 @@ public class PlayerEatController : MonoBehaviour
     //OnTriggerですり抜け判定を取る
     private void OnTriggerStay(Collider other)
     {
-        if (Input.GetButton("Fire2") && GameManager.Instance.mainGameFLG)
+        if (Input.GetButton("Fire2") && GameManager.Instance.mainGameFLG && !controller.fireFLG)
         {
-            
             if (other.transform.tag == "Fish")
             {
                 GameManager.Instance.Eat();
                 Destroy(other.gameObject);
+
+                controller.fireFLG = true;
             }
 
             if (other.transform.tag == "Bubble")
             {
                 GameManager.Instance.AirGet();
                 Destroy(other.gameObject);
+
+                controller.fireFLG = true;
             }
         }
     }
