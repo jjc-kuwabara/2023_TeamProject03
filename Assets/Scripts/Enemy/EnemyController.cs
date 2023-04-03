@@ -246,7 +246,7 @@ public class EnemyController : MonoBehaviour
     {
         pos_Patrol = movePointer[pointer].transform.position;
 
-        transform.Translate(pos_Patrol * direction * Time.deltaTime);
+        transform.Translate((pos_Patrol - this.transform.position) * direction * Time.deltaTime);
 
         if (pos_Patrol.magnitude - this.transform.position.magnitude <= 0.5f)
         {
