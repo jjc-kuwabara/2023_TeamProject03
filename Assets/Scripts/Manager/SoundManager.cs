@@ -37,11 +37,13 @@ public class SoundManager : Singleton<SoundManager>
     public AudioClip[] bgmClip;
     public AudioClip[] se_SysClip;
     public AudioClip[] se_GameClip;
+    public AudioClip[] se_VoiClip;
 
     //各音声用のAudioSourceを用意する
     [System.NonSerialized] public AudioSource BGMSource;
     [System.NonSerialized] public AudioSource SE_SysSource;
     [System.NonSerialized] public AudioSource[] SE_GameSource;
+    [System.NonSerialized] public AudioSource SE_VoiSource;
 
     //音量の段階（SliderのValueで設定）
     float[] vol_BGM = { -80f, -30f, -27, -24f, -21f, -18f, -15f, -12.5f, -10f, -7.5f, -5f };
@@ -69,6 +71,11 @@ public class SoundManager : Singleton<SoundManager>
         SE_SysSource.loop = false;
         SE_SysSource.priority = 1;
         SE_SysSource.outputAudioMixerGroup = SEGroup;
+
+        SE_VoiSource = gameObject.AddComponent<AudioSource>();
+        SE_VoiSource.loop = false;
+        SE_VoiSource.priority = 1;
+        SE_VoiSource.outputAudioMixerGroup = SEGroup;
 
         //メインのゲーム中に使用するSEは複数の音が同時に鳴ることが多いため
         //SEのクリップ数と同じだけAudioSourceを用意する
@@ -105,6 +112,13 @@ public class SoundManager : Singleton<SoundManager>
     public void PlaySE_Game(int i)
     {
         SE_GameSource[i].Play();
+    }
+
+    //Voiceを外部から呼び出す時
+    public void PlaySE_Voi(int i)
+    {
+        SE_VoiSource.clip = se_VoiClip[i];
+        SE_VoiSource.Play();
     }
 
     //Silderによる音量の調整
