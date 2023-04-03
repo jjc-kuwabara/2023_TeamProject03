@@ -244,18 +244,18 @@ public class EnemyController : MonoBehaviour
 
     void Patrol()
     {
-        if(pos_Patrol.magnitude - this.transform.position.magnitude <= 0.5f)
+        pos_Patrol = movePointer[pointer].transform.position;
+
+        transform.Translate(pos_Patrol * direction * Time.deltaTime);
+
+        if (pos_Patrol.magnitude - this.transform.position.magnitude <= 0.5f)
         {
             pointer++;
-            if(pointer >= movePointer.Length)
+            if (pointer >= movePointer.Length)
             {
                 pointer = 0;
             }
         }
-
-        pos_Patrol = movePointer[pointer].transform.position;
-
-        transform.Translate(pos_Patrol * direction * Time.deltaTime);
     }
 
     void Patrol_or_Chase()
