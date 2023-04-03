@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerEatController : MonoBehaviour
 {
+    public int notEat = 80;
+
     GameObject player;
     PlayerController controller;   //PlayerControllerのコンポーネント取得用
 
@@ -24,7 +26,7 @@ public class PlayerEatController : MonoBehaviour
     {
         if (Input.GetButton("Fire2") && GameManager.Instance.mainGameFLG && !controller.fireFLG)
         {
-            if (other.transform.tag == "Fish")
+            if (other.transform.tag == "Fish" && GameManager.Instance.eatCurrent < notEat)
             {
                 GameManager.Instance.Eat();
                 Destroy(other.gameObject);
