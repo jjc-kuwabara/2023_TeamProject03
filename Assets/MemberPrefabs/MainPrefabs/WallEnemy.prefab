@@ -114,7 +114,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveType: 0
   rotateType: 0
-  damageType: 1
+  damageType: 4
   attackType: 0
   awakeType: 0
   actionType: 0
