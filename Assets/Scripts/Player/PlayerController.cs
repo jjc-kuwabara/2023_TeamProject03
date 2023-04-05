@@ -75,13 +75,11 @@ public class PlayerController : MonoBehaviour
         if (Input.GetButton("Fire3") && !shiftFLG){
             m_speedCurrent /= 2;
             shiftFLG = true;
-            Debug.Log("b");
         }
         else if(!Input.GetButton("Fire3") && shiftFLG)
         {
             m_speedCurrent *= 2;
             shiftFLG = false;
-            Debug.Log("a");
         }
 
         float x = Input.GetAxis("Horizontal");
