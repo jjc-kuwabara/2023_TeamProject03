@@ -6,6 +6,8 @@ public class PlayerEatController : MonoBehaviour
 {
     public int notEat = 80;
 
+    public float heal = 2;
+
     GameObject player;
     PlayerController controller;   //PlayerControllerのコンポーネント取得用
 
@@ -37,6 +39,14 @@ public class PlayerEatController : MonoBehaviour
             if (other.transform.tag == "Bubble")
             {
                 GameManager.Instance.AirGet();
+                Destroy(other.gameObject);
+
+                controller.fireFLG = true;
+            }
+
+            if(other.transform.tag == "Item")
+            {
+                GameManager.Instance.HPUpdate(heal);
                 Destroy(other.gameObject);
 
                 controller.fireFLG = true;
