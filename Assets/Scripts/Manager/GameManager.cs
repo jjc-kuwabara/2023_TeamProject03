@@ -88,11 +88,10 @@ public class GameManager : Singleton<GameManager>
 
     [Header("リザルトデータ")]
     int result = 0;
-    [SerializeField]
-    int resultHP = 100;
-    int resultAir = 100;
-    int resultEat = 100;
-    int resultKill = 1000;
+    [SerializeField]int resultHP = 100;
+    [SerializeField]int resultAir = 100;
+    [SerializeField]int resultEat = 100;
+    [SerializeField]int resultKill = 1000;
 
     GameObject player;
     PlayerController controller;   //PlayerControllerのコンポーネント取得用
