@@ -11,7 +11,7 @@ public class PlayerHitCheck : MonoBehaviour
 
     void Start()
     {
-        //controller = GetComponent<PlayerController>();    //PlayerControllerのコンポーネント取得
+        controller = GetComponent<PlayerController>();    //PlayerControllerのコンポーネント取得
     }
 
     void Update()
@@ -40,6 +40,7 @@ public class PlayerHitCheck : MonoBehaviour
             enemy = other.GetComponent<EnemyController>();
 
             GameManager.Instance.HPUpdate(enemy.enemyATK);
+            controller.AttackTypeChenge(1);
 
             //SoundManager.Instance.PlaySE_Game(8);
             //Instantiate(EffectManager.Instance.playerFX[0], transform.position, Quaternion.identity);

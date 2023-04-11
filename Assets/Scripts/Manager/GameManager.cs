@@ -239,6 +239,7 @@ public class GameManager : Singleton<GameManager>
     void DTO(int mo)
     {
         HPUpdate(HPMax / 100 * mo);
+        controller.AttackTypeChenge(1);
     }
 
     void Found()
