@@ -6,6 +6,13 @@ using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
+    enum AttackType
+    {
+        前方に向かって攻撃する,
+        前方三方向に攻撃する,
+    }
+    [SerializeField] private AttackType attackType;
+
     [Header("プレイヤーの移動に関する変数")]
     public float m_speedStart;
     public float m_speedCurrent;
@@ -32,6 +39,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float attackTime = 1;
     float attackTimeCurrent;
     public bool fireFLG = false;
+    public float way = 30f;
 
     bool inputFLG = false;
 
@@ -150,10 +158,32 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetButton("Fire1") && !fireFLG)
         {
-            Instantiate(bullet, firePos.transform.position, firePos.transform.rotation);
-            //生成するオブジェクト、生成するときの場所、生成した時の角度
+            switch (attackType)
+            {
+                case AttackType.前方に向かって攻撃する:
+                    Instantiate(bullet, firePos.transform.position, firePos.transform.rotation);
+                    //生成するオブジェクト、生成するときの場所、生成した時の角度
+                    break;
+
+                case AttackType.前方三方向に攻撃する:
+                    wayShoot();
+                    break;
+            }
             fireFLG = true;
         }
+    }
+
+    void wayShoot()
+    {
+        Instantiate(bullet, firePos.transform.position, firePos.transform.rotation);
+
+        Quaternion firePosPuls = Quaternion.Euler(firePos.transform.rotation.x, firePos.transform.rotation.y + way, firePos.transform.rotation.z);
+
+        Instantiate(bullet, firePos.transform.position, firePosPuls);
+
+        Quaternion firePosMinus = Quaternion.Euler(firePos.transform.rotation.x, firePos.transform.rotation.y - way, firePos.transform.rotation.z);
+
+        Instantiate(bullet, firePos.transform.position, firePosMinus);
     }
 
     void AttackTimeCount()
@@ -167,6 +197,23 @@ public class PlayerController : MonoBehaviour
                 fireFLG = false;
                 attackTimeCurrent = 0;
             }
+        }
+    }
+
+    public void AttackTypeChenge(int n)
+    {
+        switch (n)
+        {
+            case 1:
+                attackType = AttackType.前方に向かって攻撃する;
+                break;
+
+            case 2:
+                attackType = AttackType.前方三方向に攻撃する;
+                break;
+
+            default:
+                break;
         }
     }
 

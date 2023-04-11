@@ -46,7 +46,23 @@ public class PlayerEatController : MonoBehaviour
 
             if(other.transform.tag == "Item")
             {
-                GameManager.Instance.HPUpdate(heal);
+                GameManager.Instance.HPUpdate(-heal);
+                Destroy(other.gameObject);
+
+                controller.fireFLG = true;
+            }
+
+            if(other.transform.tag == "BulletItem_1")
+            {
+                controller.AttackTypeChenge(1);
+                Destroy(other.gameObject);
+
+                controller.fireFLG = true;
+            }
+
+            if(other.transform.tag == "BulletItem_2")
+            {
+                controller.AttackTypeChenge(2);
                 Destroy(other.gameObject);
 
                 controller.fireFLG = true;
