@@ -58,6 +58,7 @@ public class EnemyController : MonoBehaviour
         なし,
         プレイヤーに当たったら消える,
         死んだら爆発する,
+        ダメージを受けたら小さくなる,
     }
     [SerializeField] private ActionType actionType;
 
@@ -95,6 +96,9 @@ public class EnemyController : MonoBehaviour
     public GameObject weakPoint;
     EnemyHitCheck hitCheck;
     public float weakMagnification;
+
+    [Header("小さくなる処理")]
+    public float scaleDown = 0.1f;
 
     EnemySearch search;
     EnemyPattern_Attack attack;
@@ -427,6 +431,16 @@ public class EnemyController : MonoBehaviour
 
     void Damage(float damage)
     {
+        switch (actionType)
+        {
+            case ActionType.ダメージを受けたら小さくなる:
+                ScaleDown();
+                break;
+
+            default:
+                break;
+        }
+
         lifePoint -= damage;
 
         if (lifePoint <= 0)
@@ -449,6 +463,16 @@ public class EnemyController : MonoBehaviour
 
     void DamageOnly(float damage)
     {
+        switch (actionType)
+        {
+            case ActionType.ダメージを受けたら小さくなる:
+                ScaleDown();
+                break;
+
+            default:
+                break;
+        }
+
         lifePoint -= damage;
 
         if (lifePoint <= 0)
@@ -465,5 +489,15 @@ public class EnemyController : MonoBehaviour
 
             Destroy(gameObject);
         }
+    }
+
+    void ScaleDown()
+    {
+        if (damage / lifePoint >= 1)
+        {
+            return;
+        }
+
+        this.gameObject.transform.localScale = new Vector3(transform.localScale.x - scaleDown, transform.localScale.y - scaleDown, transform.localScale.z - scaleDown);
     }
 }
