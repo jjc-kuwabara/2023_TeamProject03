@@ -65,7 +65,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6b79df7949459484fb60d4115e9e66ba, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -141,8 +141,9 @@ MonoBehaviour:
   lifePoint: 0
   damage: 0
   movePointer: []
-  WeakPoint: {fileID: 0}
+  weakPoint: {fileID: 0}
   weakMagnification: 0
+  scaleDown: 0.1
   childNo: 1
   enemyATK: 1
 --- !u!54 &4045631052651543280

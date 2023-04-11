@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7224525479347256305}
   - component: {fileID: 4045631052651543280}
   m_Layer: 0
-  m_Name: Enemybullet
+  m_Name: BigFishBullet
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -145,7 +145,7 @@ MonoBehaviour:
   weakMagnification: 0
   scaleDown: 0.1
   childNo: 1
-  enemyATK: 1
+  enemyATK: 2
 --- !u!54 &4045631052651543280
 Rigidbody:
   m_ObjectHideFlags: 0

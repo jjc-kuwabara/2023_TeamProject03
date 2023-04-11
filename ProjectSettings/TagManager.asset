@@ -12,6 +12,8 @@ TagManager:
   - Air
   - DeadArea
   - Item
+  - BulletItem_1
+  - BulletItem_2
   layers:
   - Default
   - TransparentFX
