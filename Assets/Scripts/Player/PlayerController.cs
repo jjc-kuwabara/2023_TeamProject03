@@ -35,11 +35,10 @@ public class PlayerController : MonoBehaviour
 
     [Header("攻撃に関する変数")]
     public GameObject bullet;
-    public GameObject firePos;
+    public GameObject[] firePos;
     [SerializeField] float attackTime = 1;
     float attackTimeCurrent;
     public bool fireFLG = false;
-    public float way = 30f;
 
     bool inputFLG = false;
 
@@ -50,6 +49,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         characon = GetComponent<CharacterController>();   //CharacterControllerのコンポーネント取得
+        animator = GetComponent<Animator>();
         m_speedCurrent = m_speedStart;
     }
 
@@ -161,29 +161,24 @@ public class PlayerController : MonoBehaviour
             switch (attackType)
             {
                 case AttackType.前方に向かって攻撃する:
-                    Instantiate(bullet, firePos.transform.position, firePos.transform.rotation);
-                    //生成するオブジェクト、生成するときの場所、生成した時の角度
+                    wayShoot(1);
                     break;
 
                 case AttackType.前方三方向に攻撃する:
-                    wayShoot();
+                    wayShoot(3);
                     break;
             }
             fireFLG = true;
         }
     }
 
-    void wayShoot()
+    void wayShoot(int n)
     {
-        Instantiate(bullet, firePos.transform.position, firePos.transform.rotation);
-
-        Quaternion firePosPuls = Quaternion.Euler(firePos.transform.rotation.x, firePos.transform.rotation.y + way, firePos.transform.rotation.z);
-
-        Instantiate(bullet, firePos.transform.position, firePosPuls);
-
-        Quaternion firePosMinus = Quaternion.Euler(firePos.transform.rotation.x, firePos.transform.rotation.y - way, firePos.transform.rotation.z);
-
-        Instantiate(bullet, firePos.transform.position, firePosMinus);
+        for(int i = 0; i < n; i++)
+        {
+            Instantiate(bullet, firePos[i].transform.position, firePos[i].transform.rotation);
+            //生成するオブジェクト、生成するときの場所、生成した時の角度
+        }
     }
 
     void AttackTimeCount()
