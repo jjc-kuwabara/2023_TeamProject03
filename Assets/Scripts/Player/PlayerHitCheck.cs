@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class PlayerHitCheck : MonoBehaviour
 {
+    GameObject player;
     PlayerController controller;   //PlayerControllerのコンポーネント取得用
     EnemyController enemy;
 
-    //EnemyController enemy;
-
     void Start()
     {
-        controller = GetComponent<PlayerController>();    //PlayerControllerのコンポーネント取得
+        player = GameObject.FindGameObjectWithTag("Player");
+        controller = player.GetComponent<PlayerController>();    //PlayerControllerのコンポーネント取得
     }
 
     void Update()
