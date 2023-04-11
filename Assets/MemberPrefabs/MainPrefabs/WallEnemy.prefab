@@ -117,7 +117,7 @@ MonoBehaviour:
   damageType: 4
   attackType: 0
   awakeType: 0
-  actionType: 0
+  actionType: 3
   pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: -10, z: 0}
   rot: {x: 0, y: 0, z: 0}
@@ -127,6 +127,7 @@ MonoBehaviour:
   movePointer: []
   weakPoint: {fileID: 0}
   weakMagnification: 0
+  scaleDown: 1
   childNo: 0
   enemyATK: 1
 --- !u!54 &5420618647581923049

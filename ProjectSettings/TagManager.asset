@@ -11,6 +11,7 @@ TagManager:
   - Enemy
   - Air
   - DeadArea
+  - Item
   layers:
   - Default
   - TransparentFX
