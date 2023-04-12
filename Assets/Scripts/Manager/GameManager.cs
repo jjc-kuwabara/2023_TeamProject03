@@ -97,6 +97,12 @@ public class GameManager : Singleton<GameManager>
     GameObject player;
     PlayerController controller;   //PlayerControllerのコンポーネント取得用
 
+    GameObject goal;
+
+    float progressValue;
+    float distanceMax;
+    float distanceCurrent;
+
     void Start()
     {
         pd_gameStart.Play();
@@ -119,6 +125,9 @@ public class GameManager : Singleton<GameManager>
         progressGauge = GetComponent<Slider>();
         progressGauge.maxValue = 1;
 
+        distanceMax = goal.transform.position.x - player.transform.position.x;
+        progressValue = 1;
+
         //撃破数の初期設定
         killCurrent = 0;
         killText.text = killCurrent.ToString("00");
@@ -126,6 +135,8 @@ public class GameManager : Singleton<GameManager>
         player = GameObject.FindGameObjectWithTag("Player");
         //PlayerControllerのコンポーネント取得
         controller = player.GetComponent<PlayerController>();
+
+        goal = GameObject.FindGameObjectWithTag("Finish");
     }
 
     void Update()
@@ -165,6 +176,8 @@ public class GameManager : Singleton<GameManager>
             AirCheck();
 
             Found();
+
+            ProgressUpdate();
         }
 
         if (pd_gameStart.state == PlayState.Playing && Input.GetButtonDown("Jump") && !mainGameFLG)
@@ -332,10 +345,14 @@ public class GameManager : Singleton<GameManager>
         killText.text = killCurrent.ToString("00");
     }
 
-    public void ProgressUpdate(float value)
+    public void ProgressUpdate()
     {
+        distanceCurrent = goal.transform.position.x - player.transform.position.x;
+
+        progressValue = distanceCurrent / distanceMax;
+
         //ゲージの更新
-        progressGauge.value = value;
+        progressGauge.value = progressValue;
     }
 
     public void GameClear()
