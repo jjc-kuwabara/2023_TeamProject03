@@ -123,10 +123,11 @@ public class GameManager : Singleton<GameManager>
 
         //進行度ゲージの初期設定
         progressGauge = GetComponent<Slider>();
-        progressGauge.maxValue = 1;
 
         distanceMax = goal.transform.position.x - player.transform.position.x;
-        progressValue = 1;
+        progressValue = 1f;
+
+        progressGauge.maxValue = progressValue;
 
         //撃破数の初期設定
         killCurrent = 0;
