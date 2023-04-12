@@ -11,12 +11,12 @@ public class ScrollManager : MonoBehaviour
     Vector3 move;
 
     GameObject player;
-    PlayerController PC;
+    PlayerController controller;
 
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        PC = player.GetComponent<PlayerController>();
+        controller = player.GetComponent<PlayerController>();
     }
 
     void Update()
@@ -30,12 +30,12 @@ public class ScrollManager : MonoBehaviour
     void Scroll()
     {
         move = moveAngle * moveSpeed * Time.deltaTime;
-        PC.x_L += move.x;
-        PC.x_R += move.x;
+        controller.x_L += move.x;
+        controller.x_R += move.x;
 
-        if (PC.x_L >= PC.transform.position.x)
+        if (controller.x_L >= controller.transform.position.x)
         {
-            PC.Move_2(move);
+            controller.Move_2(move);
         }
         transform.Translate(move);
     }
