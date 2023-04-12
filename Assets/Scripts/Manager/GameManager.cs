@@ -114,8 +114,9 @@ public class GameManager : Singleton<GameManager>
         //満腹ゲージの初期設定
         eatCurrent = eatMax / 2;
         eatGauge.fillAmount = 1;
-        
+
         //進行度ゲージの初期設定
+        progressGauge = GetComponent<Slider>();
         progressGauge.maxValue = 1;
 
         //撃破数の初期設定
