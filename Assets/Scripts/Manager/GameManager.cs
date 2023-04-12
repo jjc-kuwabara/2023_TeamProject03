@@ -75,7 +75,7 @@ public class GameManager : Singleton<GameManager>
     [SerializeField] GameObject pd_clearParent;
     [SerializeField] GameObject pd_overParent;
     [SerializeField] GameObject mainCamera;
-    [SerializeField] int playBGMNo;
+    int playBGMNo;
     [SerializeField] GameObject focusClear;
     [SerializeField] GameObject focusOver;
 
@@ -99,6 +99,8 @@ public class GameManager : Singleton<GameManager>
     void Start()
     {
         pd_gameStart.Play();
+
+        playBGMNo = SceneManager.GetActiveScene().buildIndex;
 
         //HPの初期設定
         HPCurrent = HPMax;
@@ -342,6 +344,11 @@ public class GameManager : Singleton<GameManager>
         mainGameFLG = false;
         gameOver = true;
         Debug.Log("ゲームオーバー");
+    }
+
+    public void DemoPlayBGM()
+    {
+        //SoundManager.Instance.PlayBGM(playBGMNo);
     }
 
     //スタート演出のスキップ
