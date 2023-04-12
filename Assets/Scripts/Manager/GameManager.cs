@@ -57,8 +57,7 @@ public class GameManager : Singleton<GameManager>
     float airValue;
     public Image eatGauge;
     float eatValue;
-    public Image progressGauge;
-    float progressValue;
+    public Slider progressGauge;
     public TextMeshProUGUI killText;
 
     [Header("鵜飼の処理")]
@@ -115,9 +114,10 @@ public class GameManager : Singleton<GameManager>
         //満腹ゲージの初期設定
         eatCurrent = eatMax / 2;
         eatGauge.fillAmount = 1;
-        
+
         //進行度ゲージの初期設定
-        progressGauge.fillAmount = 1;
+        progressGauge = GetComponent<Slider>();
+        progressGauge.maxValue = 1;
 
         //撃破数の初期設定
         killCurrent = 0;
@@ -335,7 +335,7 @@ public class GameManager : Singleton<GameManager>
     public void ProgressUpdate(float value)
     {
         //ゲージの更新
-        progressGauge.fillAmount = value;
+        progressGauge.value = value;
     }
 
     public void GameClear()
