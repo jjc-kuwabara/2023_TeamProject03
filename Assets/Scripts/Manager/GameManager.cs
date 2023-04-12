@@ -109,6 +109,12 @@ public class GameManager : Singleton<GameManager>
 
         playBGMNo = SceneManager.GetActiveScene().buildIndex;
 
+        player = GameObject.FindGameObjectWithTag("Player");
+        //PlayerControllerのコンポーネント取得
+        controller = player.GetComponent<PlayerController>();
+
+        goal = GameObject.FindGameObjectWithTag("Finish");
+
         //HPの初期設定
         HPCurrent = HPMax;
         HPGauge.fillAmount = 1;
@@ -132,12 +138,6 @@ public class GameManager : Singleton<GameManager>
         //撃破数の初期設定
         killCurrent = 0;
         killText.text = killCurrent.ToString("00");
-
-        player = GameObject.FindGameObjectWithTag("Player");
-        //PlayerControllerのコンポーネント取得
-        controller = player.GetComponent<PlayerController>();
-
-        goal = GameObject.FindGameObjectWithTag("Finish");
     }
 
     void Update()
