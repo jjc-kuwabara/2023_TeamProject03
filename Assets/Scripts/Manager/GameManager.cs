@@ -128,7 +128,6 @@ public class GameManager : Singleton<GameManager>
         eatGauge.fillAmount = 1;
 
         //進行度ゲージの初期設定
-        progressGauge = GetComponent<Slider>();
 
         distanceMax = goal.transform.position.x - player.transform.position.x;
         progressValue = 1f;
