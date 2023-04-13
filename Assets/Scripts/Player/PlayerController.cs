@@ -39,6 +39,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float attackTime = 1;
     float attackTimeCurrent;
     public bool fireFLG = false;
+    public int attackSE = 0;
 
     bool inputFLG = false;
 
@@ -168,6 +169,9 @@ public class PlayerController : MonoBehaviour
                     wayShoot(3);
                     break;
             }
+
+            SoundManager.Instance.PlaySE_Game(attackSE);
+
             fireFLG = true;
         }
     }

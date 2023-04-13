@@ -23,6 +23,10 @@ public class GameManager : Singleton<GameManager>
     [SerializeField] PlayableDirector pd_gameClear;  //ゲームクリアのデモ演出
     [SerializeField] PlayableDirector pd_gameOver;   //ゲームオーバーのデモ演出
 
+    [Header("SEの番号")]
+    public int gaugeSE = 3;
+    public int killSE = 2;
+
     [Header("PlayerのHP")]
     public float HPCurrent;
     public float HPMax = 10;
@@ -47,7 +51,7 @@ public class GameManager : Singleton<GameManager>
     public float eatDamageTime = 0;
     public float eatDamageTimeCullent = 0;
 
-    [Header("敵の撃破数")]
+    [Header("敵の撃破")]
     public int killCurrent;
 
     [Header("UI")]
@@ -305,6 +309,8 @@ public class GameManager : Singleton<GameManager>
 
     public void AirGet()
     {
+        SoundManager.Instance.PlaySE_Game(gaugeSE);
+
         airCurrent += airBubble;
 
         airValue = airCurrent / airMax;
@@ -314,6 +320,8 @@ public class GameManager : Singleton<GameManager>
 
     public void Eat()
     {
+        SoundManager.Instance.PlaySE_Game(gaugeSE);
+
         eatCurrent += eatHeal;
 
         eatValue = (float)eatCurrent / eatMax;
@@ -341,6 +349,7 @@ public class GameManager : Singleton<GameManager>
 
     public void Kill()
     {
+        SoundManager.Instance.PlaySE_Game(killSE);
         killCurrent++;
         killText.text = killCurrent.ToString("00");
     }
