@@ -16,6 +16,9 @@ public class PauseManager : MonoBehaviour
     [Header("ポーズメニューのカーソル初期位置")]
     [SerializeField] GameObject focusPausemenu;
 
+    [Header("操作説明のカーソル初期位置")]
+    [SerializeField] GameObject focusInstructions;
+
     [Header("ヒットストップ")]
     [SerializeField] float timeScale = 0.1f;
     [SerializeField] float slowTime = 1f;
@@ -170,5 +173,25 @@ public class PauseManager : MonoBehaviour
         ChangePause(false);
 
         GameManager.Instance.SceneMove(no);
+    }
+
+    public void CanvasChange(bool change)
+    {
+        CanvasInit();
+
+        if (change)
+        {
+            canvas[2].SetActive(true);
+
+            //初期カーソル位置設定
+            EventSystem.current.SetSelectedGameObject(focusInstructions);
+        }
+        else
+        {
+            canvas[1].SetActive(true);
+
+            //初期カーソル位置設定
+            EventSystem.current.SetSelectedGameObject(focusPausemenu);
+        }
     }
 }
