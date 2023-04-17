@@ -10,6 +10,7 @@ public class PlayerEatController : MonoBehaviour
 
     GameObject player;
     PlayerController controller;   //PlayerControllerのコンポーネント取得用
+    EnemyController enemy;
 
     void Start()
     {
@@ -30,7 +31,8 @@ public class PlayerEatController : MonoBehaviour
         {
             if (other.transform.tag == "Fish" && GameManager.Instance.eatCurrent < notEat)
             {
-                GameManager.Instance.Eat();
+                enemy = other.gameObject.GetComponent<EnemyController>();
+                GameManager.Instance.Eat(enemy.score);
                 Destroy(other.gameObject);
 
                 controller.fireFLG = true;

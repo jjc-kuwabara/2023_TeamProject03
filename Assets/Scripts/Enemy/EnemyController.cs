@@ -84,6 +84,9 @@ public class EnemyController : MonoBehaviour
     public float lifePoint;
     public float damage = 1;
 
+    [Header("スコアの加算量")]
+    public float score = 1000;
+
     [Header("移動するポイント")]
     public GameObject[] movePointer;
     int pointer = 0;
@@ -445,7 +448,7 @@ public class EnemyController : MonoBehaviour
 
         if (lifePoint <= 0)
         {
-            GameManager.Instance.Kill();
+            GameManager.Instance.Kill(score);
 
             switch (actionType)
             {
