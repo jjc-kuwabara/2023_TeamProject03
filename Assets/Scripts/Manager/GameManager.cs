@@ -94,9 +94,9 @@ public class GameManager : Singleton<GameManager>
     [Header("リザルトデータ")]
     int result = 0;
     [SerializeField]int resultHP = 100;
-    [SerializeField]int resultAir = 100;
-    [SerializeField]int resultEat = 100;
-    [SerializeField]int resultKill = 1000;
+    float resultKill = 0;
+    [SerializeField] int stageNo = 0;
+    int scoreCurrent = 0;
 
     GameObject player;
     PlayerController controller;   //PlayerControllerのコンポーネント取得用
@@ -132,7 +132,6 @@ public class GameManager : Singleton<GameManager>
         eatGauge.fillAmount = 1;
 
         //進行度ゲージの初期設定
-
         distanceMax = goal.transform.position.x - player.transform.position.x;
         progressValue = 1f;
 
@@ -140,7 +139,8 @@ public class GameManager : Singleton<GameManager>
 
         //撃破数の初期設定
         killCurrent = 0;
-        killText.text = killCurrent.ToString("00");
+        resultKill = 0;
+        killText.text = killCurrent.ToString("0000");
     }
 
     void Update()
@@ -318,7 +318,7 @@ public class GameManager : Singleton<GameManager>
         airGauge.fillAmount = airValue;
     }
 
-    public void Eat()
+    public void Eat(float addScore)
     {
         SoundManager.Instance.PlaySE_Game(gaugeSE);
 
@@ -344,14 +344,15 @@ public class GameManager : Singleton<GameManager>
 
         //ゲージの更新
         eatGauge.fillAmount = eatValue;
-        Kill();
+        Kill(addScore);
     }
 
-    public void Kill()
+    public void Kill(float addScore)
     {
         SoundManager.Instance.PlaySE_Game(killSE);
-        killCurrent++;
-        killText.text = killCurrent.ToString("00");
+        resultKill += addScore;
+        killCurrent = (int)resultKill;
+        killText.text = killCurrent.ToString("0000");
     }
 
     public void ProgressUpdate()
@@ -369,8 +370,30 @@ public class GameManager : Singleton<GameManager>
         mainGameFLG = false;
         gameClear = true;
 
-        result = (int)(HPCurrent * resultHP) + (int)(airCurrent * resultAir)
-                  + (int)(eatCurrent * resultEat) + (killCurrent * resultKill);
+        result = (int)(HPCurrent * resultHP) + (int)resultKill;
+
+        switch (stageNo)
+        {
+            case 1:
+                scoreCurrent = PlayerPrefs.GetInt("SCORE_1",0);
+                if (result > scoreCurrent)
+                {
+                    PlayerPrefs.SetInt("SCORE_1", result);
+                }
+                break;
+
+            case 2:
+                scoreCurrent = PlayerPrefs.GetInt("SCORE_2", 0);
+                if (result > scoreCurrent)
+                {
+                    PlayerPrefs.SetInt("SCORE_2", result);
+                }
+                break;
+
+            default:
+                break;
+        }
+        PlayerPrefs.Save();
 
         Debug.Log("ゲームクリア");
         Debug.Log(result);

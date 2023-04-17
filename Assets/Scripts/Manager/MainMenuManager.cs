@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
+using UnityEngine.EventSystems;\
+using TMPro;
+using UnityEngine.UI;
 
 public class MainMenuManager : MonoBehaviour
 {
@@ -12,6 +14,12 @@ public class MainMenuManager : MonoBehaviour
     GameObject currentFocus;   //現在
     GameObject previousFocus;  //前フレーム
     [SerializeField] GameObject[] focusMainMenu;  //初期カーソル位置
+
+    [Header("スコア")]
+    [SerializeField] TextMeshProUGUI scoreText_Stage1;
+    int scoreCurrent_Stage1;
+    [SerializeField] TextMeshProUGUI scoreText_Stage2;
+    int scoreCurrent_Stage2;
 
     public float sceneMoveTime = 0;
 
@@ -32,6 +40,12 @@ public class MainMenuManager : MonoBehaviour
             GameObject count = GameObject.FindGameObjectWithTag("Count");
             Destroy(count);
         }
+
+        scoreCurrent_Stage1 = PlayerPrefs.GetInt("SCORE_1", 0);
+        scoreText_Stage1.text = scoreCurrent_Stage1.ToString("0000");
+
+        scoreCurrent_Stage2 = PlayerPrefs.GetInt("SCORE_2", 0);
+        scoreText_Stage2.text = scoreCurrent_Stage2.ToString("0000");
     }
 
     void Update()
@@ -81,9 +95,28 @@ public class MainMenuManager : MonoBehaviour
         FadeManager.Instance.LoadSceneIndex(sceneNo, sceneMoveTime);
     }
 
-    public void StageSelectMove(int no)
+    public void ScoreReset_1()
     {
-        PlayerPrefs.SetInt("難易度", no);
+        PlayerPrefs.DeleteKey("SCORE_1");
+        PlayerPrefs.Save();
+
+        scoreCurrent_Stage1 = PlayerPrefs.GetInt("SCORE_1", 0);
+        scoreText_Stage1.text = scoreCurrent_Stage1.ToString("0000");
+    }
+
+    public void ScoreReset_2()
+    {
+        PlayerPrefs.DeleteKey("SCORE_2");
+        PlayerPrefs.Save();
+
+        scoreCurrent_Stage2 = PlayerPrefs.GetInt("SCORE_2", 0);
+        scoreText_Stage2.text = scoreCurrent_Stage1.ToString("0000");
+    }
+
+    public void ScoreReset_All()
+    {
+        ScoreReset_1();
+        ScoreReset_2();
     }
 
     public void GameExit()
