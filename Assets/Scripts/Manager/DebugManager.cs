@@ -48,7 +48,7 @@ public class DebugManager : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.N))
         {
-            GameManager.Instance.Eat();
+            GameManager.Instance.Eat(100);
         }
     }
 
