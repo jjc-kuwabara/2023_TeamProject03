@@ -24,7 +24,7 @@ public class GameManager : Singleton<GameManager>
     [SerializeField] PlayableDirector pd_gameOver;   //ゲームオーバーのデモ演出
 
     [Header("SEの番号")]
-    public int gaugeSE = 3;
+    public int airSE = 3;
     public int killSE = 2;
 
     [Header("PlayerのHP")]
@@ -59,8 +59,6 @@ public class GameManager : Singleton<GameManager>
     float HPValue;
     public Image airGauge;
     float airValue;
-    public Image eatGauge;
-    float eatValue;
     public Slider progressGauge;
     public TextMeshProUGUI killText;
 
@@ -126,10 +124,6 @@ public class GameManager : Singleton<GameManager>
         //酸素の初期設定
         airCurrent = airMax;
         airGauge.fillAmount = 1;
-        
-        //満腹ゲージの初期設定
-        eatCurrent = eatMax / 2;
-        eatGauge.fillAmount = 1;
 
         //進行度ゲージの初期設定
         distanceMax = goal.transform.position.x - player.transform.position.x;
@@ -163,8 +157,6 @@ public class GameManager : Singleton<GameManager>
             //ゲージの更新
             airGauge.fillAmount = airValue;
 
-            EatUpdate();
-
             if (airFLG == false)
             {
                 airCurrent -= airMinus * Time.deltaTime;
@@ -176,7 +168,6 @@ public class GameManager : Singleton<GameManager>
 
             eatCurrent -= digestion * Time.deltaTime;
 
-            EatCheck();
             AirCheck();
 
             Found();
@@ -198,48 +189,6 @@ public class GameManager : Singleton<GameManager>
         {
             DemoOverSkip();
         }*/
-    }
-
-    void EatUpdate()
-    {
-        eatValue = (float)eatCurrent / eatMax;
-
-        if (eatValue >= 0.8)
-        {
-            if (eatValue < 0.9)
-            {
-                controller.MoveSpeedChenge((float)5);
-            }
-            else
-            {
-                controller.MoveSpeedChenge((float)10);
-            }
-        }
-        else
-        {
-            controller.MoveSpeedChenge((float)0);
-        }
-
-        //ゲージの更新
-        eatGauge.fillAmount = eatValue;
-    }
-
-    void EatCheck()
-    {
-        if(eatCurrent <= 0)
-        {
-            if (eatDamageTimeCullent >= eatDamageTime)
-            {
-                DTO(eatDamage);
-                eatDamageTimeCullent = 0;
-            }
-
-            eatDamageTimeCullent += Time.deltaTime;
-        }
-        else
-        {
-            eatDamageTimeCullent = 0;
-        }
     }
 
     void AirCheck()
@@ -309,42 +258,13 @@ public class GameManager : Singleton<GameManager>
 
     public void AirGet()
     {
-        SoundManager.Instance.PlaySE_Game(gaugeSE);
+        SoundManager.Instance.PlaySE_Game(airSE);
 
         airCurrent += airBubble;
 
         airValue = airCurrent / airMax;
         //ゲージの更新
         airGauge.fillAmount = airValue;
-    }
-
-    public void Eat(float addScore)
-    {
-        SoundManager.Instance.PlaySE_Game(gaugeSE);
-
-        eatCurrent += eatHeal;
-
-        eatValue = (float)eatCurrent / eatMax;
-
-        if (eatValue >= 0.8)
-        {
-            if (eatValue < 0.9)
-            {
-                controller.MoveSpeedChenge((float)5);
-            }
-            else
-            {
-                controller.MoveSpeedChenge((float)10);
-            }
-        }
-        else
-        {
-            controller.MoveSpeedChenge((float)0);
-        }
-
-        //ゲージの更新
-        eatGauge.fillAmount = eatValue;
-        Kill(addScore);
     }
 
     public void Kill(float addScore)

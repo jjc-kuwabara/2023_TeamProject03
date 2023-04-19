@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class PlayerEatController : MonoBehaviour
 {
-    public int notEat = 80;
+    public bool eatFLG = false;
+    public float digestionTime = 3f;
+    public int eatSE = 4;
 
     public float heal = 2;
 
     GameObject player;
     PlayerController controller;   //PlayerControllerのコンポーネント取得用
-    EnemyController enemy;
 
     void Start()
     {
@@ -29,13 +30,19 @@ public class PlayerEatController : MonoBehaviour
     {
         if (Input.GetButton("Fire2") && GameManager.Instance.mainGameFLG && !controller.fireFLG)
         {
-            if (other.transform.tag == "Fish" && GameManager.Instance.eatCurrent < notEat)
+            if (other.transform.tag == "Fish" && !eatFLG)
             {
-                enemy = other.gameObject.GetComponent<EnemyController>();
-                GameManager.Instance.Eat(enemy.score);
                 Destroy(other.gameObject);
 
                 controller.fireFLG = true;
+                eatFLG = true;
+
+                SoundManager.Instance.PlaySE_Game(eatSE);
+                controller.MoveSpeedChenge((float)10);
+
+                Debug.Log("食べた");
+
+                Invoke("Digestion", digestionTime);
             }
 
             if (other.transform.tag == "Bubble")
@@ -70,5 +77,13 @@ public class PlayerEatController : MonoBehaviour
                 controller.fireFLG = true;
             }
         }
+    }
+
+    void Digestion()
+    {
+        eatFLG = false;
+        controller.MoveSpeedChenge((float)0);
+
+        Debug.Log("消化した");
     }
 }
