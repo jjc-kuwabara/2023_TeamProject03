@@ -8,6 +8,9 @@ public class PlayerEatController : MonoBehaviour
     public float digestionTime = 3f;
     public int eatSE = 4;
 
+    public float score_1 = 10;
+    public float score_2 = 20;
+
     public float heal = 2;
 
     GameObject player;
@@ -79,7 +82,7 @@ public class PlayerEatController : MonoBehaviour
 
             if(other.transform.tag == "ScoreItem_1")
             {
-                controller.AttackTypeChenge(1);
+                GameManager.Instance.ScoreItemGet(score_1);
                 Destroy(other.gameObject);
 
                 controller.fireFLG = true;
@@ -87,7 +90,7 @@ public class PlayerEatController : MonoBehaviour
 
             if(other.transform.tag == "ScoreItem_2")
             {
-                controller.AttackTypeChenge(2);
+                GameManager.Instance.ScoreItemGet(score_2);
                 Destroy(other.gameObject);
 
                 controller.fireFLG = true;

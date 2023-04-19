@@ -42,8 +42,8 @@ public class GameManager : Singleton<GameManager>
     public float airDamageTime = 0;
     float airDamageTimeCullent = 0;
 
-    [Header("敵の撃破")]
-    public int killCurrent;
+    [Header("スコア")]
+    public int scoreCurrent;
 
     [Header("UI")]
     public Image HPGauge;
@@ -51,7 +51,7 @@ public class GameManager : Singleton<GameManager>
     public Image airGauge;
     float airValue;
     public Slider progressGauge;
-    public TextMeshProUGUI killText;
+    public TextMeshProUGUI scoreText;
 
     [Header("鵜飼の処理")]
     [System.NonSerialized] public bool foundFLG = false;
@@ -83,9 +83,9 @@ public class GameManager : Singleton<GameManager>
     [Header("リザルトデータ")]
     int result = 0;
     [SerializeField]int resultHP = 100;
-    float resultKill = 0;
+    float resultScore = 0;
     [SerializeField] int stageNo = 0;
-    int scoreCurrent = 0;
+    int score = 0;
 
     GameObject player;
     PlayerController controller;   //PlayerControllerのコンポーネント取得用
@@ -123,9 +123,9 @@ public class GameManager : Singleton<GameManager>
         progressGauge.maxValue = progressValue;
 
         //撃破数の初期設定
-        killCurrent = 0;
-        resultKill = 0;
-        killText.text = killCurrent.ToString("0000");
+        scoreCurrent = 0;
+        resultScore = 0;
+        scoreText.text = scoreCurrent.ToString("0000");
     }
 
     void Update()
@@ -258,9 +258,16 @@ public class GameManager : Singleton<GameManager>
     public void Kill(float addScore)
     {
         SoundManager.Instance.PlaySE_Game(killSE);
-        resultKill += addScore;
-        killCurrent = (int)resultKill;
-        killText.text = killCurrent.ToString("0000");
+        resultScore += addScore;
+        scoreCurrent = (int)resultScore;
+        scoreText.text = scoreCurrent.ToString("0000");
+    }
+
+    public void ScoreItemGet(float addScore)
+    {
+        resultScore += addScore;
+        scoreCurrent = (int)resultScore;
+        scoreText.text = scoreCurrent.ToString("0000");
     }
 
     public void ProgressUpdate()
@@ -278,21 +285,21 @@ public class GameManager : Singleton<GameManager>
         mainGameFLG = false;
         gameClear = true;
 
-        result = (int)(HPCurrent * resultHP) + (int)resultKill;
+        result = (int)(HPCurrent * resultHP) + (int)resultScore;
 
         switch (stageNo)
         {
             case 1:
-                scoreCurrent = PlayerPrefs.GetInt("SCORE_1",0);
-                if (result > scoreCurrent)
+                score = PlayerPrefs.GetInt("SCORE_1",0);
+                if (result > score)
                 {
                     PlayerPrefs.SetInt("SCORE_1", result);
                 }
                 break;
 
             case 2:
-                scoreCurrent = PlayerPrefs.GetInt("SCORE_2", 0);
-                if (result > scoreCurrent)
+                score = PlayerPrefs.GetInt("SCORE_2", 0);
+                if (result > score)
                 {
                     PlayerPrefs.SetInt("SCORE_2", result);
                 }
