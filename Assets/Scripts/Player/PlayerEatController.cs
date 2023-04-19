@@ -53,7 +53,7 @@ public class PlayerEatController : MonoBehaviour
                 controller.fireFLG = true;
             }
 
-            if(other.transform.tag == "Item")
+            if(other.transform.tag == "HealItem")
             {
                 GameManager.Instance.HPUpdate(-heal);
                 Destroy(other.gameObject);
@@ -70,6 +70,22 @@ public class PlayerEatController : MonoBehaviour
             }
 
             if(other.transform.tag == "BulletItem_2")
+            {
+                controller.AttackTypeChenge(2);
+                Destroy(other.gameObject);
+
+                controller.fireFLG = true;
+            }
+
+            if(other.transform.tag == "ScoreItem_1")
+            {
+                controller.AttackTypeChenge(1);
+                Destroy(other.gameObject);
+
+                controller.fireFLG = true;
+            }
+
+            if(other.transform.tag == "ScoreItem_2")
             {
                 controller.AttackTypeChenge(2);
                 Destroy(other.gameObject);

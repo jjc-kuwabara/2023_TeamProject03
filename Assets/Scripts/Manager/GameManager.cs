@@ -41,15 +41,6 @@ public class GameManager : Singleton<GameManager>
     public int airDamage = 10;
     public float airDamageTime = 0;
     float airDamageTimeCullent = 0;
-    
-    [Header("満腹ゲージ")]
-    public float eatCurrent;
-    public int eatMax = 10;
-    public float eatHeal = 1;
-    public float digestion = 0.1f;
-    public int eatDamage = 10;
-    public float eatDamageTime = 0;
-    public float eatDamageTimeCullent = 0;
 
     [Header("敵の撃破")]
     public int killCurrent;
@@ -151,7 +142,6 @@ public class GameManager : Singleton<GameManager>
             //Clamp(引数…現在値,最小値,最大値)                
             HPCurrent = Mathf.Clamp(HPCurrent, 0, HPMax);
             airCurrent = Mathf.Clamp(airCurrent, 0, airMax);
-            eatCurrent = Mathf.Clamp(eatCurrent, 0, eatMax);
 
             airValue = (float)airCurrent / airMax;
             //ゲージの更新
@@ -165,8 +155,6 @@ public class GameManager : Singleton<GameManager>
             {
                 airCurrent += airHeal * Time.deltaTime;
             }
-
-            eatCurrent -= digestion * Time.deltaTime;
 
             AirCheck();
 
