@@ -112,7 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c10d306598c35584e9f726a347888875, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletSpeed: 50
+  bulletSpeed: 30
   destoryTime: 1
   effectExp: {fileID: 0}
   effectAura: {fileID: 0}
@@ -140,6 +140,7 @@ MonoBehaviour:
   time: 0
   lifePoint: 0
   damage: 0
+  score: 1000
   movePointer: []
   weakPoint: {fileID: 0}
   weakMagnification: 0
