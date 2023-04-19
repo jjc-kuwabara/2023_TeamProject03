@@ -14,6 +14,9 @@ TagManager:
   - Item
   - BulletItem_1
   - BulletItem_2
+  - HealItem
+  - ScoreItem_1
+  - ScoreItem_2
   layers:
   - Default
   - TransparentFX
