@@ -13,6 +13,8 @@ public class ScrollManager : MonoBehaviour
     GameObject player;
     PlayerController controller;
 
+    bool scrollFLG = false;
+
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
@@ -21,7 +23,7 @@ public class ScrollManager : MonoBehaviour
 
     void Update()
     {
-        if (GameManager.Instance.mainGameFLG)
+        if (scrollFLG)
         {
             Scroll();
         }
@@ -38,5 +40,10 @@ public class ScrollManager : MonoBehaviour
             controller.Move_2(move);
         }
         transform.Translate(move);
+    }
+
+    public void ScrollFLGChange(bool flg)
+    {
+        scrollFLG = flg;
     }
 }

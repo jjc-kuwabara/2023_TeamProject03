@@ -57,7 +57,7 @@ public class GameManager : Singleton<GameManager>
     [System.NonSerialized] public bool foundFLG = false;
 
     public float foundTime;
-    float foundTimeCurrent;
+    public float foundTimeCurrent;
 
     [Header("スキップ時に必要な設定")]
     [SerializeField] GameObject canvasMainGame;
