@@ -85,7 +85,7 @@ public class EnemyController : MonoBehaviour
     public float damage = 1;
 
     [Header("スコアの加算量")]
-    public float score = 1000;
+    public float score = 10;
 
     [Header("移動するポイント")]
     public GameObject[] movePointer;
