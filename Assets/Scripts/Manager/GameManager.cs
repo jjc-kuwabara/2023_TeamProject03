@@ -92,6 +92,9 @@ public class GameManager : Singleton<GameManager>
 
     GameObject goal;
 
+    GameObject scroll;
+    ScrollManager scrollM;
+
     float progressValue;
     float distanceMax;
     float distanceCurrent;
@@ -107,6 +110,9 @@ public class GameManager : Singleton<GameManager>
         controller = player.GetComponent<PlayerController>();
 
         goal = GameObject.FindGameObjectWithTag("Finish");
+
+        scroll = GameObject.FindGameObjectWithTag("Scroll");
+        scrollM = scroll.GetComponent<ScrollManager>();
 
         //HPの初期設定
         HPCurrent = HPMax;
@@ -283,6 +289,7 @@ public class GameManager : Singleton<GameManager>
     public void GameClear()
     {
         mainGameFLG = false;
+        scrollM.ScrollFLGChange(false);
         gameClear = true;
 
         result = (int)(HPCurrent * resultHP) + (int)resultScore;
@@ -317,6 +324,7 @@ public class GameManager : Singleton<GameManager>
     public void GameOver()
     {
         mainGameFLG = false;
+        scrollM.ScrollFLGChange(false);
         gameOver = true;
         Debug.Log("ゲームオーバー");
     }
@@ -349,6 +357,7 @@ public class GameManager : Singleton<GameManager>
         //SoundManager.Instance.PlayBGM(playBGMNo);
 
         mainGameFLG = true;
+        scrollM.ScrollFLGChange(true);
     }
 
     //クリア演出のスキップ
