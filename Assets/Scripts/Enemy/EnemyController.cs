@@ -62,6 +62,16 @@ public class EnemyController : MonoBehaviour
     }
     [SerializeField] private ActionType actionType;
 
+    enum DropType
+    {
+        なし,
+        回復アイテムを落とす,
+        スコア用アイテムを落とす,
+        攻撃変化のアイテムを落とす,
+        ランダムにアイテムを落とす,
+    }
+    [SerializeField] private DropType dropType;
+
     [Header("移動にかかわる変数")]
     //移動の方向を決める変数
     public Vector3 pos_Go;
@@ -84,6 +94,10 @@ public class EnemyController : MonoBehaviour
     public float lifePoint;
     public float damage = 1;
 
+    [Header("ドロップアイテム")]
+    public GameObject[] dropItem;
+    int dropNo = 0;
+
     [Header("スコアの加算量")]
     public float score = 10;
 
@@ -103,11 +117,13 @@ public class EnemyController : MonoBehaviour
     [Header("小さくなる処理")]
     public float scaleDown = 0.1f;
 
+    [Header("EnemySearchの番号")]
+    public int childNo = 1;
     EnemySearch search;
     EnemyPattern_Attack attack;
     bool patrolFLG = false;
-    [Header("EnemySearchの番号")]
-    public int childNo = 1;
+
+    [Header("敵から受けるダメージ量")]
     public int enemyATK = 1;
 
     PlayerController controller;
@@ -457,6 +473,22 @@ public class EnemyController : MonoBehaviour
                     break;
 
                 default:
+                    break;
+            }
+
+            switch (dropType)
+            {
+                case DropType.なし:
+                    break;
+
+                case DropType.ランダムにアイテムを落とす:
+                    dropNo = Random.Range(0, dropItem.Length);
+
+                    Instantiate(dropItem[dropNo], this.transform.position, this.transform.rotation);
+                    break;
+
+                default:
+                    Instantiate(dropItem[0], this.transform.position, this.transform.rotation);
                     break;
             }
 
