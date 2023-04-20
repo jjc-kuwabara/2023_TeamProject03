@@ -20,6 +20,7 @@ public class TutorialManager : MonoBehaviour
     public GameObject eatFishArea;
     public GameObject eatItemArea;
     public GameObject speedDownArea;
+    public GameObject endArea;
 
     TutorialArea moveFLG;
     TutorialArea airFLG;
@@ -27,13 +28,23 @@ public class TutorialManager : MonoBehaviour
     TutorialArea eatFishFLG;
     TutorialArea eatItemFLG;
     TutorialArea speedDownFLG;
+    TutorialArea endFLG;
 
     [Header("移動時間")]
     public float moveTime = 3;
     float inputTime = 0;
 
     [Header("チュートリアル用の敵")]
-    public GameObject[] enemy;
+    public GameObject enemy_Attack;
+    public GameObject enemy_Eat;
+
+    [Header("チュートリアル用のアイテム")]
+    public GameObject item_Heal;
+    public GameObject item_Score;
+    public GameObject item_Bullet;
+    bool item_HealFLG = false;
+    bool item_ScoreFLG = false;
+    bool item_BulletFLG = false;
 
     [Header("スクロールのオブジェクト")]
     public GameObject scroll;
@@ -47,6 +58,7 @@ public class TutorialManager : MonoBehaviour
         eatFishFLG = eatFishArea.GetComponent<TutorialArea>();
         eatItemFLG = eatItemArea.GetComponent<TutorialArea>();
         speedDownFLG = speedDownArea.GetComponent<TutorialArea>();
+        endFLG = speedDownArea.GetComponent<TutorialArea>();
 
         scrollM = scroll.GetComponent<ScrollManager>();
     }
@@ -82,12 +94,19 @@ public class TutorialManager : MonoBehaviour
         {
             SpeedDown();
         }
+
+        if (endFLG.flg)
+        {
+            TextAllNotActive();
+            endFLG.flg = false;
+        }
     }
 
     void Move()
     {
         if (!move[0].activeSelf && !move[1].activeSelf)
         {
+            TextAllNotActive();
             scrollM.ScrollFLGChange(false);
             move[0].SetActive(true);
         }
@@ -102,13 +121,9 @@ public class TutorialManager : MonoBehaviour
             move[0].SetActive(false);
             move[1].SetActive(true);
 
-            if (Input.anyKeyDown)
-            {
-                move[1].SetActive(false);
-                moveFLG.flg = false;
+            scrollM.ScrollFLGChange(true);
 
-                scrollM.ScrollFLGChange(true);
-            }
+            moveFLG.flg = false;
         }
     }
 
@@ -116,6 +131,7 @@ public class TutorialManager : MonoBehaviour
     {
         if (!air[0].activeSelf && !air[1].activeSelf && !air[2].activeSelf)
         {
+            TextAllNotActive();
             scrollM.ScrollFLGChange(false);
             air[0].SetActive(true);
         }
@@ -131,33 +147,148 @@ public class TutorialManager : MonoBehaviour
             air[1].SetActive(false);
             air[2].SetActive(true);
 
-            if (Input.anyKeyDown)
-            {
-                air[2].SetActive(false);
-                airFLG.flg = false;
+            scrollM.ScrollFLGChange(true);
 
-                scrollM.ScrollFLGChange(true);
-            }
+            airFLG.flg = false;
         }
     }
 
     void Attack()
     {
+        if (!attack[0].activeSelf && !attack[1].activeSelf)
+        {
+            TextAllNotActive();
+            scrollM.ScrollFLGChange(false);
+            move[0].SetActive(true);
+        }
 
+        if (enemy_Attack = null)
+        {
+            attack[0].SetActive(false);
+            attack[1].SetActive(true);
+
+            scrollM.ScrollFLGChange(true);
+
+            attackFLG.flg = false;
+        }
     }
 
     void EatFish()
     {
+        if (!eatFish[0].activeSelf && !eatFish[1].activeSelf)
+        {
+            TextAllNotActive();
+            scrollM.ScrollFLGChange(false);
+            eatFish[0].SetActive(true);
+        }
 
+        if (enemy_Eat = null)
+        {
+            eatFish[0].SetActive(false);
+            eatFish[1].SetActive(true);
+
+            scrollM.ScrollFLGChange(true);
+
+            eatFishFLG.flg = false;
+        }
     }
 
     void EatItem()
     {
+        if (!eatItem[0].activeSelf && !eatItem[1].activeSelf)
+        {
+            TextAllNotActive();
+            scrollM.ScrollFLGChange(false);
+            eatItem[0].SetActive(true);
+        }
 
+        if (item_Heal = null)
+        {
+            TextAllNotActive();
+            eatItem[1].SetActive(true);
+
+            item_HealFLG = true;
+        }
+
+        if (item_Score = null)
+        {
+            TextAllNotActive();
+            eatItem[2].SetActive(true);
+
+            item_ScoreFLG = true;
+        }
+
+        if (item_Bullet = null)
+        {
+            TextAllNotActive();
+            eatItem[3].SetActive(true);
+
+            item_BulletFLG = true;
+        }
+
+        if(item_HealFLG && item_ScoreFLG && item_BulletFLG)
+        {
+            scrollM.ScrollFLGChange(true);
+
+            eatItemFLG.flg = false;
+        }
     }
 
     void SpeedDown()
     {
+        if (!speedDown[0].activeSelf && !speedDown[1].activeSelf)
+        {
+            TextAllNotActive();
+            scrollM.ScrollFLGChange(false);
+            speedDown[0].SetActive(true);
 
+            inputTime = 0;
+        }
+
+        if (speedDown[0].activeSelf && Input.GetButton("Fire3"))
+        {
+            if (Input.GetButton("Horizontal") || Input.GetButton("Vertical"))
+            {
+                inputTime += Time.deltaTime;
+            }
+        }
+
+        if (inputTime >= moveTime)
+        {
+            speedDown[0].SetActive(false);
+            speedDown[1].SetActive(true);
+
+            scrollM.ScrollFLGChange(true);
+
+            speedDownFLG.flg = false;
+        }
+    }
+
+    void TextAllNotActive()
+    {
+        for (int i = 0; i < move.Length; i++)
+        {
+            move[i].SetActive(false);
+        }
+        for (int i = 0; i < air.Length; i++)
+        {
+            air[i].SetActive(false);
+        }
+        for (int i = 0; i < attack.Length; i++)
+        {
+            attack[i].SetActive(false);
+        }
+        for (int i = 0; i < eatFish.Length; i++)
+        {
+            eatFish[i].SetActive(false);
+        }
+        for (int i = 0; i < eatItem.Length; i++)
+        {
+            eatItem[i].SetActive(false);
+        }
+        for (int i = 0; i < speedDown.Length; i++)
+        {
+            speedDown[i].SetActive(false);
+        }
     }
 }
