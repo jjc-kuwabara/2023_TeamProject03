@@ -7,6 +7,8 @@ public class EnemyHitCheck : MonoBehaviour
     public bool HitFLG;
     public GameObject bullet;
 
+    public int damageSE = 0;
+
     void Start()
     {
         
@@ -27,7 +29,7 @@ public class EnemyHitCheck : MonoBehaviour
 
             HitFLG = true;
 
-            //SoundManager.Instance.PlaySE_Game(8);
+            SoundManager.Instance.PlaySE_Game(damageSE);
             //Instantiate(EffectManager.Instance.playerFX[0], transform.position, Quaternion.identity);
             //          生成物　　　　　　　　　　　　　　　生成する場所　　　　生成する角度
         }

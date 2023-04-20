@@ -6,7 +6,14 @@ public class PlayerEatController : MonoBehaviour
 {
     public bool eatFLG = false;
     public float digestionTime = 3f;
+
     public int eatSE = 4;
+    public int healSE = 0;
+    public int bullet_1SE = 0;
+    public int bullet_2SE = 0;
+    public int score_1SE = 0;
+    public int score_2SE = 0;
+    public int digestionSE = 0;
 
     public float score_1 = 10;
     public float score_2 = 20;
@@ -61,6 +68,8 @@ public class PlayerEatController : MonoBehaviour
                 GameManager.Instance.HPUpdate(-heal);
                 Destroy(other.gameObject);
 
+                SoundManager.Instance.PlaySE_Game(healSE);
+
                 controller.fireFLG = true;
             }
 
@@ -68,6 +77,8 @@ public class PlayerEatController : MonoBehaviour
             {
                 controller.AttackTypeChenge(1);
                 Destroy(other.gameObject);
+
+                SoundManager.Instance.PlaySE_Game(bullet_1SE);
 
                 controller.fireFLG = true;
             }
@@ -77,6 +88,8 @@ public class PlayerEatController : MonoBehaviour
                 controller.AttackTypeChenge(2);
                 Destroy(other.gameObject);
 
+                SoundManager.Instance.PlaySE_Game(bullet_2SE);
+
                 controller.fireFLG = true;
             }
 
@@ -85,6 +98,8 @@ public class PlayerEatController : MonoBehaviour
                 GameManager.Instance.ScoreItemGet(score_1);
                 Destroy(other.gameObject);
 
+                SoundManager.Instance.PlaySE_Game(score_1SE);
+
                 controller.fireFLG = true;
             }
 
@@ -92,6 +107,8 @@ public class PlayerEatController : MonoBehaviour
             {
                 GameManager.Instance.ScoreItemGet(score_2);
                 Destroy(other.gameObject);
+
+                SoundManager.Instance.PlaySE_Game(score_2SE);
 
                 controller.fireFLG = true;
             }
@@ -102,6 +119,8 @@ public class PlayerEatController : MonoBehaviour
     {
         eatFLG = false;
         controller.MoveSpeedChenge((float)0);
+
+        SoundManager.Instance.PlaySE_Game(digestionSE);
 
         Debug.Log("è¡âªÇµÇΩ");
     }

@@ -26,6 +26,8 @@ public class PlayerController : MonoBehaviour
     public float y_Up = 0;
     public float y_Down = 0;
 
+    public int moveSE = 0;
+
     bool x_L_FLG = false;
     bool x_R_FLG = false;
     bool y_Up_FLG = false;
@@ -131,6 +133,8 @@ public class PlayerController : MonoBehaviour
         }
 
         characon.Move(m_moveDistance * Time.deltaTime);
+
+        SoundManager.Instance.PlaySE_Game(moveSE);
     }
 
     public void FLGUpdate(int n, bool flg)

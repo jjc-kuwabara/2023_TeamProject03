@@ -24,8 +24,10 @@ public class GameManager : Singleton<GameManager>
     [SerializeField] PlayableDirector pd_gameOver;   //ゲームオーバーのデモ演出
 
     [Header("SEの番号")]
-    public int airSE = 3;
+    public int airSE = 0;
+    public int airGetSE = 3;
     public int killSE = 2;
+    public int damageSE = 0;
 
     [Header("PlayerのHP")]
     public float HPCurrent;
@@ -160,6 +162,8 @@ public class GameManager : Singleton<GameManager>
             else
             {
                 airCurrent += airHeal * Time.deltaTime;
+
+                SoundManager.Instance.PlaySE_Game(airSE);
             }
 
             AirCheck();
@@ -207,6 +211,8 @@ public class GameManager : Singleton<GameManager>
     {
         HPUpdate(HPMax / 100 * mo);
         controller.AttackTypeChenge(1);
+
+        SoundManager.Instance.PlaySE_Game(damageSE);
     }
 
     void Found()
@@ -252,7 +258,7 @@ public class GameManager : Singleton<GameManager>
 
     public void AirGet()
     {
-        SoundManager.Instance.PlaySE_Game(airSE);
+        SoundManager.Instance.PlaySE_Game(airGetSE);
 
         airCurrent += airBubble;
 
@@ -332,6 +338,11 @@ public class GameManager : Singleton<GameManager>
     public void DemoPlayBGM()
     {
         //SoundManager.Instance.PlayBGM(playBGMNo);
+    }
+
+    public void PlayBGMChange(int no)
+    {
+        //SoundManager.Instance.PlayBGM(no);
     }
 
     //スタート演出のスキップ

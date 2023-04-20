@@ -31,6 +31,9 @@ public class PauseManager : MonoBehaviour
     GameObject currentFocus;   //現在
     GameObject previousFocus;  //前フレーム
 
+
+    public int decisionSE = 0;
+
     void Start()
     {
         //初期化
@@ -216,5 +219,10 @@ public class PauseManager : MonoBehaviour
             //初期カーソル位置設定
             EventSystem.current.SetSelectedGameObject(focusPausemenu);
         }
+    }
+
+    public void Decision()
+    {
+        SoundManager.Instance.PlaySE_Sys(decisionSE);
     }
 }
