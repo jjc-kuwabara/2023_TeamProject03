@@ -19,6 +19,9 @@ public class PauseManager : MonoBehaviour
     [Header("操作説明のカーソル初期位置")]
     [SerializeField] GameObject focusInstructions;
 
+    [Header("音量設定のカーソル初期位置")]
+    [SerializeField] GameObject focusVolumeChange;
+
     [Header("ヒットストップ")]
     [SerializeField] float timeScale = 0.1f;
     [SerializeField] float slowTime = 1f;
@@ -175,7 +178,7 @@ public class PauseManager : MonoBehaviour
         GameManager.Instance.SceneMove(no);
     }
 
-    public void CanvasChange(bool change)
+    public void CanvasChange_Instructions(bool change)
     {
         CanvasInit();
 
@@ -185,6 +188,26 @@ public class PauseManager : MonoBehaviour
 
             //初期カーソル位置設定
             EventSystem.current.SetSelectedGameObject(focusInstructions);
+        }
+        else
+        {
+            canvas[1].SetActive(true);
+
+            //初期カーソル位置設定
+            EventSystem.current.SetSelectedGameObject(focusPausemenu);
+        }
+    }
+
+    public void CanvasChange_VolumeChange(bool change)
+    {
+        CanvasInit();
+
+        if (change)
+        {
+            canvas[3].SetActive(true);
+
+            //初期カーソル位置設定
+            EventSystem.current.SetSelectedGameObject(focusVolumeChange);
         }
         else
         {

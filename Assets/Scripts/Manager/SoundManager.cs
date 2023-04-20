@@ -120,6 +120,15 @@ public class SoundManager : Singleton<SoundManager>
         SE_VoiSource.clip = se_VoiClip[i];
         SE_VoiSource.Play();
     }
+    
+    //（第1引数でBGM、第2引数でSEのボリューム）
+    public void VolumeChange_Start(int vol1, int vol2)
+    {
+        mixer.SetFloat("BGVol", vol_BGM[vol1]);
+        mixer.SetFloat("SEVol", vol_SE[vol2]);
+
+        bgmVol = vol_BGM[vol1];
+    }
 
     //Silderによる音量の調整
     //（第1引数でBGM、第2引数でSEのボリューム）
@@ -127,6 +136,8 @@ public class SoundManager : Singleton<SoundManager>
     {
         mixer.SetFloat("BGVol", vol_BGM[vol1]);
         mixer.SetFloat("SEVol", vol_SE[vol2]);
+
+        Save.Audio(vol1, vol2);
 
         bgmVol = vol_BGM[vol1];
     }

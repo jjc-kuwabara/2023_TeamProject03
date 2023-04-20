@@ -15,7 +15,7 @@ namespace SaveData_Settings
             bgm = PlayerPrefs.GetInt("Vol_BG", 8);
             se = PlayerPrefs.GetInt("Vol_SE", 8);
 
-            SoundManager.Instance.VolumeChange(bgm, se);
+            SoundManager.Instance.VolumeChange_Start(bgm, se);
         }
     }
 

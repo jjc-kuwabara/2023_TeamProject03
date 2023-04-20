@@ -33,7 +33,6 @@ public class EnemyController : MonoBehaviour
         ダメージを受ける,
         弱点だけダメージを受ける,
         弱点に当てるとダメージ上昇,
-        倒した数を増やさない,
     }
     [SerializeField] private DamageType damageType;
 
@@ -418,13 +417,6 @@ public class EnemyController : MonoBehaviour
                 }
                 break;
 
-            case DamageType.倒した数を増やさない:
-                if(other.gameObject.tag == "PlayerAttack")
-                {
-                    DamageOnly(damage);
-                }
-                break;
-
             default:
                 break;
         }
@@ -489,36 +481,6 @@ public class EnemyController : MonoBehaviour
 
                 default:
                     Instantiate(dropItem[0], this.transform.position, this.transform.rotation);
-                    break;
-            }
-
-            Destroy(gameObject);
-        }
-    }
-
-    void DamageOnly(float damage)
-    {
-        switch (actionType)
-        {
-            case ActionType.ダメージを受けたら小さくなる:
-                ScaleDown();
-                break;
-
-            default:
-                break;
-        }
-
-        lifePoint -= damage;
-
-        if (lifePoint <= 0)
-        {
-            switch (actionType)
-            {
-                case ActionType.死んだら爆発する:
-                    attack.SpreadAttack();
-                    break;
-
-                default:
                     break;
             }
 
