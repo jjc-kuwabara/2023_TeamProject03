@@ -17,6 +17,7 @@ TagManager:
   - HealItem
   - ScoreItem_1
   - ScoreItem_2
+  - Scroll
   layers:
   - Default
   - TransparentFX

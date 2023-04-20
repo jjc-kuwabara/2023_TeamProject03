@@ -346,12 +346,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 1
   actionType: 2
+  dropType: 0
   pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: -10, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 1
   damage: 1
+  dropItem: []
   score: 10
   movePointer: []
   weakPoint: {fileID: 0}
@@ -525,12 +527,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 1
   actionType: 0
+  dropType: 0
   pos_Go: {x: -30, y: 0, z: 0}
   pos_Iteration: {x: 0, y: -30, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 1
   damage: 1
+  dropItem: []
   score: 10
   movePointer: []
   weakPoint: {fileID: 0}
@@ -887,12 +891,14 @@ MonoBehaviour:
   attackType: 1
   awakeType: 1
   actionType: 0
+  dropType: 0
   pos_Go: {x: -5, y: 0, z: 0}
   pos_Iteration: {x: 0, y: -10, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 3
   damage: 1
+  dropItem: []
   score: 1000
   movePointer: []
   weakPoint: {fileID: 0}
@@ -1098,12 +1104,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 1
   actionType: 0
+  dropType: 0
   pos_Go: {x: -30, y: 0, z: 0}
   pos_Iteration: {x: 0, y: -30, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 1
   damage: 1
+  dropItem: []
   score: 10
   movePointer: []
   weakPoint: {fileID: 0}
@@ -2081,12 +2089,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 1
   actionType: 0
+  dropType: 0
   pos_Go: {x: -30, y: 0, z: 0}
   pos_Iteration: {x: 0, y: -30, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 1
   damage: 1
+  dropItem: []
   score: 10
   movePointer: []
   weakPoint: {fileID: 0}
@@ -2474,12 +2484,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 1
   actionType: 0
+  dropType: 0
   pos_Go: {x: -30, y: 0, z: 0}
   pos_Iteration: {x: 0, y: -30, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 1
   damage: 1
+  dropItem: []
   score: 10
   movePointer: []
   weakPoint: {fileID: 0}
@@ -2867,12 +2879,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 1
   actionType: 0
+  dropType: 0
   pos_Go: {x: -30, y: 0, z: 0}
   pos_Iteration: {x: 0, y: -10, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 2
   damage: 1
+  dropItem: []
   score: 10
   movePointer: []
   weakPoint: {fileID: 0}
@@ -3050,12 +3064,14 @@ MonoBehaviour:
   attackType: 2
   awakeType: 1
   actionType: 2
+  dropType: 0
   pos_Go: {x: 0, y: 0, z: 0}
   pos_Iteration: {x: 0, y: -8, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 4
   lifePoint: 100
   damage: 1
+  dropItem: []
   score: 1000
   movePointer: []
   weakPoint: {fileID: 1360594835}
@@ -4209,7 +4225,7 @@ GameObject:
   - component: {fileID: 284506271}
   - component: {fileID: 284506270}
   m_Layer: 0
-  m_Name: ItemFish (2)
+  m_Name: ScoreItem
   m_TagString: ScoreItem_1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4265,12 +4281,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
+  dropType: 0
   pos_Go: {x: 0, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 0
   damage: 1
+  dropItem: []
   score: 1000
   movePointer: []
   weakPoint: {fileID: 0}
@@ -4509,12 +4527,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
+  dropType: 0
   pos_Go: {x: 0, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 0
   damage: 1
+  dropItem: []
   score: 1000
   movePointer: []
   weakPoint: {fileID: 0}
@@ -4775,12 +4795,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 1
   actionType: 0
+  dropType: 0
   pos_Go: {x: -30, y: 0, z: 0}
   pos_Iteration: {x: 0, y: -30, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 1
   damage: 1
+  dropItem: []
   score: 10
   movePointer: []
   weakPoint: {fileID: 0}
@@ -4923,12 +4945,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 1
   actionType: 0
+  dropType: 0
   pos_Go: {x: -30, y: 0, z: 0}
   pos_Iteration: {x: 0, y: -30, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 1
   damage: 1
+  dropItem: []
   score: 10
   movePointer: []
   weakPoint: {fileID: 0}
@@ -5221,12 +5245,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 1
   actionType: 0
+  dropType: 0
   pos_Go: {x: -30, y: 0, z: 0}
   pos_Iteration: {x: 0, y: -30, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 1
   damage: 1
+  dropItem: []
   score: 10
   movePointer: []
   weakPoint: {fileID: 0}
@@ -5483,12 +5509,14 @@ MonoBehaviour:
   attackType: 1
   awakeType: 1
   actionType: 0
+  dropType: 0
   pos_Go: {x: -5, y: 0, z: 0}
   pos_Iteration: {x: 0, y: -10, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 3
   damage: 1
+  dropItem: []
   score: 1000
   movePointer: []
   weakPoint: {fileID: 0}
@@ -6016,12 +6044,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
+  dropType: 0
   pos_Go: {x: 0, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 0
   damage: 1
+  dropItem: []
   score: 1000
   movePointer: []
   weakPoint: {fileID: 0}
@@ -6268,12 +6298,14 @@ MonoBehaviour:
   attackType: 1
   awakeType: 1
   actionType: 0
+  dropType: 0
   pos_Go: {x: 0, y: 0, z: 0}
   pos_Iteration: {x: 0, y: -10, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 2
   lifePoint: 2
   damage: 1
+  dropItem: []
   score: 10
   movePointer:
   - {fileID: 0}
@@ -6938,12 +6970,14 @@ MonoBehaviour:
   attackType: 1
   awakeType: 1
   actionType: 0
+  dropType: 0
   pos_Go: {x: 0, y: 5, z: 0}
   pos_Iteration: {x: 0, y: -10, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 1
   damage: 1
+  dropItem: []
   score: 1000
   movePointer: []
   weakPoint: {fileID: 0}
@@ -7718,12 +7752,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 1
   actionType: 0
+  dropType: 0
   pos_Go: {x: -30, y: 0, z: 0}
   pos_Iteration: {x: 0, y: -30, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 1
   damage: 1
+  dropItem: []
   score: 10
   movePointer: []
   weakPoint: {fileID: 0}
@@ -8140,12 +8176,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
+  dropType: 0
   pos_Go: {x: 20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: -10, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 3
   damage: 1
+  dropItem: []
   score: 1000
   movePointer: []
   weakPoint: {fileID: 0}
@@ -8438,12 +8476,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 1
   actionType: 0
+  dropType: 0
   pos_Go: {x: -30, y: 0, z: 0}
   pos_Iteration: {x: 0, y: -30, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 1
   damage: 1
+  dropItem: []
   score: 10
   movePointer: []
   weakPoint: {fileID: 0}
@@ -9274,12 +9314,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 1
   actionType: 0
+  dropType: 0
   pos_Go: {x: -30, y: 0, z: 0}
   pos_Iteration: {x: 0, y: -30, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 1
   damage: 1
+  dropItem: []
   score: 10
   movePointer: []
   weakPoint: {fileID: 0}
@@ -10171,12 +10213,17 @@ MonoBehaviour:
   attackType: 0
   awakeType: 1
   actionType: 0
+  dropType: 4
   pos_Go: {x: -30, y: 0, z: 0}
   pos_Iteration: {x: 0, y: -10, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 2
   damage: 1
+  dropItem:
+  - {fileID: 4200169032589301720, guid: ef13cfb18f2389e4b96330c60716a509, type: 3}
+  - {fileID: 5681017837689237130, guid: c6df27586c7fff1448f6728212657906, type: 3}
+  - {fileID: 9117250845610569366, guid: 04aec195eea45ff42be812516d889708, type: 3}
   score: 10
   movePointer: []
   weakPoint: {fileID: 0}
@@ -10318,12 +10365,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 1
   actionType: 0
+  dropType: 0
   pos_Go: {x: 0, y: -3, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 5
   lifePoint: 0
   damage: 1
+  dropItem: []
   score: 1000
   movePointer: []
   weakPoint: {fileID: 0}
@@ -12150,12 +12199,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
+  dropType: 0
   pos_Go: {x: 0, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 0
   damage: 1
+  dropItem: []
   score: 1000
   movePointer: []
   weakPoint: {fileID: 0}
@@ -12634,12 +12685,15 @@ MonoBehaviour:
   attackType: 0
   awakeType: 1
   actionType: 0
+  dropType: 3
   pos_Go: {x: -30, y: 0, z: 0}
   pos_Iteration: {x: 0, y: -10, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 2
   damage: 1
+  dropItem:
+  - {fileID: 5681017837689237130, guid: c6df27586c7fff1448f6728212657906, type: 3}
   score: 10
   movePointer: []
   weakPoint: {fileID: 0}
@@ -12814,12 +12868,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 1
   actionType: 0
+  dropType: 0
   pos_Go: {x: -30, y: 0, z: 0}
   pos_Iteration: {x: 0, y: -30, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 1
   damage: 1
+  dropItem: []
   score: 10
   movePointer: []
   weakPoint: {fileID: 0}
@@ -14185,12 +14241,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 1
   actionType: 0
+  dropType: 0
   pos_Go: {x: -30, y: 0, z: 0}
   pos_Iteration: {x: 0, y: -10, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 2
   damage: 1
+  dropItem: []
   score: 10
   movePointer: []
   weakPoint: {fileID: 0}
@@ -15649,12 +15707,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 1
   actionType: 2
+  dropType: 0
   pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: -10, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 1
   damage: 1
+  dropItem: []
   score: 10
   movePointer: []
   weakPoint: {fileID: 0}
@@ -16187,12 +16247,14 @@ MonoBehaviour:
   attackType: 1
   awakeType: 1
   actionType: 0
+  dropType: 0
   pos_Go: {x: 0, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 10, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 2
   lifePoint: 2
   damage: 1
+  dropItem: []
   score: 10
   movePointer:
   - {fileID: 0}
@@ -16631,12 +16693,14 @@ MonoBehaviour:
   attackType: 1
   awakeType: 1
   actionType: 0
+  dropType: 0
   pos_Go: {x: 0, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 10, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 2
   lifePoint: 2
   damage: 1
+  dropItem: []
   score: 10
   movePointer:
   - {fileID: 0}
@@ -16813,12 +16877,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 1
   actionType: 0
+  dropType: 0
   pos_Go: {x: -30, y: 0, z: 0}
   pos_Iteration: {x: 0, y: -30, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 1
   damage: 1
+  dropItem: []
   score: 10
   movePointer: []
   weakPoint: {fileID: 0}
@@ -18479,12 +18545,14 @@ MonoBehaviour:
   attackType: 1
   awakeType: 1
   actionType: 0
+  dropType: 0
   pos_Go: {x: -5, y: 0, z: 0}
   pos_Iteration: {x: 0, y: -10, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 3
   damage: 1
+  dropItem: []
   score: 1000
   movePointer: []
   weakPoint: {fileID: 0}
@@ -18893,12 +18961,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
+  dropType: 0
   pos_Go: {x: 0, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 12, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 3
   lifePoint: 0
   damage: 1
+  dropItem: []
   score: 1000
   movePointer: []
   weakPoint: {fileID: 0}
@@ -20721,12 +20791,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 1
   actionType: 0
+  dropType: 0
   pos_Go: {x: -30, y: 0, z: 0}
   pos_Iteration: {x: 0, y: -30, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 1
   damage: 1
+  dropItem: []
   score: 10
   movePointer: []
   weakPoint: {fileID: 0}
@@ -21002,12 +21074,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
+  dropType: 0
   pos_Go: {x: 0, y: 0, z: 0}
   pos_Iteration: {x: 0, y: -12, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 3
   lifePoint: 0
   damage: 1
+  dropItem: []
   score: 1000
   movePointer: []
   weakPoint: {fileID: 0}
@@ -21150,12 +21224,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 1
   actionType: 0
+  dropType: 0
   pos_Go: {x: -30, y: 0, z: 0}
   pos_Iteration: {x: 0, y: -30, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 1
   damage: 1
+  dropItem: []
   score: 10
   movePointer: []
   weakPoint: {fileID: 0}
@@ -21504,12 +21580,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
+  dropType: 0
   pos_Go: {x: 0, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 0
   damage: 1
+  dropItem: []
   score: 1000
   movePointer: []
   weakPoint: {fileID: 0}
@@ -21684,12 +21762,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 1
   actionType: 0
+  dropType: 0
   pos_Go: {x: -30, y: 0, z: 0}
   pos_Iteration: {x: 0, y: -30, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 1
   damage: 1
+  dropItem: []
   score: 10
   movePointer: []
   weakPoint: {fileID: 0}
@@ -22129,12 +22209,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 1
   actionType: 0
+  dropType: 0
   pos_Go: {x: -30, y: 0, z: 0}
   pos_Iteration: {x: 0, y: -30, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 1
   damage: 1
+  dropItem: []
   score: 10
   movePointer: []
   weakPoint: {fileID: 0}
@@ -22452,12 +22534,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
+  dropType: 0
   pos_Go: {x: 0, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 0
   damage: 1
+  dropItem: []
   score: 1000
   movePointer: []
   weakPoint: {fileID: 0}
@@ -23220,6 +23304,7 @@ MonoBehaviour:
   progressGauge: {fileID: 721716447}
   scoreText: {fileID: 1108208964}
   foundTime: 5
+  foundTimeCurrent: 0
   canvasMainGame: {fileID: 2109593933}
   canvasStartDemo: {fileID: 569029650}
   startDemoUsed:
@@ -24497,6 +24582,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
+        - m_Target: {fileID: 1802116853}
+          m_TargetAssemblyTypeName: ScrollManager, Assembly-CSharp
+          m_MethodName: ScrollFLGChange
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
 --- !u!1 &1469214523
 GameObject:
   m_ObjectHideFlags: 0
@@ -24960,12 +25057,14 @@ MonoBehaviour:
   attackType: 1
   awakeType: 1
   actionType: 0
+  dropType: 0
   pos_Go: {x: 0, y: 0, z: 0}
   pos_Iteration: {x: 0, y: -10, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 2
   lifePoint: 2
   damage: 1
+  dropItem: []
   score: 10
   movePointer:
   - {fileID: 0}
@@ -25511,12 +25610,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
+  dropType: 0
   pos_Go: {x: 0, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 0
   damage: 1
+  dropItem: []
   score: 1000
   movePointer: []
   weakPoint: {fileID: 0}
@@ -26981,12 +27082,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 1
   actionType: 0
+  dropType: 0
   pos_Go: {x: -30, y: 0, z: 0}
   pos_Iteration: {x: 0, y: -10, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 2
   damage: 1
+  dropItem: []
   score: 10
   movePointer: []
   weakPoint: {fileID: 0}
@@ -27418,12 +27521,14 @@ MonoBehaviour:
   attackType: 1
   awakeType: 1
   actionType: 0
+  dropType: 0
   pos_Go: {x: 0, y: -5, z: 0}
   pos_Iteration: {x: 0, y: -10, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 1
   damage: 1
+  dropItem: []
   score: 1000
   movePointer: []
   weakPoint: {fileID: 0}
@@ -27584,12 +27689,14 @@ MonoBehaviour:
   attackType: 1
   awakeType: 1
   actionType: 0
+  dropType: 0
   pos_Go: {x: 0, y: 0, z: 0}
   pos_Iteration: {x: 0, y: -10, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 2
   lifePoint: 2
   damage: 1
+  dropItem: []
   score: 10
   movePointer:
   - {fileID: 0}
@@ -27881,12 +27988,14 @@ MonoBehaviour:
   attackType: 1
   awakeType: 1
   actionType: 0
+  dropType: 0
   pos_Go: {x: 0, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 10, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 2
   lifePoint: 2
   damage: 1
+  dropItem: []
   score: 10
   movePointer:
   - {fileID: 0}
@@ -29154,12 +29263,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 1
   actionType: 2
+  dropType: 0
   pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: -10, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 1
   damage: 1
+  dropItem: []
   score: 10
   movePointer: []
   weakPoint: {fileID: 0}
@@ -29339,12 +29450,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 1
   actionType: 0
+  dropType: 0
   pos_Go: {x: -30, y: 0, z: 0}
   pos_Iteration: {x: 0, y: -30, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 1
   damage: 1
+  dropItem: []
   score: 10
   movePointer: []
   weakPoint: {fileID: 0}
@@ -29700,12 +29813,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 1
   actionType: 0
+  dropType: 0
   pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: -10, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 10
   damage: 1
+  dropItem: []
   score: 1000
   movePointer: []
   weakPoint: {fileID: 1823199506}
@@ -29970,12 +30085,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
+  dropType: 0
   pos_Go: {x: 0, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 0
   damage: 1
+  dropItem: []
   score: 1000
   movePointer: []
   weakPoint: {fileID: 0}
@@ -30152,7 +30269,7 @@ GameObject:
   - component: {fileID: 1802116853}
   m_Layer: 0
   m_Name: "\u25CFScrollFolder"
-  m_TagString: Untagged
+  m_TagString: Scroll
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31000,12 +31117,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 1
   actionType: 0
+  dropType: 0
   pos_Go: {x: -30, y: 0, z: 0}
   pos_Iteration: {x: 0, y: -30, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 1
   damage: 1
+  dropItem: []
   score: 10
   movePointer: []
   weakPoint: {fileID: 0}
@@ -31355,12 +31474,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 1
   actionType: 0
+  dropType: 0
   pos_Go: {x: -30, y: 0, z: 0}
   pos_Iteration: {x: 0, y: -30, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 1
   damage: 1
+  dropItem: []
   score: 10
   movePointer: []
   weakPoint: {fileID: 0}
@@ -31626,12 +31747,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
+  dropType: 0
   pos_Go: {x: 0, y: 0, z: 0}
   pos_Iteration: {x: 0, y: -12, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 3
   lifePoint: 0
   damage: 1
+  dropItem: []
   score: 1000
   movePointer: []
   weakPoint: {fileID: 0}
@@ -32636,12 +32759,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 1
   actionType: 0
+  dropType: 0
   pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: -10, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 10
   damage: 1
+  dropItem: []
   score: 1000
   movePointer: []
   weakPoint: {fileID: 1469214523}
@@ -34854,12 +34979,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
+  dropType: 0
   pos_Go: {x: 0, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 0
   damage: 1
+  dropItem: []
   score: 1000
   movePointer: []
   weakPoint: {fileID: 0}
@@ -35056,12 +35183,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 0
   actionType: 0
+  dropType: 0
   pos_Go: {x: 0, y: 0, z: 0}
   pos_Iteration: {x: 0, y: 0, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0
   lifePoint: 0
   damage: 1
+  dropItem: []
   score: 10
   movePointer: []
   weakPoint: {fileID: 0}
@@ -35412,12 +35541,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 1
   actionType: 0
+  dropType: 0
   pos_Go: {x: -30, y: 0, z: 0}
   pos_Iteration: {x: 0, y: -30, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 1
   damage: 1
+  dropItem: []
   score: 10
   movePointer: []
   weakPoint: {fileID: 0}
@@ -35592,12 +35723,14 @@ MonoBehaviour:
   attackType: 0
   awakeType: 1
   actionType: 0
+  dropType: 0
   pos_Go: {x: -30, y: 0, z: 0}
   pos_Iteration: {x: 0, y: -10, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 2
   damage: 1
+  dropItem: []
   score: 10
   movePointer: []
   weakPoint: {fileID: 0}
