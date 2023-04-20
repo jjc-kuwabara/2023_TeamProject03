@@ -20,17 +20,21 @@ public class VolumeManager : MonoBehaviour
         seVolCurrent = seSlider.value;
     }
 
-    public void BGMBolumeChange()
+    public void BGMVolumeChange()
     {
         bgmVolCurrent = bgmSlider.value;
 
         SoundManager.Instance.VolumeChange((int)bgmVolCurrent, (int)seVolCurrent);
+
+        //SoundManager.Instance.PlaySE_Game();
     }
 
-    public void SEBolumeChange()
+    public void SEVolumeChange()
     {
         seVolCurrent = seSlider.value;
 
         SoundManager.Instance.VolumeChange((int)bgmVolCurrent, (int)seVolCurrent);
+
+        //SoundManager.Instance.PlaySE_Game();
     }
 }

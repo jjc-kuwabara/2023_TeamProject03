@@ -23,6 +23,9 @@ public class MainMenuManager : MonoBehaviour
 
     public float sceneMoveTime = 0;
 
+    public int decisionSE = 0;
+    public int scoreResetSE = 0;
+
     void Start()
     {
         //èâä˙âª
@@ -102,6 +105,8 @@ public class MainMenuManager : MonoBehaviour
 
         scoreCurrent_Stage1 = PlayerPrefs.GetInt("SCORE_1", 0);
         scoreText_Stage1.text = scoreCurrent_Stage1.ToString("0000");
+
+        SoundManager.Instance.PlaySE_Sys(scoreResetSE);
     }
 
     public void ScoreReset_2()
@@ -111,16 +116,34 @@ public class MainMenuManager : MonoBehaviour
 
         scoreCurrent_Stage2 = PlayerPrefs.GetInt("SCORE_2", 0);
         scoreText_Stage2.text = scoreCurrent_Stage1.ToString("0000");
+
+        SoundManager.Instance.PlaySE_Sys(scoreResetSE);
     }
 
     public void ScoreReset_All()
     {
-        ScoreReset_1();
-        ScoreReset_2();
+        PlayerPrefs.DeleteKey("SCORE_1");
+        PlayerPrefs.Save();
+
+        scoreCurrent_Stage1 = PlayerPrefs.GetInt("SCORE_1", 0);
+        scoreText_Stage1.text = scoreCurrent_Stage1.ToString("0000");
+
+        PlayerPrefs.DeleteKey("SCORE_2");
+        PlayerPrefs.Save();
+
+        scoreCurrent_Stage2 = PlayerPrefs.GetInt("SCORE_2", 0);
+        scoreText_Stage2.text = scoreCurrent_Stage1.ToString("0000");
+
+        SoundManager.Instance.PlaySE_Sys(scoreResetSE);
     }
 
     public void GameExit()
     {
         Application.Quit();
+    }
+
+    public void Decision()
+    {
+        SoundManager.Instance.PlaySE_Sys(decisionSE);
     }
 }

@@ -12,6 +12,8 @@ public class TitleManager : MonoBehaviour
 
     public float sceneMoveTime = 0;
 
+    public int sceneMoveSE = 0;
+
     void Start()
     {
         SoundManager.Instance.PlayBGM(0);
@@ -41,6 +43,8 @@ public class TitleManager : MonoBehaviour
 
     public void SceneMove(int sceneNo)
     {
+        SoundManager.Instance.PlaySE_Sys(sceneMoveSE);
+
         FadeManager.Instance.LoadSceneIndex(sceneNo, sceneMoveTime);
     }
 }

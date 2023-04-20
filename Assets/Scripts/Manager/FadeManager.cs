@@ -163,6 +163,7 @@ public class FadeManager : Singleton<FadeManager>
 
 	private IEnumerator FadeIn(float interval)
 	{
+        fadeAlpha = 1f;
 		//音量もフェードイン
 		StartCoroutine(SoundManager.Instance.FadeIn(interval * 0.9f));
 
