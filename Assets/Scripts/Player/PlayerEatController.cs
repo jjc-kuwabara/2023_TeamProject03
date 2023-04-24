@@ -83,7 +83,7 @@ public class PlayerEatController : MonoBehaviour
 
                 controller.fireFLG = true;
 
-                Instantiate(EffectManager.Instance.playerFX[healFX], transform.position, Quaternion.identity);
+                Instantiate(EffectManager.Instance.playerFX[healFX], player.transform.position, Quaternion.identity);
                 //          生成物　　　　　　　　　　　　　　　生成する場所　　　　生成する角度
             }
 
@@ -106,7 +106,7 @@ public class PlayerEatController : MonoBehaviour
 
                 controller.fireFLG = true;
 
-                Instantiate(EffectManager.Instance.playerFX[bulletFX], transform.position, Quaternion.identity);
+                Instantiate(EffectManager.Instance.playerFX[bulletFX], player.transform.position, Quaternion.identity);
                 //          生成物　　　　　　　　　　　　　　　生成する場所　　　　生成する角度
             }
 
@@ -119,7 +119,7 @@ public class PlayerEatController : MonoBehaviour
 
                 controller.fireFLG = true;
 
-                Instantiate(EffectManager.Instance.playerFX[scoreFX], transform.position, Quaternion.identity);
+                Instantiate(EffectManager.Instance.playerFX[scoreFX], player.transform.position, Quaternion.identity);
                 //          生成物　　　　　　　　　　　　　　　生成する場所　　　　生成する角度
             }
 
@@ -132,7 +132,7 @@ public class PlayerEatController : MonoBehaviour
 
                 controller.fireFLG = true;
 
-                Instantiate(EffectManager.Instance.playerFX[scoreFX], transform.position, Quaternion.identity);
+                Instantiate(EffectManager.Instance.playerFX[scoreFX], player.transform.position, Quaternion.identity);
                 //          生成物　　　　　　　　　　　　　　　生成する場所　　　　生成する角度
             }
         }
