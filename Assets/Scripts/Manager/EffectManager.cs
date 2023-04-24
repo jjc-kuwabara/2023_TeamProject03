@@ -13,7 +13,7 @@ public class EffectManager : Singleton<EffectManager>
     public GameObject[] playerFX;
 
     [Header("敵やステージに関するエフェクト")]
-    public GameObject[] StageFX;
+    public GameObject[] stageFX;
 
     [Header("進行等に関わるエフェクト")]
     public GameObject[] otherFX;

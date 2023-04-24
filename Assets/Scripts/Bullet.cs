@@ -7,9 +7,9 @@ public class Bullet : MonoBehaviour
     public float bulletSpeed = 10;
     public float destoryTime = 3;
 
-    public GameObject effectExp;
-    public GameObject effectAura;
-
+    [Header("エフェクトの番号")]
+    public int trajectoryFX = 0;
+    public int hitFX = 0;
 
     Rigidbody rig;
 
@@ -23,17 +23,14 @@ public class Bullet : MonoBehaviour
 
     private void Update()
     {
-        if(effectAura != null)
-        {
-            Instantiate(effectAura, transform.position, transform.rotation);
-        }
+        Instantiate(EffectManager.Instance.playerFX[trajectoryFX], transform.position, Quaternion.identity);
     }
 
     private void OnCollisionEnter(Collision collision)
     {
         if(collision.transform.tag != "Eat" && collision.transform.tag != "Player" && collision.transform.tag != "PlayerAttack" && collision.transform.tag != "Item")
         {
-            //Instantiate(effectExp, transform.position, transform.rotation);
+            Instantiate(EffectManager.Instance.playerFX[hitFX], transform.position, Quaternion.identity);
 
             Destroy(this.gameObject);
         }

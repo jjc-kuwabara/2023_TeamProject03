@@ -71,7 +71,6 @@ public class GameManager : Singleton<GameManager>
     [SerializeField] GameObject pd_clearParent;
     [SerializeField] GameObject pd_overParent;
     [SerializeField] GameObject mainCamera;
-    int playBGMNo;
     [SerializeField] GameObject focusClear;
     [SerializeField] GameObject focusOver;
 
@@ -104,8 +103,6 @@ public class GameManager : Singleton<GameManager>
     void Start()
     {
         pd_gameStart.Play();
-
-        playBGMNo = SceneManager.GetActiveScene().buildIndex;
 
         player = GameObject.FindGameObjectWithTag("Player");
         //PlayerControllerのコンポーネント取得
@@ -337,7 +334,7 @@ public class GameManager : Singleton<GameManager>
 
     public void DemoPlayBGM()
     {
-        //SoundManager.Instance.PlayBGM(playBGMNo);
+        SoundManager.Instance.PlayBGM(0);
     }
 
     public void PlayBGMChange(int no)
@@ -365,7 +362,7 @@ public class GameManager : Singleton<GameManager>
             }
         }
 
-        //SoundManager.Instance.PlayBGM(playBGMNo);
+        SoundManager.Instance.PlayBGM(0);
 
         mainGameFLG = true;
         scrollM.ScrollFLGChange(true);

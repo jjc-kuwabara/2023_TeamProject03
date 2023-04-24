@@ -42,6 +42,7 @@ public class PlayerController : MonoBehaviour
     float attackTimeCurrent;
     public bool fireFLG = false;
     public int attackSE = 0;
+    public int attackFX = 0;
 
     bool inputFLG = false;
 
@@ -186,6 +187,9 @@ public class PlayerController : MonoBehaviour
         {
             Instantiate(bullet, firePos[i].transform.position, firePos[i].transform.rotation);
             //生成するオブジェクト、生成するときの場所、生成した時の角度
+
+            Instantiate(EffectManager.Instance.playerFX[attackFX], transform.position, Quaternion.identity);
+            //          生成物　　　　　　　　　　　　　　　生成する場所　　　　生成する角度
         }
     }
 
