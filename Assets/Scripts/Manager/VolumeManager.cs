@@ -37,4 +37,13 @@ public class VolumeManager : MonoBehaviour
 
         //SoundManager.Instance.PlaySE_Game();
     }
+
+    public void VoiceVolumeChange()
+    {
+        seVolCurrent = seSlider.value;
+
+        SoundManager.Instance.VolumeChange((int)bgmVolCurrent, (int)seVolCurrent);
+
+        //SoundManager.Instance.PlaySE_Game();
+    }
 }
