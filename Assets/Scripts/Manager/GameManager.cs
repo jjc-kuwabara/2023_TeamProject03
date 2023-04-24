@@ -22,6 +22,7 @@ public class GameManager : Singleton<GameManager>
     [SerializeField] PlayableDirector pd_gameStart;  //ゲームスタートのデモ演出
     [SerializeField] PlayableDirector pd_gameClear;  //ゲームクリアのデモ演出
     [SerializeField] PlayableDirector pd_gameOver;   //ゲームオーバーのデモ演出
+    [SerializeField] PlayableDirector pd_gameOver_Found;   //ゲームオーバーのデモ演出
 
     [Header("SEの番号")]
     public int airSE = 0;
@@ -67,12 +68,15 @@ public class GameManager : Singleton<GameManager>
     [SerializeField] GameObject[] startDemoUsed;
     [SerializeField] GameObject canvasClearDemo;
     [SerializeField] GameObject canvasOverDemo;
+    [SerializeField] GameObject canvasOverFoundDemo;
     [SerializeField] GameObject pd_startParent;
     [SerializeField] GameObject pd_clearParent;
     [SerializeField] GameObject pd_overParent;
+    [SerializeField] GameObject pd_overParent_Found;
     [SerializeField] GameObject mainCamera;
     [SerializeField] GameObject focusClear;
     [SerializeField] GameObject focusOver;
+    [SerializeField] GameObject focusOver_Found;
 
     //フォーカスが外れないようにする処理用
     GameObject currentFocus;   //現在
@@ -185,6 +189,11 @@ public class GameManager : Singleton<GameManager>
         if (pd_gameOver.state == PlayState.Playing && Input.GetButtonDown("Jump") && !mainGameFLG)
         {
             DemoOverSkip();
+        }
+
+        if (pd_gameOver_Found.state == PlayState.Playing && Input.GetButtonDown("Jump") && !mainGameFLG)
+        {
+            DemoOverFoundSkip();
         }*/
     }
 
@@ -230,7 +239,7 @@ public class GameManager : Singleton<GameManager>
             foundTimeCurrent += Time.deltaTime;
             if(foundTimeCurrent >= foundTime)
             {
-                GameOver();
+                GameOver_Found();
             }
         }
         else
@@ -340,6 +349,8 @@ public class GameManager : Singleton<GameManager>
         }
         PlayerPrefs.Save();
 
+        //pd_gameClear.Play();
+
         Debug.Log("ゲームクリア");
         Debug.Log(result);
     }
@@ -349,6 +360,20 @@ public class GameManager : Singleton<GameManager>
         mainGameFLG = false;
         scrollM.ScrollFLGChange(false);
         gameOver = true;
+
+        //pd_gameOver.Play();
+
+        Debug.Log("ゲームオーバー");
+    }
+
+    public void GameOver_Found()
+    {
+        mainGameFLG = false;
+        scrollM.ScrollFLGChange(false);
+        gameOver = true;
+
+        //pd_gameOver_Found.Play();
+
         Debug.Log("ゲームオーバー");
     }
 
@@ -408,6 +433,17 @@ public class GameManager : Singleton<GameManager>
         canvasMainGame.SetActive(false);    //メインUI
         canvasOverDemo.SetActive(true);  //デモ中UI
         pd_overParent.SetActive(true);  //デモ中カメラ
+    }
+
+    //ゲームオーバー演出のスキップ
+    void DemoOverFoundSkip()
+    {
+        //演出の停止
+        pd_gameOver_Found.Stop();
+
+        canvasMainGame.SetActive(false);    //メインUI
+        canvasOverFoundDemo.SetActive(true);  //デモ中UI
+        pd_overParent_Found.SetActive(true);  //デモ中カメラ
     }
 
     //シーン遷移
