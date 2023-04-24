@@ -116,10 +116,12 @@ public class GameManager : Singleton<GameManager>
         //HPの初期設定
         HPCurrent = HPMax;
         HPGauge.fillAmount = 1;
+        HPGauge.GetComponent<Image>().color = Color.green;
 
         //酸素の初期設定
         airCurrent = airMax;
         airGauge.fillAmount = 1;
+        airGauge.GetComponent<Image>().color = Color.cyan;
 
         //進行度ゲージの初期設定
         distanceMax = goal.transform.position.x - player.transform.position.x;
@@ -188,6 +190,15 @@ public class GameManager : Singleton<GameManager>
 
     void AirCheck()
     {
+        if(airCurrent <= airMax / 5)
+        {
+            airGauge.GetComponent<Image>().color = Color.red;
+        }
+        else
+        {
+            airGauge.GetComponent<Image>().color = Color.cyan;
+        }
+
         if(airCurrent <= 0)
         {
             if (airDamageTimeCullent >= airDamageTime)
@@ -240,6 +251,15 @@ public class GameManager : Singleton<GameManager>
         HPValue = HPCurrent / HPMax;
         //ゲージの更新
         HPGauge.fillAmount = HPValue;
+
+        if (HPCurrent <= HPMax / 5)
+        {
+            HPGauge.GetComponent<Image>().color = Color.red;
+        }
+        else
+        {
+            HPGauge.GetComponent<Image>().color = Color.green;
+        }
     }
 
     //外部からメインゲームのフラグを操作
