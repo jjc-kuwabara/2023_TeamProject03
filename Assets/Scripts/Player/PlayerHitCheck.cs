@@ -8,8 +8,12 @@ public class PlayerHitCheck : MonoBehaviour
     PlayerController controller;   //PlayerControllerのコンポーネント取得用
     EnemyController enemy;
 
+    [Header("SEの番号")]
     public int airSE = 0;
     public int damageSE = 1;
+
+    [Header("エフェクトの番号")]
+    public int damageFX = 0;
 
     void Start()
     {
@@ -48,7 +52,7 @@ public class PlayerHitCheck : MonoBehaviour
             controller.AttackTypeChenge(1);
 
             SoundManager.Instance.PlaySE_Game(damageSE);
-            //Instantiate(EffectManager.Instance.playerFX[0], transform.position, Quaternion.identity);
+            Instantiate(EffectManager.Instance.playerFX[damageFX], transform.position, Quaternion.identity);
             //          生成物　　　　　　　　　　　　　　　生成する場所　　　　生成する角度
         }
     }

@@ -125,6 +125,12 @@ public class EnemyController : MonoBehaviour
     [Header("敵から受けるダメージ量")]
     public int enemyATK = 1;
 
+    [Header("SEの番号")]
+    public int damageSE = 0;
+
+    [Header("エフェクトの番号")]
+    public int deathFX = 0;
+
     PlayerController controller;
 
     void Start()
@@ -483,6 +489,10 @@ public class EnemyController : MonoBehaviour
                     Instantiate(dropItem[0], this.transform.position, this.transform.rotation);
                     break;
             }
+
+            SoundManager.Instance.PlaySE_Game(damageSE);
+            Instantiate(EffectManager.Instance.stageFX[deathFX], transform.position, Quaternion.identity);
+            //          生成物　　　　　　　　　　　　　　　生成する場所　　　　生成する角度
 
             Destroy(gameObject);
         }

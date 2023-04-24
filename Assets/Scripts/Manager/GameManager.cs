@@ -22,6 +22,7 @@ public class GameManager : Singleton<GameManager>
     [SerializeField] PlayableDirector pd_gameStart;  //ゲームスタートのデモ演出
     [SerializeField] PlayableDirector pd_gameClear;  //ゲームクリアのデモ演出
     [SerializeField] PlayableDirector pd_gameOver;   //ゲームオーバーのデモ演出
+    [SerializeField] PlayableDirector pd_gameOver_Found;   //ゲームオーバーのデモ演出
 
     [Header("SEの番号")]
     public int airSE = 0;
@@ -67,13 +68,15 @@ public class GameManager : Singleton<GameManager>
     [SerializeField] GameObject[] startDemoUsed;
     [SerializeField] GameObject canvasClearDemo;
     [SerializeField] GameObject canvasOverDemo;
+    [SerializeField] GameObject canvasOverFoundDemo;
     [SerializeField] GameObject pd_startParent;
     [SerializeField] GameObject pd_clearParent;
     [SerializeField] GameObject pd_overParent;
+    [SerializeField] GameObject pd_overParent_Found;
     [SerializeField] GameObject mainCamera;
-    int playBGMNo;
     [SerializeField] GameObject focusClear;
     [SerializeField] GameObject focusOver;
+    [SerializeField] GameObject focusOver_Found;
 
     //フォーカスが外れないようにする処理用
     GameObject currentFocus;   //現在
@@ -105,8 +108,6 @@ public class GameManager : Singleton<GameManager>
     {
         pd_gameStart.Play();
 
-        playBGMNo = SceneManager.GetActiveScene().buildIndex;
-
         player = GameObject.FindGameObjectWithTag("Player");
         //PlayerControllerのコンポーネント取得
         controller = player.GetComponent<PlayerController>();
@@ -119,10 +120,12 @@ public class GameManager : Singleton<GameManager>
         //HPの初期設定
         HPCurrent = HPMax;
         HPGauge.fillAmount = 1;
+        HPGauge.GetComponent<Image>().color = Color.green;
 
         //酸素の初期設定
         airCurrent = airMax;
         airGauge.fillAmount = 1;
+        airGauge.GetComponent<Image>().color = Color.cyan;
 
         //進行度ゲージの初期設定
         distanceMax = goal.transform.position.x - player.transform.position.x;
@@ -186,11 +189,25 @@ public class GameManager : Singleton<GameManager>
         if (pd_gameOver.state == PlayState.Playing && Input.GetButtonDown("Jump") && !mainGameFLG)
         {
             DemoOverSkip();
+        }
+
+        if (pd_gameOver_Found.state == PlayState.Playing && Input.GetButtonDown("Jump") && !mainGameFLG)
+        {
+            DemoOverFoundSkip();
         }*/
     }
 
     void AirCheck()
     {
+        if(airCurrent <= airMax / 5)
+        {
+            airGauge.GetComponent<Image>().color = Color.red;
+        }
+        else
+        {
+            airGauge.GetComponent<Image>().color = Color.cyan;
+        }
+
         if(airCurrent <= 0)
         {
             if (airDamageTimeCullent >= airDamageTime)
@@ -222,7 +239,7 @@ public class GameManager : Singleton<GameManager>
             foundTimeCurrent += Time.deltaTime;
             if(foundTimeCurrent >= foundTime)
             {
-                GameOver();
+                GameOver_Found();
             }
         }
         else
@@ -243,6 +260,15 @@ public class GameManager : Singleton<GameManager>
         HPValue = HPCurrent / HPMax;
         //ゲージの更新
         HPGauge.fillAmount = HPValue;
+
+        if (HPCurrent <= HPMax / 5)
+        {
+            HPGauge.GetComponent<Image>().color = Color.red;
+        }
+        else
+        {
+            HPGauge.GetComponent<Image>().color = Color.green;
+        }
     }
 
     //外部からメインゲームのフラグを操作
@@ -323,6 +349,8 @@ public class GameManager : Singleton<GameManager>
         }
         PlayerPrefs.Save();
 
+        //pd_gameClear.Play();
+
         Debug.Log("ゲームクリア");
         Debug.Log(result);
     }
@@ -332,12 +360,26 @@ public class GameManager : Singleton<GameManager>
         mainGameFLG = false;
         scrollM.ScrollFLGChange(false);
         gameOver = true;
+
+        //pd_gameOver.Play();
+
+        Debug.Log("ゲームオーバー");
+    }
+
+    public void GameOver_Found()
+    {
+        mainGameFLG = false;
+        scrollM.ScrollFLGChange(false);
+        gameOver = true;
+
+        //pd_gameOver_Found.Play();
+
         Debug.Log("ゲームオーバー");
     }
 
     public void DemoPlayBGM()
     {
-        //SoundManager.Instance.PlayBGM(playBGMNo);
+        SoundManager.Instance.PlayBGM(0);
     }
 
     public void PlayBGMChange(int no)
@@ -365,7 +407,7 @@ public class GameManager : Singleton<GameManager>
             }
         }
 
-        //SoundManager.Instance.PlayBGM(playBGMNo);
+        SoundManager.Instance.PlayBGM(0);
 
         mainGameFLG = true;
         scrollM.ScrollFLGChange(true);
@@ -391,6 +433,17 @@ public class GameManager : Singleton<GameManager>
         canvasMainGame.SetActive(false);    //メインUI
         canvasOverDemo.SetActive(true);  //デモ中UI
         pd_overParent.SetActive(true);  //デモ中カメラ
+    }
+
+    //ゲームオーバー演出のスキップ
+    void DemoOverFoundSkip()
+    {
+        //演出の停止
+        pd_gameOver_Found.Stop();
+
+        canvasMainGame.SetActive(false);    //メインUI
+        canvasOverFoundDemo.SetActive(true);  //デモ中UI
+        pd_overParent_Found.SetActive(true);  //デモ中カメラ
     }
 
     //シーン遷移
