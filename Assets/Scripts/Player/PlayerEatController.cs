@@ -83,8 +83,9 @@ public class PlayerEatController : MonoBehaviour
 
                 controller.fireFLG = true;
 
-                Instantiate(EffectManager.Instance.playerFX[healFX], player.transform.position, Quaternion.identity);
+                GameObject obj = (GameObject)Instantiate(EffectManager.Instance.playerFX[healFX], player.transform.position, Quaternion.identity);
                 //          生成物　　　　　　　　　　　　　　　生成する場所　　　　生成する角度
+                obj.transform.parent = player.transform;
             }
 
             if (other.transform.tag == "BulletItem_1")
@@ -106,8 +107,9 @@ public class PlayerEatController : MonoBehaviour
 
                 controller.fireFLG = true;
 
-                Instantiate(EffectManager.Instance.playerFX[bulletFX], player.transform.position, Quaternion.identity);
+                GameObject obj = (GameObject)Instantiate(EffectManager.Instance.playerFX[bulletFX], player.transform.position, Quaternion.identity);
                 //          生成物　　　　　　　　　　　　　　　生成する場所　　　　生成する角度
+                obj.transform.parent = player.transform;
             }
 
             if (other.transform.tag == "ScoreItem_1")
@@ -119,8 +121,9 @@ public class PlayerEatController : MonoBehaviour
 
                 controller.fireFLG = true;
 
-                Instantiate(EffectManager.Instance.playerFX[scoreFX], player.transform.position, Quaternion.identity);
+                GameObject obj = (GameObject)Instantiate(EffectManager.Instance.playerFX[scoreFX], player.transform.position, Quaternion.identity);
                 //          生成物　　　　　　　　　　　　　　　生成する場所　　　　生成する角度
+                obj.transform.parent = player.transform;
             }
 
             if (other.transform.tag == "ScoreItem_2")
@@ -132,8 +135,9 @@ public class PlayerEatController : MonoBehaviour
 
                 controller.fireFLG = true;
 
-                Instantiate(EffectManager.Instance.playerFX[scoreFX], player.transform.position, Quaternion.identity);
+                GameObject obj = (GameObject) Instantiate(EffectManager.Instance.playerFX[scoreFX], player.transform.position, Quaternion.identity);
                 //          生成物　　　　　　　　　　　　　　　生成する場所　　　　生成する角度
+                obj.transform.parent = player.transform;
             }
         }
     }

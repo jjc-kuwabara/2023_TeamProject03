@@ -52,8 +52,9 @@ public class PlayerHitCheck : MonoBehaviour
             controller.AttackTypeChenge(1);
 
             SoundManager.Instance.PlaySE_Game(damageSE);
-            Instantiate(EffectManager.Instance.playerFX[damageFX], transform.position, Quaternion.identity);
+            GameObject obj = (GameObject)Instantiate(EffectManager.Instance.playerFX[damageFX], transform.position, Quaternion.identity);
             //          生成物　　　　　　　　　　　　　　　生成する場所　　　　生成する角度
+            obj.transform.parent = player.transform;
         }
     }
 
