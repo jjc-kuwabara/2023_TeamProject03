@@ -18,6 +18,7 @@ TagManager:
   - ScoreItem_1
   - ScoreItem_2
   - Scroll
+  - Tutorial
   layers:
   - Default
   - TransparentFX
