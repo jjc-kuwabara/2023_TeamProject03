@@ -7,9 +7,11 @@ public class VolumeManager : MonoBehaviour
 {
     public Slider bgmSlider;
     public Slider seSlider;
+    public Slider voiSlider;
 
     float bgmVolCurrent;
     float seVolCurrent;
+    float voiVolCurrent;
 
     void Start()
     {
@@ -24,7 +26,7 @@ public class VolumeManager : MonoBehaviour
     {
         bgmVolCurrent = bgmSlider.value;
 
-        SoundManager.Instance.VolumeChange((int)bgmVolCurrent, (int)seVolCurrent);
+        SoundManager.Instance.VolumeChange((int)bgmVolCurrent, (int)seVolCurrent,(int)voiVolCurrent);
 
         //SoundManager.Instance.PlaySE_Game();
     }
@@ -33,16 +35,16 @@ public class VolumeManager : MonoBehaviour
     {
         seVolCurrent = seSlider.value;
 
-        SoundManager.Instance.VolumeChange((int)bgmVolCurrent, (int)seVolCurrent);
+        SoundManager.Instance.VolumeChange((int)bgmVolCurrent, (int)seVolCurrent, (int)voiVolCurrent);
 
         //SoundManager.Instance.PlaySE_Game();
     }
 
     public void VoiceVolumeChange()
     {
-        seVolCurrent = seSlider.value;
+        voiVolCurrent = voiSlider.value;
 
-        SoundManager.Instance.VolumeChange((int)bgmVolCurrent, (int)seVolCurrent);
+        SoundManager.Instance.VolumeChange((int)bgmVolCurrent, (int)seVolCurrent, (int)voiVolCurrent);
 
         //SoundManager.Instance.PlaySE_Game();
     }
