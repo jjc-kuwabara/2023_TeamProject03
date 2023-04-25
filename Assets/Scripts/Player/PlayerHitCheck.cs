@@ -29,11 +29,6 @@ public class PlayerHitCheck : MonoBehaviour
     //OnTrigger‚Å‚·‚è”²‚¯”»’è‚ðŽæ‚é
     private void OnTriggerEnter(Collider other)
     {
-        if (other.transform.tag == "Finish")
-        {
-            GameManager.Instance.GameClear();
-        }
-
         if (other.transform.tag == "Air")
         {
             GameManager.Instance.AirFLG(true);
