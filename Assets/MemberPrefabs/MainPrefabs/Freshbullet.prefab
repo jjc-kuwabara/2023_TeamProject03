@@ -114,8 +114,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletSpeed: 40
   destoryTime: 1.5
-  effectExp: {fileID: 0}
-  effectAura: {fileID: 0}
+  trajectoryFX: 1
+  hitFX: 2
 --- !u!54 &-8405924409044302033
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -334,7 +334,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5077831875789601797}
-  - component: {fileID: 5179854912830642383}
   - component: {fileID: 8592204692475138374}
   m_Layer: 0
   m_Name: trout brown
@@ -360,21 +359,6 @@ Transform:
   m_Father: {fileID: 7559428049214936002}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &5179854912830642383
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5076245777277230377}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 822e0f358878a434cbf6db2d8e31db7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  manager: {fileID: 0}
-  rotSpeed: 1
 --- !u!95 &8592204692475138374
 Animator:
   serializedVersion: 5
