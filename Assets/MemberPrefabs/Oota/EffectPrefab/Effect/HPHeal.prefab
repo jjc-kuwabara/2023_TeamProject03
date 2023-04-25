@@ -9588,7 +9588,7 @@ GameObject:
   - component: {fileID: 9185063840616208822}
   - component: {fileID: 9185063840616208825}
   m_Layer: 0
-  m_Name: HealEffect
+  m_Name: HPHeal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -114,8 +114,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletSpeed: 40
   destoryTime: 1.5
-  effectExp: {fileID: 0}
-  effectAura: {fileID: 0}
+  trajectoryFX: 1
+  hitFX: 2
 --- !u!54 &-8405924409044302033
 Rigidbody:
   m_ObjectHideFlags: 0
