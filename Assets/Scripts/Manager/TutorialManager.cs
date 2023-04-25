@@ -159,10 +159,10 @@ public class TutorialManager : MonoBehaviour
         {
             TextAllNotActive();
             scrollM.ScrollFLGChange(false);
-            move[0].SetActive(true);
+            attack[0].SetActive(true);
         }
 
-        if (enemy_Attack = null)
+        if (enemy_Attack == null)
         {
             attack[0].SetActive(false);
             attack[1].SetActive(true);
@@ -182,7 +182,7 @@ public class TutorialManager : MonoBehaviour
             eatFish[0].SetActive(true);
         }
 
-        if (enemy_Eat = null)
+        if (enemy_Eat == null)
         {
             eatFish[0].SetActive(false);
             eatFish[1].SetActive(true);
@@ -202,7 +202,7 @@ public class TutorialManager : MonoBehaviour
             eatItem[0].SetActive(true);
         }
 
-        if (item_Heal == null && item_HealFLG)
+        if (item_Heal == null && !item_HealFLG)
         {
             TextAllNotActive();
             eatItem[1].SetActive(true);
@@ -210,7 +210,7 @@ public class TutorialManager : MonoBehaviour
             item_HealFLG = true;
         }
 
-        if (item_Score == null && item_ScoreFLG)
+        if (item_Score == null && !item_ScoreFLG)
         {
             TextAllNotActive();
             eatItem[2].SetActive(true);
@@ -218,7 +218,7 @@ public class TutorialManager : MonoBehaviour
             item_ScoreFLG = true;
         }
 
-        if (item_Bullet == null && item_BulletFLG)
+        if (item_Bullet == null && !item_BulletFLG)
         {
             TextAllNotActive();
             eatItem[3].SetActive(true);
