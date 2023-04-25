@@ -44,12 +44,14 @@ public class PlayerHitCheck : MonoBehaviour
 
         //敵に衝突した時の処理
         //　敵と衝突したら　　　　　　　　かつ　無敵じゃないとき
-        if (other.transform.tag == "Enemy" || other.transform.tag == "Fish"/* && !controller.invincible*/)
+        if (other.transform.tag == "Enemy" || other.transform.tag == "Fish" && !controller.invincible)
         {
             enemy = other.GetComponent<EnemyController>();
 
             GameManager.Instance.HPUpdate(enemy.enemyATK);
             controller.AttackTypeChenge(1);
+
+            controller.invincible = true;
 
             SoundManager.Instance.PlaySE_Game(damageSE);
             GameObject obj = (GameObject)Instantiate(EffectManager.Instance.playerFX[damageFX], transform.position, Quaternion.identity);
