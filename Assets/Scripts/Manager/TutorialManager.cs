@@ -58,7 +58,7 @@ public class TutorialManager : MonoBehaviour
         eatFishFLG = eatFishArea.GetComponent<TutorialArea>();
         eatItemFLG = eatItemArea.GetComponent<TutorialArea>();
         speedDownFLG = speedDownArea.GetComponent<TutorialArea>();
-        endFLG = speedDownArea.GetComponent<TutorialArea>();
+        endFLG = endArea.GetComponent<TutorialArea>();
 
         scrollM = scroll.GetComponent<ScrollManager>();
     }
