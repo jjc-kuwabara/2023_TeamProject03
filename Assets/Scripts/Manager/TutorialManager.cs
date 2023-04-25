@@ -123,6 +123,8 @@ public class TutorialManager : MonoBehaviour
 
             scrollM.ScrollFLGChange(true);
 
+            inputTime = 0;
+
             moveFLG.flg = false;
         }
     }
@@ -195,7 +197,7 @@ public class TutorialManager : MonoBehaviour
 
     void EatItem()
     {
-        if (!eatItem[0].activeSelf && !eatItem[1].activeSelf)
+        if (!eatItem[0].activeSelf && !eatItem[1].activeSelf && !eatItem[2].activeSelf && !eatItem[3].activeSelf)
         {
             TextAllNotActive();
             scrollM.ScrollFLGChange(false);
@@ -241,8 +243,6 @@ public class TutorialManager : MonoBehaviour
             TextAllNotActive();
             scrollM.ScrollFLGChange(false);
             speedDown[0].SetActive(true);
-
-            inputTime = 0;
         }
 
         if (speedDown[0].activeSelf && Input.GetButton("Fire3"))
