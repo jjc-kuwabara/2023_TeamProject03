@@ -202,7 +202,7 @@ public class TutorialManager : MonoBehaviour
             eatItem[0].SetActive(true);
         }
 
-        if (item_Heal = null)
+        if (item_Heal == null && item_HealFLG)
         {
             TextAllNotActive();
             eatItem[1].SetActive(true);
@@ -210,7 +210,7 @@ public class TutorialManager : MonoBehaviour
             item_HealFLG = true;
         }
 
-        if (item_Score = null)
+        if (item_Score == null && item_ScoreFLG)
         {
             TextAllNotActive();
             eatItem[2].SetActive(true);
@@ -218,7 +218,7 @@ public class TutorialManager : MonoBehaviour
             item_ScoreFLG = true;
         }
 
-        if (item_Bullet = null)
+        if (item_Bullet == null && item_BulletFLG)
         {
             TextAllNotActive();
             eatItem[3].SetActive(true);
