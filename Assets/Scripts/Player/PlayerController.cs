@@ -46,6 +46,10 @@ public class PlayerController : MonoBehaviour
 
     bool inputFLG = false;
 
+    [Header("鵜の見た目")]
+    [SerializeField] GameObject player;
+    public bool invincible;
+
     CharacterController characon;  //CharacterControllerのコンポーネント取得用
 
     Animator animator;  //Animatorのコンポーネント取得用
@@ -60,6 +64,7 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         InputCheck();
+        DamageCheck();
 
         if (inputFLG)
         {
@@ -80,6 +85,11 @@ public class PlayerController : MonoBehaviour
         {
             inputFLG = false;
         }
+    }
+
+    void DamageCheck()
+    {
+
     }
 
     void Move()
@@ -210,6 +220,8 @@ public class PlayerController : MonoBehaviour
 
     public void AttackTypeChenge(int n)
     {
+        GameManager.Instance.AttackImageChenge(n);
+
         switch (n)
         {
             case 1:

@@ -55,6 +55,7 @@ public class GameManager : Singleton<GameManager>
     float airValue;
     public Slider progressGauge;
     public TextMeshProUGUI scoreText;
+    public GameObject[] attackImage;
 
     [Header("鵜飼の処理")]
     [System.NonSerialized] public bool foundFLG = false;
@@ -91,6 +92,9 @@ public class GameManager : Singleton<GameManager>
     float resultScore = 0;
     [SerializeField] int stageNo = 0;
     int score = 0;
+
+    [Header("リザルトデータ")]
+    public GameObject ukaiCamera;
 
     GameObject player;
     PlayerController controller;   //PlayerControllerのコンポーネント取得用
@@ -137,6 +141,8 @@ public class GameManager : Singleton<GameManager>
         scoreCurrent = 0;
         resultScore = 0;
         scoreText.text = scoreCurrent.ToString("0000");
+
+        AttackImageChenge(1);
     }
 
     void Update()
@@ -385,6 +391,33 @@ public class GameManager : Singleton<GameManager>
     public void PlayBGMChange(int no)
     {
         //SoundManager.Instance.PlayBGM(no);
+    }
+
+    public void AttackImageChenge(int n)
+    {
+        AttackImageDelete();
+
+        switch (n)
+        {
+            case 1:
+                attackImage[n - 1].SetActive(true);
+                break;
+
+            case 2:
+                attackImage[n - 1].SetActive(true);
+                break;
+
+            default:
+                break;
+        }
+    }
+
+    void AttackImageDelete()
+    {
+        for (int i = 0; i < attackImage.Length; i++)
+        {
+            attackImage[i].SetActive(false);
+        }
     }
 
     //スタート演出のスキップ
