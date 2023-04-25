@@ -8,7 +8,7 @@ public class TutorialArea : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.transform.tag == "Player")
+        if(other.gameObject.transform.tag == "Tutorial")
         {
             flg = true;
 
