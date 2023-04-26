@@ -35,14 +35,7 @@ public class MainMenuManager : MonoBehaviour
         canvas[0].SetActive(true);
 
         SoundManager.Instance.PlayBGM(0);
-
         EventSystem.current.SetSelectedGameObject(focusMainMenu[0]);
-
-        if (GameObject.FindGameObjectWithTag("Count"))
-        {
-            GameObject count = GameObject.FindGameObjectWithTag("Count");
-            Destroy(count);
-        }
 
         scoreCurrent_Stage1 = PlayerPrefs.GetInt("SCORE_1", 0);
         scoreText_Stage1.text = scoreCurrent_Stage1.ToString("0000");

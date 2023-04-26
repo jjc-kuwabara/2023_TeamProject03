@@ -10,8 +10,6 @@ namespace SaveData_Settings
         //音量設定のロード
         public static void Audio()
         {
-            Debug.Log("音量設定をロードしました");
-
             bgm = PlayerPrefs.GetInt("Vol_BG", 8);
             se = PlayerPrefs.GetInt("Vol_SE", 8);
             voi = PlayerPrefs.GetInt("Vol_Voice", 8);
@@ -26,8 +24,6 @@ namespace SaveData_Settings
         //音量設定の保存
         public static void Audio(int b, int s, int v)
         {
-            Debug.Log("音量設定をセーブしました");
-
             PlayerPrefs.SetInt("Vol_BG", b);
             PlayerPrefs.SetInt("Vol_SE", s);
             PlayerPrefs.SetInt("Vol_Voice", v);

@@ -107,6 +107,8 @@ AudioMixerController:
     name: MasterVol
   - guid: 5f99cd9255740e746ae7ebe6a22cd684
     name: SEVol
+  - guid: de1c8530e88c43d4c97f4aa6e18184f5
+    name: VoiceVol
   m_AudioMixerGroupViews:
   - guids:
     - 2f6e82b04d2a02c49ba3d22685138b94
@@ -162,6 +164,7 @@ AudioMixerSnapshotController:
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: 62359dfed0306b44ea82cb2a3b9da69b
   m_FloatValues:
+    de1c8530e88c43d4c97f4aa6e18184f5: -0.3
     5f99cd9255740e746ae7ebe6a22cd684: -0.36761647
     73818a75f578a994a87660899eacbcc6: -0
     295a286ac3ddb0b41884ea2a7379d262: -0.3418002

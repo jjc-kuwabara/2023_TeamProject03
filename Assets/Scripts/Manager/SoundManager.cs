@@ -128,7 +128,7 @@ public class SoundManager : Singleton<SoundManager>
     {
         mixer.SetFloat("BGVol", vol_BGM[vol1]);
         mixer.SetFloat("SEVol", vol_SE[vol2]);
-        mixer.SetFloat("VOICEVol", vol_Voice[vol3]);
+        mixer.SetFloat("VoiceVol", vol_Voice[vol3]);
 
         bgmVol = vol_BGM[vol1];
     }
@@ -139,7 +139,7 @@ public class SoundManager : Singleton<SoundManager>
     {
         mixer.SetFloat("BGVol", vol_BGM[vol1]);
         mixer.SetFloat("SEVol", vol_SE[vol2]);
-        mixer.SetFloat("VOICEVol", vol_Voice[vol3]);
+        mixer.SetFloat("VoiceVol", vol_Voice[vol3]);
 
         Save.Audio(vol1, vol2, vol3);
 
