@@ -129,11 +129,12 @@ public class PlayerController : MonoBehaviour
 
     void Move()
     {
-        if (Input.GetButton("Fire3") && !shiftFLG){
+        if (Input.GetButton("Fire3") && !shiftFLG)
+        {
             m_speedCurrent /= 2;
             shiftFLG = true;
         }
-        else if(!Input.GetButton("Fire3") && shiftFLG)
+        else if (!Input.GetButton("Fire3") && shiftFLG)
         {
             m_speedCurrent *= 2;
             shiftFLG = false;
@@ -147,15 +148,15 @@ public class PlayerController : MonoBehaviour
         m_moveDirection = m_moveDirection.normalized;
 
         m_moveDistance = m_moveDirection * m_speedCurrent;
-        
-        if(this.transform.position.x <= x_L || x_L_FLG)
+
+        if (this.transform.position.x <= x_L || x_L_FLG)
         {
-            if(x <= 0)
+            if (x <= 0)
             {
                 m_moveDistance.x = 0;
             }
         }
-        if(this.transform.position.x >= x_R || x_R_FLG)
+        if (this.transform.position.x >= x_R || x_R_FLG)
         {
             if (x >= 0)
             {
@@ -163,7 +164,7 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        if(this.transform.position.y <= y_Down || y_Down_FLG)
+        if (this.transform.position.y <= y_Down || y_Down_FLG)
         {
             if (y <= 0)
             {
@@ -228,7 +229,7 @@ public class PlayerController : MonoBehaviour
 
     void wayShoot(int n)
     {
-        for(int i = 0; i < n; i++)
+        for (int i = 0; i < n; i++)
         {
             Instantiate(bullet, firePos[i].transform.position, firePos[i].transform.rotation);
             //生成するオブジェクト、生成するときの場所、生成した時の角度
@@ -238,7 +239,8 @@ public class PlayerController : MonoBehaviour
                 Quaternion rot = Quaternion.Euler(firePos[i].transform.rotation.x, firePos[i].transform.rotation.y - 180, firePos[i].transform.rotation.z);
                 Instantiate(EffectManager.Instance.playerFX[attackFX_1], firePos[i].transform.position, rot);
                 //          生成物　　　　　　　　　　　　　　　生成する場所　　　　生成する角度
-            }else if (n == 3 && i == 0)
+            }
+            else if (n == 3 && i == 0)
             {
                 Quaternion rot = Quaternion.Euler(firePos[i].transform.rotation.x, firePos[i].transform.rotation.y - 180, firePos[i].transform.rotation.z);
                 Instantiate(EffectManager.Instance.playerFX[attackFX_3], firePos[i].transform.position, rot);
@@ -253,7 +255,7 @@ public class PlayerController : MonoBehaviour
         {
             attackTimeCurrent += Time.deltaTime;
 
-            if(attackTimeCurrent >= attackTime)
+            if (attackTimeCurrent >= attackTime)
             {
                 fireFLG = false;
                 attackTimeCurrent = 0;
