@@ -94,6 +94,8 @@ public class SoundManager : Singleton<SoundManager>
                 SE_GameSource[i].outputAudioMixerGroup = SEGroup;
             }
         }
+
+        VolumeManager.Instance.First();
     }
 
     //BGM‚ğŠO•”‚©‚çŒÄ‚Ño‚·
