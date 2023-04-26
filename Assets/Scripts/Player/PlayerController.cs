@@ -42,7 +42,8 @@ public class PlayerController : MonoBehaviour
     float attackTimeCurrent;
     public bool fireFLG = false;
     public int attackSE = 0;
-    public int attackFX = 0;
+    public int attackFX_1 = 0;
+    public int attackFX_3 = 0;
 
     bool inputFLG = false;
 
@@ -232,9 +233,17 @@ public class PlayerController : MonoBehaviour
             Instantiate(bullet, firePos[i].transform.position, firePos[i].transform.rotation);
             //生成するオブジェクト、生成するときの場所、生成した時の角度
 
-            Quaternion rot = Quaternion.Euler(firePos[i].transform.rotation.x, firePos[i].transform.rotation.y - 180, firePos[i].transform.rotation.z);
-            Instantiate(EffectManager.Instance.playerFX[attackFX], firePos[i].transform.position, rot);
-            //          生成物　　　　　　　　　　　　　　　生成する場所　　　　生成する角度
+            if (n == 1)
+            {
+                Quaternion rot = Quaternion.Euler(firePos[i].transform.rotation.x, firePos[i].transform.rotation.y - 180, firePos[i].transform.rotation.z);
+                Instantiate(EffectManager.Instance.playerFX[attackFX_1], firePos[i].transform.position, rot);
+                //          生成物　　　　　　　　　　　　　　　生成する場所　　　　生成する角度
+            }else if (n == 3 && i == 0)
+            {
+                Quaternion rot = Quaternion.Euler(firePos[i].transform.rotation.x, firePos[i].transform.rotation.y - 180, firePos[i].transform.rotation.z);
+                Instantiate(EffectManager.Instance.playerFX[attackFX_3], firePos[i].transform.position, rot);
+                //          生成物　　　　　　　　　　　　　　　生成する場所　　　　生成する角度
+            }
         }
     }
 
