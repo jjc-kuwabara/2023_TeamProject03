@@ -56,9 +56,9 @@ public class VolumeManager : Singleton<VolumeManager>
     {
         InitializeSaveData.All();
 
-        bgmSlider.value = PlayerPrefs.GetInt("Vol_BG", 8);
-        seSlider.value = PlayerPrefs.GetInt("Vol_SE", 8);
-        voiSlider.value = PlayerPrefs.GetInt("Vol_Voice", 8);
+        bgmSlider.value = 8;
+        seSlider.value = 8;
+        voiSlider.value = 8;
 
         bgmVolCurrent = bgmSlider.value;
         seVolCurrent = seSlider.value;

@@ -337,8 +337,10 @@ MonoBehaviour:
   - {fileID: 8300000, guid: f88fc11601ed421488076422d3cbbe25, type: 3}
   se_SysClip:
   - {fileID: 8300000, guid: 3aef82a1cf148e143aab987c413e7ed9, type: 3}
-  se_GameClip: []
-  voiClip: []
+  se_GameClip:
+  - {fileID: 8300000, guid: f6c0bb45ebd1add44a0b14a86b46fdb4, type: 3}
+  voiClip:
+  - {fileID: 8300000, guid: e77a78e7d1c053445acf6f3bf1a0e835, type: 3}
 --- !u!4 &219755456
 Transform:
   m_ObjectHideFlags: 0
@@ -397,11 +399,15 @@ MonoBehaviour:
   - {fileID: 94464943417816240}
   - {fileID: 94464943250740250}
   - {fileID: 94464943525366633}
-  scoreText_Stage1: {fileID: 94464943388129506}
-  scoreText_Stage2: {fileID: 94464945114483226}
+  scoreText_Stage1w: {fileID: 94464943388129506}
+  scoreText_Stage2w: {fileID: 94464945114483226}
+  scoreText_Stage1b: {fileID: 94464944234358707}
+  scoreText_Stage2b: {fileID: 94464944653965126}
   sceneMoveTime: 0
   decisionSE: 0
   scoreResetSE: 0
+  demoSE: 0
+  demoVoice: 0
 --- !u!4 &470542987
 Transform:
   m_ObjectHideFlags: 0
@@ -1008,7 +1014,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 40018733}
         m_TargetAssemblyTypeName: VolumeManager, Assembly-CSharp
-        m_MethodName: SEVolumeChange
+        m_MethodName: VoiceVolumeChange
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

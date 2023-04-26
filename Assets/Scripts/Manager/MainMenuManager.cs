@@ -29,6 +29,8 @@ public class MainMenuManager : MonoBehaviour
 
     public int decisionSE = 0;
     public int scoreResetSE = 0;
+    public int demoSE = 0;
+    public int demoVoice = 0;
 
     void Start()
     {
@@ -55,6 +57,8 @@ public class MainMenuManager : MonoBehaviour
     void Update()
     {
         FocusCheck();
+
+        SEPlay();
     }
 
     public void CanvasChange(int canvasNo)
@@ -154,5 +158,18 @@ public class MainMenuManager : MonoBehaviour
     public void Decision()
     {
         SoundManager.Instance.PlaySE_Sys(decisionSE);
+    }
+
+    public void SEPlay()
+    {
+        if (Input.GetKeyDown(KeyCode.J))
+        {
+            SoundManager.Instance.PlaySE_Game(demoSE);
+        }
+
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            SoundManager.Instance.PlaySE_Voi(demoVoice);
+        }
     }
 }
