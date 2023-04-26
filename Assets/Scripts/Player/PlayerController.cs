@@ -48,6 +48,12 @@ public class PlayerController : MonoBehaviour
 
     [Header("鵜の見た目")]
     [SerializeField] GameObject player;
+
+    [Header("ダメージを受けた時の処理に使う変数")]
+    [SerializeField] float time_Invincible = 0.5f;
+    [SerializeField] float time_Cycle = 0.1f;
+    float timeCurrent_Invincible = 0f;
+    float timeCurrent_Cycle = 0f;
     public bool invincible;
 
     CharacterController characon;  //CharacterControllerのコンポーネント取得用
@@ -89,7 +95,35 @@ public class PlayerController : MonoBehaviour
 
     void DamageCheck()
     {
+        if (invincible)
+        {
+            if (timeCurrent_Invincible < time_Invincible)
+            {
+                timeCurrent_Invincible += Time.deltaTime;
+                timeCurrent_Cycle += Time.deltaTime;
 
+                if (timeCurrent_Cycle >= time_Cycle)
+                {
+                    if (player.activeSelf)
+                    {
+                        player.SetActive(false);
+                    }
+                    else
+                    {
+                        player.SetActive(true);
+                    }
+                    timeCurrent_Cycle = 0;
+                }
+            }
+            else
+            {
+                player.SetActive(true);
+
+                timeCurrent_Invincible = 0;
+                timeCurrent_Cycle = 0;
+                invincible = false;
+            }
+        }
     }
 
     void Move()

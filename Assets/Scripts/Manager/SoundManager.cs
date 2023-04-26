@@ -32,12 +32,13 @@ public class SoundManager : Singleton<SoundManager>
     [SerializeField, Label("Masterグループ")] public AudioMixerGroup MasterGroup;
     [SerializeField, Label("BGMグループ")] public AudioMixerGroup BGMGroup;
     [SerializeField, Label("SEグループ")] public AudioMixerGroup SEGroup;
+    [SerializeField, Label("Voiceグループ")] public AudioMixerGroup VoiGroup;
     [Space(10)]
     //各カテゴリごとにAudioClipを入れる変数を配列で用意
     public AudioClip[] bgmClip;
     public AudioClip[] se_SysClip;
     public AudioClip[] se_GameClip;
-    public AudioClip[] se_VoiClip;
+    public AudioClip[] voiClip;
 
     //各音声用のAudioSourceを用意する
     [System.NonSerialized] public AudioSource BGMSource;
@@ -48,6 +49,7 @@ public class SoundManager : Singleton<SoundManager>
     //音量の段階（SliderのValueで設定）
     float[] vol_BGM = { -80f, -30f, -27, -24f, -21f, -18f, -15f, -12.5f, -10f, -7.5f, -5f };
     float[] vol_SE = { -80f, -14f, -12f, -9f, -7f, -5f, -3f, -1f, 1f, 3f, 5f };
+    float[] vol_Voice = { -80f, -14f, -12f, -9f, -7f, -5f, -3f, -1f, 1f, 3f, 5f };
 
     //フェード用に音量を保持
     float bgmVol;
@@ -75,7 +77,7 @@ public class SoundManager : Singleton<SoundManager>
         SE_VoiSource = gameObject.AddComponent<AudioSource>();
         SE_VoiSource.loop = false;
         SE_VoiSource.priority = 1;
-        SE_VoiSource.outputAudioMixerGroup = SEGroup;
+        SE_VoiSource.outputAudioMixerGroup = VoiGroup;
 
         //メインのゲーム中に使用するSEは複数の音が同時に鳴ることが多いため
         //SEのクリップ数と同じだけAudioSourceを用意する
@@ -117,27 +119,29 @@ public class SoundManager : Singleton<SoundManager>
     //Voiceを外部から呼び出す時
     public void PlaySE_Voi(int i)
     {
-        SE_VoiSource.clip = se_VoiClip[i];
+        SE_VoiSource.clip = voiClip[i];
         SE_VoiSource.Play();
     }
     
     //（第1引数でBGM、第2引数でSEのボリューム）
-    public void VolumeChange_Start(int vol1, int vol2)
+    public void VolumeChange_Start(int vol1, int vol2, int vol3)
     {
         mixer.SetFloat("BGVol", vol_BGM[vol1]);
         mixer.SetFloat("SEVol", vol_SE[vol2]);
+        mixer.SetFloat("VoiceVol", vol_Voice[vol3]);
 
         bgmVol = vol_BGM[vol1];
     }
 
     //Silderによる音量の調整
     //（第1引数でBGM、第2引数でSEのボリューム）
-    public void VolumeChange(int vol1, int vol2)
+    public void VolumeChange(int vol1, int vol2, int vol3)
     {
         mixer.SetFloat("BGVol", vol_BGM[vol1]);
         mixer.SetFloat("SEVol", vol_SE[vol2]);
+        mixer.SetFloat("VoiceVol", vol_Voice[vol3]);
 
-        Save.Audio(vol1, vol2);
+        Save.Audio(vol1, vol2, vol3);
 
         bgmVol = vol_BGM[vol1];
     }
