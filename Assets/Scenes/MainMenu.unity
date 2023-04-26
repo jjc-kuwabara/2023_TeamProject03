@@ -1114,6 +1114,7 @@ GameObject:
   - component: {fileID: 94464943116055274}
   - component: {fileID: 94464943116055278}
   - component: {fileID: 94464943116055279}
+  - component: {fileID: 94464943116055280}
   - component: {fileID: 94464943116055276}
   m_Layer: 5
   m_Name: VolumeText2
@@ -1240,6 +1241,26 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &94464943116055280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 94464943116055275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dee62a4d675c6340b6f5bcee5b94c94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tmp: {fileID: 0}
+  duration: 1
+  startColor:
+    serializedVersion: 2
+    rgba: 4278190080
+  endColor:
+    serializedVersion: 2
+    rgba: 1073742079
 --- !u!224 &94464943121829456
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6924,6 +6945,7 @@ GameObject:
   - component: {fileID: 94464944392521404}
   - component: {fileID: 94464944392521392}
   - component: {fileID: 94464944392521393}
+  - component: {fileID: 94464944392521407}
   - component: {fileID: 94464944392521406}
   m_Layer: 5
   m_Name: MenuText2
@@ -6953,6 +6975,26 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &94464944392521407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 94464944392521405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dee62a4d675c6340b6f5bcee5b94c94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tmp: {fileID: 0}
+  duration: 1
+  startColor:
+    serializedVersion: 2
+    rgba: 4278190080
+  endColor:
+    serializedVersion: 2
+    rgba: 1073742079
 --- !u!222 &94464944407943713
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10171,6 +10213,7 @@ GameObject:
   - component: {fileID: 94464944962877396}
   - component: {fileID: 94464944962877384}
   - component: {fileID: 94464944962877385}
+  - component: {fileID: 94464944962877399}
   - component: {fileID: 94464944962877398}
   m_Layer: 5
   m_Name: ScoreText2
@@ -10200,6 +10243,26 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &94464944962877399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 94464944962877397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dee62a4d675c6340b6f5bcee5b94c94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tmp: {fileID: 0}
+  duration: 1
+  startColor:
+    serializedVersion: 2
+    rgba: 4278190080
+  endColor:
+    serializedVersion: 2
+    rgba: 1073742079
 --- !u!224 &94464944963124928
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10295,6 +10358,7 @@ GameObject:
   - component: {fileID: 94464944978303957}
   - component: {fileID: 94464944978303945}
   - component: {fileID: 94464944978303958}
+  - component: {fileID: 94464944978303960}
   - component: {fileID: 94464944978303959}
   m_Layer: 5
   m_Name: Text
@@ -10433,6 +10497,26 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &94464944978303960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 94464944978303954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dee62a4d675c6340b6f5bcee5b94c94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tmp: {fileID: 0}
+  duration: 1
+  startColor:
+    serializedVersion: 2
+    rgba: 4278190080
+  endColor:
+    serializedVersion: 2
+    rgba: 1073742079
 --- !u!1 &94464945049601668
 GameObject:
   m_ObjectHideFlags: 0
@@ -12913,6 +12997,7 @@ GameObject:
   - component: {fileID: 1174533216081476170}
   - component: {fileID: 1174533216081476168}
   - component: {fileID: 1174533216081476171}
+  - component: {fileID: 1174533216081476174}
   - component: {fileID: 1174533216081476169}
   m_Layer: 5
   m_Name: StageText2
@@ -12921,6 +13006,26 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1174533216081476174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174533216081476173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dee62a4d675c6340b6f5bcee5b94c94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tmp: {fileID: 0}
+  duration: 1
+  startColor:
+    serializedVersion: 2
+    rgba: 4278190080
+  endColor:
+    serializedVersion: 2
+    rgba: 1073742079
 --- !u!222 &1174533216181046674
 CanvasRenderer:
   m_ObjectHideFlags: 0
