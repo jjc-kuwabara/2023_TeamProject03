@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using SaveData_Settings;    //自前で作ったSaveData_Settingsの使用に必要
 
-public class VolumeManager : MonoBehaviour
+public class VolumeManager : Singleton<VolumeManager>
 {
     public Slider bgmSlider;
     public Slider seSlider;
@@ -14,7 +14,7 @@ public class VolumeManager : MonoBehaviour
     float seVolCurrent;
     float voiVolCurrent;
 
-    void Start()
+    public void First()
     {
         bgmSlider.value = PlayerPrefs.GetInt("Vol_BG", 8);
         seSlider.value = PlayerPrefs.GetInt("Vol_SE", 8);
@@ -56,9 +56,9 @@ public class VolumeManager : MonoBehaviour
     {
         InitializeSaveData.All();
 
-        bgmSlider.value = PlayerPrefs.GetInt("Vol_BG", 8);
-        seSlider.value = PlayerPrefs.GetInt("Vol_SE", 8);
-        voiSlider.value = PlayerPrefs.GetInt("Vol_Voice", 8);
+        bgmSlider.value = 8;
+        seSlider.value = 8;
+        voiSlider.value = 8;
 
         bgmVolCurrent = bgmSlider.value;
         seVolCurrent = seSlider.value;

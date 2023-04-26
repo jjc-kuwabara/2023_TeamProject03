@@ -61,6 +61,8 @@ public class TutorialManager : MonoBehaviour
         endFLG = endArea.GetComponent<TutorialArea>();
 
         scrollM = scroll.GetComponent<ScrollManager>();
+
+        GameManager.Instance.TutorialFLGChange(true);
     }
 
     void Update()
@@ -99,6 +101,7 @@ public class TutorialManager : MonoBehaviour
         {
             TextAllNotActive();
             endFLG.flg = false;
+            GameManager.Instance.TutorialFLGChange(false);
         }
     }
 

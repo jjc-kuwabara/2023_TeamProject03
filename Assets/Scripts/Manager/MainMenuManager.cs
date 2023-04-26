@@ -16,15 +16,21 @@ public class MainMenuManager : MonoBehaviour
     [SerializeField] GameObject[] focusMainMenu;  //初期カーソル位置
 
     [Header("スコア")]
-    [SerializeField] TextMeshProUGUI scoreText_Stage1;
-    int scoreCurrent_Stage1;
-    [SerializeField] TextMeshProUGUI scoreText_Stage2;
-    int scoreCurrent_Stage2;
+    [SerializeField] TextMeshProUGUI scoreText_Stage1w;
+    int scoreCurrent_Stage1w;
+    [SerializeField] TextMeshProUGUI scoreText_Stage2w;
+    int scoreCurrent_Stage2w;
+    [SerializeField] TextMeshProUGUI scoreText_Stage1b;
+    int scoreCurrent_Stage1b;
+    [SerializeField] TextMeshProUGUI scoreText_Stage2b;
+    int scoreCurrent_Stage2b;
 
     public float sceneMoveTime = 0;
 
     public int decisionSE = 0;
     public int scoreResetSE = 0;
+    public int demoSE = 0;
+    public int demoVoice = 0;
 
     void Start()
     {
@@ -37,16 +43,22 @@ public class MainMenuManager : MonoBehaviour
         SoundManager.Instance.PlayBGM(0);
         EventSystem.current.SetSelectedGameObject(focusMainMenu[0]);
 
-        scoreCurrent_Stage1 = PlayerPrefs.GetInt("SCORE_1", 0);
-        scoreText_Stage1.text = scoreCurrent_Stage1.ToString("0000");
+        scoreCurrent_Stage1w = PlayerPrefs.GetInt("SCORE_1", 0);
+        scoreText_Stage1w.text = scoreCurrent_Stage1w.ToString("0000");
+        scoreCurrent_Stage1b = PlayerPrefs.GetInt("SCORE_1", 0);
+        scoreText_Stage1b.text = scoreCurrent_Stage1b.ToString("0000");
 
-        scoreCurrent_Stage2 = PlayerPrefs.GetInt("SCORE_2", 0);
-        scoreText_Stage2.text = scoreCurrent_Stage2.ToString("0000");
+        scoreCurrent_Stage2w = PlayerPrefs.GetInt("SCORE_2", 0);
+        scoreText_Stage2w.text = scoreCurrent_Stage2w.ToString("0000");
+        scoreCurrent_Stage2b = PlayerPrefs.GetInt("SCORE_2", 0);
+        scoreText_Stage2b.text = scoreCurrent_Stage2b.ToString("0000");
     }
 
     void Update()
     {
         FocusCheck();
+
+        SEPlay();
     }
 
     public void CanvasChange(int canvasNo)
@@ -96,8 +108,10 @@ public class MainMenuManager : MonoBehaviour
         PlayerPrefs.DeleteKey("SCORE_1");
         PlayerPrefs.Save();
 
-        scoreCurrent_Stage1 = PlayerPrefs.GetInt("SCORE_1", 0);
-        scoreText_Stage1.text = scoreCurrent_Stage1.ToString("0000");
+        scoreCurrent_Stage1w = PlayerPrefs.GetInt("SCORE_1", 0);
+        scoreText_Stage1w.text = scoreCurrent_Stage1w.ToString("0000");
+        scoreCurrent_Stage1b = PlayerPrefs.GetInt("SCORE_1", 0);
+        scoreText_Stage1b.text = scoreCurrent_Stage1b.ToString("0000");
 
         SoundManager.Instance.PlaySE_Sys(scoreResetSE);
     }
@@ -107,8 +121,10 @@ public class MainMenuManager : MonoBehaviour
         PlayerPrefs.DeleteKey("SCORE_2");
         PlayerPrefs.Save();
 
-        scoreCurrent_Stage2 = PlayerPrefs.GetInt("SCORE_2", 0);
-        scoreText_Stage2.text = scoreCurrent_Stage1.ToString("0000");
+        scoreCurrent_Stage2w = PlayerPrefs.GetInt("SCORE_2", 0);
+        scoreText_Stage2w.text = scoreCurrent_Stage2w.ToString("0000");
+        scoreCurrent_Stage2b = PlayerPrefs.GetInt("SCORE_2", 0);
+        scoreText_Stage2b.text = scoreCurrent_Stage2b.ToString("0000");
 
         SoundManager.Instance.PlaySE_Sys(scoreResetSE);
     }
@@ -118,14 +134,18 @@ public class MainMenuManager : MonoBehaviour
         PlayerPrefs.DeleteKey("SCORE_1");
         PlayerPrefs.Save();
 
-        scoreCurrent_Stage1 = PlayerPrefs.GetInt("SCORE_1", 0);
-        scoreText_Stage1.text = scoreCurrent_Stage1.ToString("0000");
+        scoreCurrent_Stage1w = PlayerPrefs.GetInt("SCORE_1", 0);
+        scoreText_Stage1w.text = scoreCurrent_Stage1w.ToString("0000");
+        scoreCurrent_Stage1b = PlayerPrefs.GetInt("SCORE_1", 0);
+        scoreText_Stage1b.text = scoreCurrent_Stage1b.ToString("0000");
 
         PlayerPrefs.DeleteKey("SCORE_2");
         PlayerPrefs.Save();
 
-        scoreCurrent_Stage2 = PlayerPrefs.GetInt("SCORE_2", 0);
-        scoreText_Stage2.text = scoreCurrent_Stage1.ToString("0000");
+        scoreCurrent_Stage2w = PlayerPrefs.GetInt("SCORE_2", 0);
+        scoreText_Stage2w.text = scoreCurrent_Stage2w.ToString("0000");
+        scoreCurrent_Stage2b = PlayerPrefs.GetInt("SCORE_2", 0);
+        scoreText_Stage2b.text = scoreCurrent_Stage2b.ToString("0000");
 
         SoundManager.Instance.PlaySE_Sys(scoreResetSE);
     }
@@ -138,5 +158,18 @@ public class MainMenuManager : MonoBehaviour
     public void Decision()
     {
         SoundManager.Instance.PlaySE_Sys(decisionSE);
+    }
+
+    public void SEPlay()
+    {
+        if (Input.GetKeyDown(KeyCode.J))
+        {
+            SoundManager.Instance.PlaySE_Game(demoSE);
+        }
+
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            SoundManager.Instance.PlaySE_Voi(demoVoice);
+        }
     }
 }
