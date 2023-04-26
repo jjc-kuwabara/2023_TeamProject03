@@ -12,6 +12,7 @@ public class GameManager : Singleton<GameManager>
     [Header("ゲームの進行状況を示すフラグ")]
     public bool gameStart = false;  //ゲーム開始前
     public bool mainGameFLG = false;
+    public bool tutorialFLG = false;
     public bool clearble = false;   //クリア可能状態
     public bool gameClear = false;  //ゲームクリア
     public bool gameOver = false;   //ゲームオーバー
@@ -150,9 +151,12 @@ public class GameManager : Singleton<GameManager>
         if (mainGameFLG)
         {
             //HPが0になったらゲームオーバー
-            if (HPCurrent <= 0 && !gameOver)
+            if (HPCurrent <= 0 && !gameOver && !tutorialFLG)
             {
                 GameOver();
+            }else if (tutorialFLG)
+            {
+                HPUpdate(-2);
             }
 
             //HPが0以下にならないように処理
@@ -243,7 +247,7 @@ public class GameManager : Singleton<GameManager>
         if (foundFLG)
         {
             foundTimeCurrent += Time.deltaTime;
-            if(foundTimeCurrent >= foundTime)
+            if(foundTimeCurrent >= foundTime && !tutorialFLG)
             {
                 GameOver_Found();
             }
@@ -418,6 +422,11 @@ public class GameManager : Singleton<GameManager>
         {
             attackImage[i].SetActive(false);
         }
+    }
+
+    public void TutorialFLGChange(bool flg)
+    {
+        tutorialFLG = flg;
     }
 
     //スタート演出のスキップ
