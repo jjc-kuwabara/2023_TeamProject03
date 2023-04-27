@@ -1923,10 +1923,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
+    m_SelectOnUp: {fileID: 94464944061208322}
+    m_SelectOnDown: {fileID: 94464944679659136}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
@@ -3151,7 +3151,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &94464943464440844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4905,10 +4905,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
+    m_SelectOnUp: {fileID: 94464944679659136}
+    m_SelectOnDown: {fileID: 94464943250740252}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
@@ -7494,10 +7494,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
+    m_SelectOnUp: {fileID: 94464943250740252}
+    m_SelectOnDown: {fileID: 94464944061208322}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
@@ -9662,7 +9662,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &94464945055012534
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11164,7 +11164,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1453171008375459093, guid: 3d284487b68cad8499e11002aa2654f6, type: 3}
+  - {fileID: 2100000, guid: 1f07689dd6634444ba94ab5f04d53762, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -15362,7 +15362,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -4051967666783060933, guid: 3d284487b68cad8499e11002aa2654f6, type: 3}
+  - {fileID: 2100000, guid: ad6544a241b136f4c87ba992a5b49818, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -17798,8 +17798,8 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6678050875110725787}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: c16963254b89eda4dab4113761666263, type: 3}
-  m_Controller: {fileID: 9100000, guid: f565fe345c8fcba46bc55ab2e68c1321, type: 2}
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 50ecd379ca9c2dd419de9588f85c77a2, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -18030,7 +18030,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1453171008375459093, guid: 3d284487b68cad8499e11002aa2654f6, type: 3}
+  - {fileID: 2100000, guid: 1f07689dd6634444ba94ab5f04d53762, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
