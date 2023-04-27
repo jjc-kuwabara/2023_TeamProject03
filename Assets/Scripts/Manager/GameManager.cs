@@ -30,6 +30,7 @@ public class GameManager : Singleton<GameManager>
     public int airGetSE = 3;
     public int killSE = 2;
     public int damageSE = 0;
+    public int airDamageSE = 0;
 
     [Header("PlayerのHP")]
     public float HPCurrent;
@@ -94,7 +95,7 @@ public class GameManager : Singleton<GameManager>
     [SerializeField] int stageNo = 0;
     int score = 0;
 
-    [Header("リザルトデータ")]
+    [Header("鵜飼のワイプ")]
     public GameObject ukaiCamera;
 
     GameObject player;
@@ -223,6 +224,7 @@ public class GameManager : Singleton<GameManager>
             if (airDamageTimeCullent >= airDamageTime)
             {
                 DTO(airDamage);
+                SoundManager.Instance.PlaySE_Game(airDamageSE);
                 airDamageTimeCullent = 0;
             }
 
@@ -238,8 +240,6 @@ public class GameManager : Singleton<GameManager>
     {
         HPUpdate(HPMax / 100 * mo);
         controller.AttackTypeChenge(1);
-
-        SoundManager.Instance.PlaySE_Game(damageSE);
     }
 
     void Found()
@@ -394,7 +394,7 @@ public class GameManager : Singleton<GameManager>
 
     public void PlayBGMChange(int no)
     {
-        //SoundManager.Instance.PlayBGM(no);
+        SoundManager.Instance.PlayBGM(no);
     }
 
     public void AttackImageChenge(int n)
@@ -464,6 +464,8 @@ public class GameManager : Singleton<GameManager>
         canvasMainGame.SetActive(false);    //メインUI
         canvasClearDemo.SetActive(true);  //デモ中UI
         pd_clearParent.SetActive(true);  //デモ中カメラ
+
+        PlayBGMChange(1);
     }
 
     //ゲームオーバー演出のスキップ
@@ -475,6 +477,8 @@ public class GameManager : Singleton<GameManager>
         canvasMainGame.SetActive(false);    //メインUI
         canvasOverDemo.SetActive(true);  //デモ中UI
         pd_overParent.SetActive(true);  //デモ中カメラ
+
+        PlayBGMChange(2);
     }
 
     //ゲームオーバー演出のスキップ
@@ -486,6 +490,8 @@ public class GameManager : Singleton<GameManager>
         canvasMainGame.SetActive(false);    //メインUI
         canvasOverFoundDemo.SetActive(true);  //デモ中UI
         pd_overParent_Found.SetActive(true);  //デモ中カメラ
+
+        PlayBGMChange(3);
     }
 
     //シーン遷移

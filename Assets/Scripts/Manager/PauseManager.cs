@@ -31,8 +31,11 @@ public class PauseManager : MonoBehaviour
     GameObject currentFocus;   //現在
     GameObject previousFocus;  //前フレーム
 
-
+    [Header("SEの番号")]
+    public int pauseSE = 0;
+    public int focusMoveSE = 0;
     public int decisionSE = 0;
+    public int cancelSE = 0;
 
     void Start()
     {
@@ -54,6 +57,7 @@ public class PauseManager : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 ChangePause(true);
+                SoundManager.Instance.PlaySE_Sys(pauseSE);
                 return;
             }
 
@@ -69,6 +73,14 @@ public class PauseManager : MonoBehaviour
 
             //ヒットストップ中の時間計測
             HitStopTime();
+        }
+
+        if (pauseFLG)
+        {
+            if (Input.GetButtonDown("Horizontal") || Input.GetButtonDown("Vertical"))
+            {
+                SoundManager.Instance.PlaySE_Sys(focusMoveSE);
+            }
         }
 
         //フォーカスが外れていないかチェック
@@ -224,5 +236,10 @@ public class PauseManager : MonoBehaviour
     public void Decision()
     {
         SoundManager.Instance.PlaySE_Sys(decisionSE);
+    }
+
+    public void Cancel()
+    {
+        SoundManager.Instance.PlaySE_Sys(cancelSE);
     }
 }
