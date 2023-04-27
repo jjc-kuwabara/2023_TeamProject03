@@ -27,7 +27,10 @@ public class MainMenuManager : MonoBehaviour
 
     public float sceneMoveTime = 0;
 
+    [Header("SEÇÃî‘çÜ")]
+    public int focusMoveSE = 0;
     public int decisionSE = 0;
+    public int cancelSE = 0;
     public int scoreResetSE = 0;
     public int demoSE = 0;
     public int demoVoice = 0;
@@ -160,6 +163,11 @@ public class MainMenuManager : MonoBehaviour
         SoundManager.Instance.PlaySE_Sys(decisionSE);
     }
 
+    public void Cancel()
+    {
+        SoundManager.Instance.PlaySE_Sys(cancelSE);
+    }
+
     public void SEPlay()
     {
         if (Input.GetKeyDown(KeyCode.J))
@@ -170,6 +178,11 @@ public class MainMenuManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.K))
         {
             SoundManager.Instance.PlaySE_Voi(demoVoice);
+        }
+
+        if (Input.GetButtonDown("Horizontal") || Input.GetButtonDown("Vertical"))
+        {
+            SoundManager.Instance.PlaySE_Sys(focusMoveSE);
         }
     }
 }
