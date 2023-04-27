@@ -34409,6 +34409,7 @@ MonoBehaviour:
   airGetSE: 3
   killSE: 2
   damageSE: 0
+  airDamageSE: 0
   HPCurrent: 0
   HPMax: 10
   airCurrent: 0
