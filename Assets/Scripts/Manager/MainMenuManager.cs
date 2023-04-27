@@ -31,6 +31,7 @@ public class MainMenuManager : MonoBehaviour
     public int focusMoveSE = 0;
     public int decisionSE = 0;
     public int cancelSE = 0;
+    public int sceneMoveSE = 0;
     public int scoreResetSE = 0;
     public int demoSE = 0;
     public int demoVoice = 0;
@@ -103,6 +104,7 @@ public class MainMenuManager : MonoBehaviour
 
     public void SceneMove(int sceneNo)
     {
+        SoundManager.Instance.PlaySE_Sys(sceneMoveSE);
         FadeManager.Instance.LoadSceneIndex(sceneNo, sceneMoveTime);
     }
 
