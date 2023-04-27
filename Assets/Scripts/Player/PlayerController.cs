@@ -237,14 +237,19 @@ public class PlayerController : MonoBehaviour
             if (n == 1)
             {
                 Quaternion rot = Quaternion.Euler(firePos[i].transform.rotation.x, firePos[i].transform.rotation.y - 180, firePos[i].transform.rotation.z);
-                Instantiate(EffectManager.Instance.playerFX[attackFX_1], firePos[i].transform.position, rot);
+                
+                GameObject obj = (GameObject)Instantiate(EffectManager.Instance.playerFX[attackFX_1], firePos[i].transform.position, rot);
                 //          生成物　　　　　　　　　　　　　　　生成する場所　　　　生成する角度
+                obj.transform.parent = player.transform;
             }
             else if (n == 3 && i == 0)
             {
                 Quaternion rot = Quaternion.Euler(firePos[i].transform.rotation.x, firePos[i].transform.rotation.y - 180, firePos[i].transform.rotation.z);
-                Instantiate(EffectManager.Instance.playerFX[attackFX_3], firePos[i].transform.position, rot);
+                
                 //          生成物　　　　　　　　　　　　　　　生成する場所　　　　生成する角度
+                GameObject obj = (GameObject)Instantiate(EffectManager.Instance.playerFX[attackFX_3], firePos[i].transform.position, rot);
+                //          生成物　　　　　　　　　　　　　　　生成する場所　　　　生成する角度
+                obj.transform.parent = player.transform;
             }
         }
     }

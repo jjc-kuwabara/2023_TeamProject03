@@ -7,9 +7,10 @@ public class Bullet : MonoBehaviour
     public float bulletSpeed = 10;
     public float destoryTime = 3;
 
-    [Header("エフェクトの番号")]
+    [Header("エフェクト・SEの番号")]
     public int trajectoryFX = 0;
     public int hitFX = 0;
+    public int hitSE = 0;
 
     Rigidbody rig;
 
@@ -31,6 +32,7 @@ public class Bullet : MonoBehaviour
         if(collision.transform.tag != "Eat" && collision.transform.tag != "Player" && collision.transform.tag != "PlayerAttack" && collision.transform.tag != "Item")
         {
             Instantiate(EffectManager.Instance.playerFX[hitFX], transform.position, Quaternion.identity);
+            SoundManager.Instance.PlaySE_Game(hitSE);
 
             Destroy(this.gameObject);
         }
