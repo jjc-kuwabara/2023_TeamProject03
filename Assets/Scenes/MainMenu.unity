@@ -181,6 +181,7 @@ GameObject:
   - component: {fileID: 86400725}
   - component: {fileID: 86400724}
   - component: {fileID: 86400723}
+  - component: {fileID: 86400726}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -250,10 +251,19 @@ Transform:
   m_LocalPosition: {x: 0, y: 1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 4345736519790186847}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!124 &86400726
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86400722}
+  m_Enabled: 1
 --- !u!1 &199709466
 GameObject:
   m_ObjectHideFlags: 0
@@ -407,6 +417,7 @@ MonoBehaviour:
   focusMoveSE: 0
   decisionSE: 0
   cancelSE: 0
+  sceneMoveSE: 0
   scoreResetSE: 0
   demoSE: 0
   demoVoice: 0
@@ -16872,11 +16883,12 @@ MonoBehaviour:
     fogDensity: 0.1
     fogColor: {r: 0, g: 0, b: 0, a: 0}
   gameObjects:
-    mainCamera: {fileID: 0}
-    waterLens: {fileID: 0}
-    airLens: {fileID: 0}
-    bubble: {fileID: 0}
-    waterPlanes: []
+    mainCamera: {fileID: 86400722}
+    waterLens: {fileID: 4345736519790428097}
+    airLens: {fileID: 4345736519790370087}
+    bubble: {fileID: 134262, guid: 8a59534d302a51d4aad125480950b6e7, type: 3}
+    waterPlanes:
+    - {fileID: 4345736521286584246}
     useSquaredPlanes: 0
   bubbleSpawnCriteria:
     minBubbleCount: 20
@@ -16945,14 +16957,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4345736519790598517}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 73.60942, y: 30.113369, z: -108.558136}
+  m_LocalPosition: {x: 0.000030517578, y: -1, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4345736519790135597}
   - {fileID: 4345736519790177393}
-  m_Father: {fileID: 4345736521670307503}
-  m_RootOrder: 2
+  m_Father: {fileID: 86400725}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4345736519790370087
 GameObject:
@@ -17653,7 +17665,6 @@ Transform:
   m_Children:
   - {fileID: 4345736521286823980}
   - {fileID: 4345736520839512138}
-  - {fileID: 4345736519790186847}
   - {fileID: 6333999854389707297}
   - {fileID: 5792315007479517276}
   - {fileID: 5792315009023338045}
@@ -19338,7 +19349,7 @@ Transform:
   - {fileID: 5792315007316493568}
   - {fileID: 5792315006166743706}
   m_Father: {fileID: 4345736521670307503}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &5792315007676515948
 Transform:
@@ -19388,7 +19399,7 @@ Transform:
   - {fileID: 5792315008417525005}
   - {fileID: 5792315006746423525}
   m_Father: {fileID: 4345736521670307503}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &5795105991393276940
 Animator:
@@ -20087,7 +20098,7 @@ Transform:
   - {fileID: 1324771061929845715}
   - {fileID: 2837487055555476146}
   m_Father: {fileID: 4345736521670307503}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 7.123, y: -127.638, z: -0.455}
 --- !u!1 &6337142305939745428
 GameObject:
