@@ -485,7 +485,7 @@ GameObject:
   - component: {fileID: 7224525479347256305}
   - component: {fileID: 4045631052651543280}
   m_Layer: 0
-  m_Name: S_Enemybullet
+  m_Name: F_CEnemybullet
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
