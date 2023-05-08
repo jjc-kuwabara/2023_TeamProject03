@@ -53,8 +53,8 @@ public class PauseManager : MonoBehaviour
         //ポーズ中でないときのみボタンを受け入れる
         if (!pauseFLG && GameManager.Instance.mainGameFLG)
         {
-            //Pを押したら時間停止
-            if (Input.GetKeyDown(KeyCode.E))
+            //Escapeを押したらポーズ画面に
+            if (Input.GetKeyDown(KeyCode.Escape))
             {
                 ChangePause(true);
                 SoundManager.Instance.PlaySE_Sys(pauseSE);
