@@ -114,7 +114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletSpeed: 10
-  destoryTime: 5
+  destoryTime: 6
   effectExp: {fileID: 0}
   effectAura: {fileID: 0}
 --- !u!114 &7224525479347256305
