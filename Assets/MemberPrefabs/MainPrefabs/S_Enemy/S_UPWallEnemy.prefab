@@ -115,22 +115,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveType: 0
   rotateType: 0
-  damageType: 4
+  damageType: 1
   attackType: 0
   awakeType: 0
   actionType: 3
+  dropType: 0
   pos_Go: {x: -20, y: 0, z: 0}
   pos_Iteration: {x: 0, y: -10, z: 0}
   rot: {x: 0, y: 0, z: 0}
   time: 0.5
   lifePoint: 3
   damage: 1
+  dropItem: []
+  score: 10
   movePointer: []
   weakPoint: {fileID: 0}
   weakMagnification: 0
   scaleDown: 1
   childNo: 0
   enemyATK: 1
+  damageSE: 0
+  deathFX: 0
 --- !u!54 &5420618647581923049
 Rigidbody:
   m_ObjectHideFlags: 0

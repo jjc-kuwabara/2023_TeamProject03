@@ -308,7 +308,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4861723228565819333}
   - component: {fileID: 4772438578778713257}
-  - component: {fileID: 4827561071296048289}
   m_Layer: 0
   m_Name: bream
   m_TagString: Untagged
@@ -354,21 +353,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &4827561071296048289
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4858192298504742897}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30c33a42adc2279459bd71b5a952dc06, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  manager: {fileID: 0}
-  rotSpeed: 1
 --- !u!1 &4858289741780184291
 GameObject:
   m_ObjectHideFlags: 0
