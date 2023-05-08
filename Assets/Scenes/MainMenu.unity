@@ -2041,8 +2041,8 @@ MonoBehaviour:
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 94464944061208322}
     m_SelectOnDown: {fileID: 94464944679659136}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
+    m_SelectOnLeft: {fileID: 94464944679659136}
+    m_SelectOnRight: {fileID: 94464944061208322}
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 0, g: 0, b: 0, a: 1}
