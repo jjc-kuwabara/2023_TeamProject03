@@ -35,9 +35,9 @@ public class ScrollManager : MonoBehaviour
         controller.x_L += move.x;
         controller.x_R += move.x;
 
-        if (controller.x_L >= controller.transform.position.x)
+        if (controller.x_L >= player.transform.position.x)
         {
-            controller.Move_2(move);
+            controller.Move_2(new Vector3(controller.x_L - player.transform.position.x, 0, 0));
         }
         transform.Translate(move);
     }
