@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 4890085278179872738, guid: 407d750cdb998a842b7d8f3e5758f8f5, type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: c0c25dd13c41ab44695595bbabd39d40, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -750,8 +750,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b7aacdb3dc1a284cb9cb4b8a31fe23b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerFX: []
-  stageFX: []
+  playerFX:
+  - {fileID: 4229023065415461548, guid: 67047f9a4ed09ab4d824fbb80817f9ca, type: 3}
+  - {fileID: 1536068471543047752, guid: 708284058b867cb4db533ee7493dae96, type: 3}
+  - {fileID: 6461202112538948155, guid: 23e6ca1cefdabc743baea33fcb68f2ff, type: 3}
+  - {fileID: 9185063840616208824, guid: 4cc3dc58cd872ab4b8431386b9d997e0, type: 3}
+  - {fileID: 5723276091295003295, guid: c220a61ff1ab32b429645b1f73ca3604, type: 3}
+  - {fileID: 9185063840616208824, guid: f2e1627c5c3f3794da6e45d536378e70, type: 3}
+  - {fileID: 4229023065415461548, guid: 849dfc9c69a019746b4c3360392f0e2d, type: 3}
+  stageFX:
+  - {fileID: 5178930066712808821, guid: dfba08dfc19303b48b71e19e10d4ae56, type: 3}
   otherFX: []
 --- !u!4 &790150493
 Transform:
