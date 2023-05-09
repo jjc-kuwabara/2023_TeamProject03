@@ -19,6 +19,7 @@ TagManager:
   - ScoreItem_2
   - Scroll
   - Tutorial
+  - Sensor
   layers:
   - Default
   - TransparentFX

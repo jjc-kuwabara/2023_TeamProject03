@@ -449,9 +449,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 80c0639f96ec6bd4f9f827eca5614a6a, type: 3}
   - {fileID: 8300000, guid: c745b2847e2f4274483f466f9702a08d, type: 3}
   se_GameClip:
-  - {fileID: 8300000, guid: f6c0bb45ebd1add44a0b14a86b46fdb4, type: 3}
+  - {fileID: 8300000, guid: 3855ff462f62bf442b49c9cf0a70414c, type: 3}
   voiClip:
-  - {fileID: 8300000, guid: e77a78e7d1c053445acf6f3bf1a0e835, type: 3}
+  - {fileID: 8300000, guid: 2c84fd10921b0b54c8bb35beb6bee1df, type: 3}
 --- !u!4 &219755456
 Transform:
   m_ObjectHideFlags: 0
@@ -515,13 +515,6 @@ MonoBehaviour:
   scoreText_Stage1b: {fileID: 94464944234358707}
   scoreText_Stage2b: {fileID: 94464944653965126}
   sceneMoveTime: 0
-  focusMoveSE: 0
-  decisionSE: 0
-  cancelSE: 0
-  sceneMoveSE: 0
-  scoreResetSE: 0
-  demoSE: 0
-  demoVoice: 0
 --- !u!4 &470542987
 Transform:
   m_ObjectHideFlags: 0

@@ -104,8 +104,8 @@ public class GameManager : Singleton<GameManager>
     float resultScore = 0;
     [SerializeField] int stageNo = 0;
     int score = 0;
-    [SerializeField] TextMeshPro scoreCurrentText;
-    [SerializeField] TextMeshPro scoreHighText;
+    [SerializeField] TextMeshProUGUI scoreCurrentText;
+    [SerializeField] TextMeshProUGUI scoreHighText;
     [SerializeField] GameObject updateText;
     bool updateFLG = false;
 
@@ -282,12 +282,12 @@ public class GameManager : Singleton<GameManager>
 
             if (secondFoundFLG)
             {
-                int no = Random.Range(5, 8);
+                int no = Random.Range(0, 3);
                 SoundManager.Instance.PlaySE_Voi(secondVoi[no]);
             }
             else if (firstFoundFLG)
             {
-                int no = Random.Range(2, 4);
+                int no = Random.Range(0, 2);
                 SoundManager.Instance.PlaySE_Voi(firstVoi[no]);
             }
             else
