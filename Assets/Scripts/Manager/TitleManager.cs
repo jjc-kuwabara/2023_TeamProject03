@@ -12,7 +12,7 @@ public class TitleManager : MonoBehaviour
 
     public float sceneMoveTime = 0;
 
-    int sceneMoveSE = 0;
+    int sceneMoveVoi = 0;
 
     void Start()
     {
@@ -43,8 +43,13 @@ public class TitleManager : MonoBehaviour
 
     public void SceneMove(int sceneNo)
     {
-        SoundManager.Instance.PlaySE_Sys(sceneMoveSE);
+        SoundManager.Instance.PlaySE_Voi(sceneMoveVoi);
 
+        Invoke(nameof(GameStart), 2.5f);
+    }
+
+    void GameStart(int sceneNo)
+    {
         FadeManager.Instance.LoadSceneIndex(sceneNo, sceneMoveTime);
     }
 }
