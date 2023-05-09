@@ -17,9 +17,9 @@ public class PlayerEatController : MonoBehaviour
     int digestionSE = 10;
 
     //エフェクトの番号
-    int healFX = 0;
-    int bulletFX = 0;
-    int scoreFX = 0;
+    int healFX = 3;
+    int bulletFX = 4;
+    int scoreFX = 5;
 
     [Header("スコアの加算量")]
     public float score_1 = 10;

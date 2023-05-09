@@ -8,8 +8,8 @@ public class Bullet : MonoBehaviour
     public float destoryTime = 3;
 
     //エフェクト・SEの番号
-    int trajectoryFX = 0;
-    int hitFX = 0;
+    int trajectoryFX = 1;
+    int hitFX = 2;
     int hitSE = 1;
 
     Rigidbody rig;

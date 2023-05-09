@@ -12,7 +12,7 @@ public class PlayerHitCheck : MonoBehaviour
     int damageSE = 4;
 
     //エフェクトの番号
-    int damageFX = 0;
+    int damageFX = 2;
 
     void Start()
     {

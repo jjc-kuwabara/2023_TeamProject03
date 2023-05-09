@@ -41,7 +41,7 @@ public class PlayerController : MonoBehaviour
     public bool fireFLG = false;
     int attackSE = 0;
     int attackFX_1 = 0;
-    int attackFX_3 = 0;
+    int attackFX_3 = 6;
 
     bool inputFLG = false;
 
