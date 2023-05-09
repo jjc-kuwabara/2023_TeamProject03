@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 4890085278179872738, guid: 202007f41afebd5439ffc71764886099, type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 049bbd6f824166646b66226bce9f42a4, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -443,7 +443,11 @@ MonoBehaviour:
   bgmClip:
   - {fileID: 8300000, guid: 3c5b7d0d1c55d6a4eacb27038e0591a9, type: 3}
   se_SysClip:
-  - {fileID: 8300000, guid: 3aef82a1cf148e143aab987c413e7ed9, type: 3}
+  - {fileID: 8300000, guid: b51fdc6d4fcf6ba43b42c4954f7cb656, type: 3}
+  - {fileID: 8300000, guid: c745b2847e2f4274483f466f9702a08d, type: 3}
+  - {fileID: 8300000, guid: ec5501bbd8fbb444ca3cefb5b3442933, type: 3}
+  - {fileID: 8300000, guid: 80c0639f96ec6bd4f9f827eca5614a6a, type: 3}
+  - {fileID: 8300000, guid: c745b2847e2f4274483f466f9702a08d, type: 3}
   se_GameClip:
   - {fileID: 8300000, guid: f6c0bb45ebd1add44a0b14a86b46fdb4, type: 3}
   voiClip:
@@ -1209,8 +1213,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b7aacdb3dc1a284cb9cb4b8a31fe23b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerFX: []
-  stageFX: []
+  playerFX:
+  - {fileID: 4229023065415461548, guid: 67047f9a4ed09ab4d824fbb80817f9ca, type: 3}
+  - {fileID: 1536068471543047752, guid: 708284058b867cb4db533ee7493dae96, type: 3}
+  - {fileID: 6461202112538948155, guid: 23e6ca1cefdabc743baea33fcb68f2ff, type: 3}
+  - {fileID: 9185063840616208824, guid: 4cc3dc58cd872ab4b8431386b9d997e0, type: 3}
+  - {fileID: 5723276091295003295, guid: c220a61ff1ab32b429645b1f73ca3604, type: 3}
+  - {fileID: 9185063840616208824, guid: f2e1627c5c3f3794da6e45d536378e70, type: 3}
+  - {fileID: 4229023065415461548, guid: 849dfc9c69a019746b4c3360392f0e2d, type: 3}
+  stageFX:
+  - {fileID: 5178930066712808821, guid: dfba08dfc19303b48b71e19e10d4ae56, type: 3}
   otherFX: []
 --- !u!4 &1815201888
 Transform:

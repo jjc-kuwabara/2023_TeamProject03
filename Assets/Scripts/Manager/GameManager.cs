@@ -29,6 +29,16 @@ public class GameManager : Singleton<GameManager>
     int airGetSE = 7;
     int airDamageSE = 9;
 
+    //Voiceの番号
+    int startVoi = 0;
+    int foundVoi_1 = 1;
+    int[] firstVoi = { 2, 3 };
+    int foundVoi_2 = 4;
+    int[] secondVoi = { 5, 6, 7 };
+    int captureVoi = 8;
+    int escapeVoi = 9;
+    int deathVoi = 10;
+
     [Header("PlayerのHP")]
     public float HPCurrent;
     public float HPMax = 10;
@@ -58,6 +68,9 @@ public class GameManager : Singleton<GameManager>
 
     [Header("鵜飼の処理")]
     [System.NonSerialized] public bool foundFLG = false;
+
+    bool firstFoundFLG = false;
+    bool secondFoundFLG = false;
 
     public float foundTime;
     public float foundTimeCurrent;
@@ -103,6 +116,7 @@ public class GameManager : Singleton<GameManager>
     PlayerController controller;   //PlayerControllerのコンポーネント取得用
 
     GameObject goal;
+    GameObject sensor;
 
     GameObject scroll;
     ScrollManager scrollM;
@@ -120,6 +134,7 @@ public class GameManager : Singleton<GameManager>
         controller = player.GetComponent<PlayerController>();
 
         goal = GameObject.FindGameObjectWithTag("Finish");
+        sensor = GameObject.FindGameObjectWithTag("Sensor");
 
         scroll = GameObject.FindGameObjectWithTag("Scroll");
         scrollM = scroll.GetComponent<ScrollManager>();
@@ -148,6 +163,8 @@ public class GameManager : Singleton<GameManager>
         AttackImageChenge(1);
 
         updateText.SetActive(false);
+
+        SoundManager.Instance.PlaySE_Voi(startVoi);
     }
 
     void Update()
@@ -158,7 +175,8 @@ public class GameManager : Singleton<GameManager>
             if (HPCurrent <= 0 && !gameOver && !tutorialFLG)
             {
                 GameOver();
-            }else if (tutorialFLG)
+            }
+            else if (tutorialFLG)
             {
                 HPUpdate(-2);
             }
@@ -261,12 +279,40 @@ public class GameManager : Singleton<GameManager>
         else
         {
             foundTimeCurrent = 0;
+
+            if (secondFoundFLG)
+            {
+                int no = Random.Range(5, 8);
+                SoundManager.Instance.PlaySE_Voi(secondVoi[no]);
+            }
+            else if (firstFoundFLG)
+            {
+                int no = Random.Range(2, 4);
+                SoundManager.Instance.PlaySE_Voi(firstVoi[no]);
+            }
+            else
+            {
+                return;
+            }
+        }
+
+        if (firstFoundFLG && foundTimeCurrent >= foundTime/2 && !secondFoundFLG)
+        {
+            secondFoundFLG = true;
+
+            SoundManager.Instance.PlaySE_Voi(foundVoi_2);
         }
     }
 
     public void FoundFLG(bool flg)
     {
         foundFLG = flg;
+        firstFoundFLG = flg;
+
+        if (firstFoundFLG)
+        {
+            SoundManager.Instance.PlaySE_Voi(foundVoi_1);
+        }
     }
 
     public void HPUpdate(float n)
@@ -325,7 +371,7 @@ public class GameManager : Singleton<GameManager>
 
     public void ProgressUpdate()
     {
-        distanceCurrent = goal.transform.position.x - player.transform.position.x;
+        distanceCurrent = goal.transform.position.x - sensor.transform.position.x;
 
         progressValue = distanceCurrent / distanceMax;
 
@@ -369,6 +415,8 @@ public class GameManager : Singleton<GameManager>
         scoreCurrentText.text = result.ToString("0000");
         scoreHighText.text = score.ToString("0000");
 
+        SoundManager.Instance.PlaySE_Voi(escapeVoi);
+
         pd_gameClear.Play();
     }
 
@@ -378,6 +426,8 @@ public class GameManager : Singleton<GameManager>
         scrollM.ScrollFLGChange(false);
         gameOver = true;
 
+        SoundManager.Instance.PlaySE_Voi(deathVoi);
+
         pd_gameOver.Play();
     }
 
@@ -386,6 +436,8 @@ public class GameManager : Singleton<GameManager>
         mainGameFLG = false;
         scrollM.ScrollFLGChange(false);
         gameOver = true;
+
+        SoundManager.Instance.PlaySE_Voi(captureVoi);
 
         pd_gameOver_Found.Play();
     }
