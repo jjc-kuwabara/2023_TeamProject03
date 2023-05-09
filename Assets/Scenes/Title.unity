@@ -1085,7 +1085,7 @@ MonoBehaviour:
   SEGroup: {fileID: -934536182363291255, guid: 5763bb3a97a1a1c46a07414e0d1a530a, type: 2}
   VoiGroup: {fileID: -6942128450662874725, guid: 5763bb3a97a1a1c46a07414e0d1a530a, type: 2}
   bgmClip:
-  - {fileID: 8300000, guid: 00ceaa66604a5054da71a0b66cb0bd5b, type: 3}
+  - {fileID: 8300000, guid: 199485b7790c55b48afb47c18fa7eb20, type: 3}
   se_SysClip:
   - {fileID: 8300000, guid: 6ff7c6f88375323448180f3e426ea165, type: 3}
   se_GameClip: []
