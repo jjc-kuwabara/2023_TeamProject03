@@ -29,7 +29,7 @@ public class Bullet : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.transform.tag != "Eat" && collision.transform.tag != "Player" && collision.transform.tag != "PlayerAttack" && collision.transform.tag != "Item")
+        if(collision.transform.tag != "Eat" && collision.transform.tag != "Player" && collision.transform.tag != "PlayerAttack" && collision.transform.tag != "HealItem" && collision.transform.tag != "BulletItem_2" && collision.transform.tag != "ScoreItem_1" && collision.transform.tag != "Bubble")
         {
             Instantiate(EffectManager.Instance.playerFX[hitFX], transform.position, Quaternion.identity);
             SoundManager.Instance.PlaySE_Game(hitSE);
