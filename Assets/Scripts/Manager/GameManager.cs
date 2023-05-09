@@ -94,6 +94,10 @@ public class GameManager : Singleton<GameManager>
     float resultScore = 0;
     [SerializeField] int stageNo = 0;
     int score = 0;
+    [SerializeField] TextMeshPro scoreCurrentText;
+    [SerializeField] TextMeshPro scoreHighText;
+    [SerializeField] GameObject updateText;
+    bool updateFLG = false;
 
     [Header("鵜飼のワイプ")]
     public GameObject ukaiCamera;
@@ -145,6 +149,8 @@ public class GameManager : Singleton<GameManager>
         scoreText.text = scoreCurrent.ToString("0000");
 
         AttackImageChenge(1);
+
+        updateText.SetActive(false);
     }
 
     void Update()
@@ -191,10 +197,15 @@ public class GameManager : Singleton<GameManager>
         {
             DemoSkip();
         }
-        /*
+        
         if (pd_gameClear.state == PlayState.Playing && Input.GetButtonDown("Jump") && !mainGameFLG)
         {
             DemoClearSkip();
+        }
+
+        if (pd_gameClear.state == PlayState.Playing && !mainGameFLG)
+        {
+            PlayerMove();
         }
 
         if (pd_gameOver.state == PlayState.Playing && Input.GetButtonDown("Jump") && !mainGameFLG)
@@ -205,7 +216,7 @@ public class GameManager : Singleton<GameManager>
         if (pd_gameOver_Found.state == PlayState.Playing && Input.GetButtonDown("Jump") && !mainGameFLG)
         {
             DemoOverFoundSkip();
-        }*/
+        }
     }
 
     void AirCheck()
@@ -343,6 +354,7 @@ public class GameManager : Singleton<GameManager>
                 if (result > score)
                 {
                     PlayerPrefs.SetInt("SCORE_1", result);
+                    updateFLG = true;
                 }
                 break;
 
@@ -351,6 +363,7 @@ public class GameManager : Singleton<GameManager>
                 if (result > score)
                 {
                     PlayerPrefs.SetInt("SCORE_2", result);
+                    updateFLG = true;
                 }
                 break;
 
@@ -358,6 +371,9 @@ public class GameManager : Singleton<GameManager>
                 break;
         }
         PlayerPrefs.Save();
+
+        scoreCurrentText.text = result.ToString("0000");
+        scoreHighText.text = score.ToString("0000");
 
         //pd_gameClear.Play();
 
@@ -429,6 +445,11 @@ public class GameManager : Singleton<GameManager>
         tutorialFLG = flg;
     }
 
+    void PlayerMove()
+    {
+        controller.Move_2(new Vector3(2,0,1));
+    }
+
     //スタート演出のスキップ
     void DemoSkip()
     {
@@ -464,6 +485,9 @@ public class GameManager : Singleton<GameManager>
         canvasMainGame.SetActive(false);    //メインUI
         canvasClearDemo.SetActive(true);  //デモ中UI
         pd_clearParent.SetActive(true);  //デモ中カメラ
+
+        player.SetActive(false);
+        ScoreUpdate();
 
         PlayBGMChange(1);
     }
@@ -510,5 +534,13 @@ public class GameManager : Singleton<GameManager>
     public void SceneReset()
     {
         FadeManager.Instance.LoadScene(SceneManager.GetActiveScene().name, fadeTime);
+    }
+
+    public void ScoreUpdate()
+    {
+        if (updateFLG)
+        {
+            updateText.SetActive(true);
+        }
     }
 }
