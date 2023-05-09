@@ -375,10 +375,7 @@ public class GameManager : Singleton<GameManager>
         scoreCurrentText.text = result.ToString("0000");
         scoreHighText.text = score.ToString("0000");
 
-        //pd_gameClear.Play();
-
-        Debug.Log("ゲームクリア");
-        Debug.Log(result);
+        pd_gameClear.Play();
     }
 
     public void GameOver()
@@ -387,9 +384,7 @@ public class GameManager : Singleton<GameManager>
         scrollM.ScrollFLGChange(false);
         gameOver = true;
 
-        //pd_gameOver.Play();
-
-        Debug.Log("ゲームオーバー");
+        pd_gameOver.Play();
     }
 
     public void GameOver_Found()
@@ -398,9 +393,7 @@ public class GameManager : Singleton<GameManager>
         scrollM.ScrollFLGChange(false);
         gameOver = true;
 
-        //pd_gameOver_Found.Play();
-
-        Debug.Log("ゲームオーバー");
+        pd_gameOver_Found.Play();
     }
 
     public void DemoPlayBGM()
@@ -459,8 +452,6 @@ public class GameManager : Singleton<GameManager>
         //初期状態の設定
         canvasMainGame.SetActive(true);    //メインUI
         canvasStartDemo.SetActive(false);  //デモ中UI
-        //pd_startParent.SetActive(false);  //デモ中カメラ
-        //mainCamera.SetActive(true);  //メインで使うカメラ
 
         if(startDemoUsed.Length > 0)
         {
@@ -484,7 +475,6 @@ public class GameManager : Singleton<GameManager>
 
         canvasMainGame.SetActive(false);    //メインUI
         canvasClearDemo.SetActive(true);  //デモ中UI
-        pd_clearParent.SetActive(true);  //デモ中カメラ
 
         player.SetActive(false);
         ScoreUpdate();
@@ -500,7 +490,6 @@ public class GameManager : Singleton<GameManager>
 
         canvasMainGame.SetActive(false);    //メインUI
         canvasOverDemo.SetActive(true);  //デモ中UI
-        pd_overParent.SetActive(true);  //デモ中カメラ
 
         PlayBGMChange(2);
     }
