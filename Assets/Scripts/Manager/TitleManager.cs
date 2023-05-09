@@ -12,7 +12,7 @@ public class TitleManager : MonoBehaviour
 
     public float sceneMoveTime = 0;
 
-    public int sceneMoveSE = 0;
+    int sceneMoveSE = 0;
 
     void Start()
     {

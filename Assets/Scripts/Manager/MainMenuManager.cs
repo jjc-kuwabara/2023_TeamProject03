@@ -27,14 +27,14 @@ public class MainMenuManager : MonoBehaviour
 
     public float sceneMoveTime = 0;
 
-    [Header("SEÇÃî‘çÜ")]
-    public int focusMoveSE = 0;
-    public int decisionSE = 0;
-    public int cancelSE = 0;
-    public int sceneMoveSE = 0;
-    public int scoreResetSE = 0;
-    public int demoSE = 0;
-    public int demoVoice = 0;
+    //SEÇÃî‘çÜ
+    int focusMoveSE = 0;
+    int decisionSE = 1;
+    int cancelSE = 2;
+    int sceneMoveSE = 3;
+    int scoreResetSE = 0;
+    int demoSE = 0;
+    int demoVoice = 0;
 
     void Start()
     {

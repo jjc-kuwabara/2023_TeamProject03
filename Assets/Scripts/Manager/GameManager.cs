@@ -25,12 +25,19 @@ public class GameManager : Singleton<GameManager>
     [SerializeField] PlayableDirector pd_gameOver;   //ゲームオーバーのデモ演出
     [SerializeField] PlayableDirector pd_gameOver_Found;   //ゲームオーバーのデモ演出
 
-    [Header("SEの番号")]
-    public int airSE = 0;
-    public int airGetSE = 3;
-    public int killSE = 2;
-    public int damageSE = 0;
-    public int airDamageSE = 0;
+    //SEの番号
+    int airGetSE = 7;
+    int airDamageSE = 9;
+
+    //Voiceの番号
+    int startVoi = 0;
+    int foundVoi_1 = 1;
+    int[] firstVoi = { 2, 3 };
+    int foundVoi_2 = 4;
+    int[] secondVoi = { 5, 6, 7 };
+    int captureVoi = 8;
+    int escapeVoi = 9;
+    int deathVoi = 10;
 
     [Header("PlayerのHP")]
     public float HPCurrent;
@@ -61,6 +68,9 @@ public class GameManager : Singleton<GameManager>
 
     [Header("鵜飼の処理")]
     [System.NonSerialized] public bool foundFLG = false;
+
+    bool firstFoundFLG = false;
+    bool secondFoundFLG = false;
 
     public float foundTime;
     public float foundTimeCurrent;
@@ -151,6 +161,8 @@ public class GameManager : Singleton<GameManager>
         AttackImageChenge(1);
 
         updateText.SetActive(false);
+
+        SoundManager.Instance.PlaySE_Voi(startVoi);
     }
 
     void Update()
@@ -161,7 +173,8 @@ public class GameManager : Singleton<GameManager>
             if (HPCurrent <= 0 && !gameOver && !tutorialFLG)
             {
                 GameOver();
-            }else if (tutorialFLG)
+            }
+            else if (tutorialFLG)
             {
                 HPUpdate(-2);
             }
@@ -182,8 +195,6 @@ public class GameManager : Singleton<GameManager>
             else
             {
                 airCurrent += airHeal * Time.deltaTime;
-
-                SoundManager.Instance.PlaySE_Game(airSE);
             }
 
             AirCheck();
@@ -266,12 +277,40 @@ public class GameManager : Singleton<GameManager>
         else
         {
             foundTimeCurrent = 0;
+
+            if (secondFoundFLG)
+            {
+                int no = Random.Range(5, 8);
+                SoundManager.Instance.PlaySE_Voi(secondVoi[no]);
+            }
+            else if (firstFoundFLG)
+            {
+                int no = Random.Range(2, 4);
+                SoundManager.Instance.PlaySE_Voi(firstVoi[no]);
+            }
+            else
+            {
+                return;
+            }
+        }
+
+        if (firstFoundFLG && foundTimeCurrent >= 5 && !secondFoundFLG)
+        {
+            secondFoundFLG = true;
+
+            SoundManager.Instance.PlaySE_Voi(foundVoi_2);
         }
     }
 
     public void FoundFLG(bool flg)
     {
         foundFLG = flg;
+        firstFoundFLG = flg;
+
+        if (firstFoundFLG)
+        {
+            SoundManager.Instance.PlaySE_Voi(foundVoi_1);
+        }
     }
 
     public void HPUpdate(float n)
@@ -316,7 +355,6 @@ public class GameManager : Singleton<GameManager>
 
     public void Kill(float addScore)
     {
-        SoundManager.Instance.PlaySE_Game(killSE);
         resultScore += addScore;
         scoreCurrent = (int)resultScore;
         scoreText.text = scoreCurrent.ToString("0000");
@@ -375,6 +413,8 @@ public class GameManager : Singleton<GameManager>
         scoreCurrentText.text = result.ToString("0000");
         scoreHighText.text = score.ToString("0000");
 
+        SoundManager.Instance.PlaySE_Voi(escapeVoi);
+
         pd_gameClear.Play();
     }
 
@@ -384,6 +424,8 @@ public class GameManager : Singleton<GameManager>
         scrollM.ScrollFLGChange(false);
         gameOver = true;
 
+        SoundManager.Instance.PlaySE_Voi(deathVoi);
+
         pd_gameOver.Play();
     }
 
@@ -392,6 +434,8 @@ public class GameManager : Singleton<GameManager>
         mainGameFLG = false;
         scrollM.ScrollFLGChange(false);
         gameOver = true;
+
+        SoundManager.Instance.PlaySE_Voi(captureVoi);
 
         pd_gameOver_Found.Play();
     }

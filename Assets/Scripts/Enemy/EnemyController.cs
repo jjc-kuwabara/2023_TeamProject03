@@ -125,11 +125,11 @@ public class EnemyController : MonoBehaviour
     [Header("敵から受けるダメージ量")]
     public int enemyATK = 1;
 
-    [Header("SEの番号")]
-    public int damageSE = 0;
+    //SEの番号
+    int damageSE = 2;
 
-    [Header("エフェクトの番号")]
-    public int deathFX = 0;
+    //エフェクトの番号
+    int deathFX = 0;
 
     PlayerController controller;
 

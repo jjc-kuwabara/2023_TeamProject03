@@ -7,19 +7,19 @@ public class PlayerEatController : MonoBehaviour
     public bool eatFLG = false;
     public float digestionTime = 3f;
 
-    [Header("SEの番号")]
-    public int eatSE = 4;
-    public int healSE = 0;
-    public int bullet_1SE = 0;
-    public int bullet_2SE = 0;
-    public int score_1SE = 0;
-    public int score_2SE = 0;
-    public int digestionSE = 0;
+    //SEの番号
+    int eatSE = 3;
+    int healSE = 6;
+    int bullet_1SE = 0;
+    int bullet_2SE = 5;
+    int score_1SE = 8;
+    int score_2SE = 0;
+    int digestionSE = 10;
 
-    [Header("エフェクトの番号")]
-    public int healFX = 0;
-    public int bulletFX = 0;
-    public int scoreFX = 0;
+    //エフェクトの番号
+    int healFX = 3;
+    int bulletFX = 4;
+    int scoreFX = 5;
 
     [Header("スコアの加算量")]
     public float score_1 = 10;
