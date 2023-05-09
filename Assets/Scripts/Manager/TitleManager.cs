@@ -41,15 +41,15 @@ public class TitleManager : MonoBehaviour
         previousFocus = EventSystem.current.currentSelectedGameObject;
     }
 
-    public void SceneMove(int sceneNo)
+    public void SceneMove()
     {
         SoundManager.Instance.PlaySE_Voi(sceneMoveVoi);
 
         Invoke(nameof(GameStart), 2.5f);
     }
 
-    void GameStart(int sceneNo)
+    void GameStart()
     {
-        FadeManager.Instance.LoadSceneIndex(sceneNo, sceneMoveTime);
+        FadeManager.Instance.LoadSceneIndex(1, sceneMoveTime);
     }
 }
