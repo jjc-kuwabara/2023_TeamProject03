@@ -116,6 +116,7 @@ public class GameManager : Singleton<GameManager>
     PlayerController controller;   //PlayerControllerのコンポーネント取得用
 
     GameObject goal;
+    GameObject sensor;
 
     GameObject scroll;
     ScrollManager scrollM;
@@ -133,6 +134,7 @@ public class GameManager : Singleton<GameManager>
         controller = player.GetComponent<PlayerController>();
 
         goal = GameObject.FindGameObjectWithTag("Finish");
+        sensor = GameObject.FindGameObjectWithTag("Sensor");
 
         scroll = GameObject.FindGameObjectWithTag("Scroll");
         scrollM = scroll.GetComponent<ScrollManager>();
@@ -369,7 +371,7 @@ public class GameManager : Singleton<GameManager>
 
     public void ProgressUpdate()
     {
-        distanceCurrent = goal.transform.position.x - player.transform.position.x;
+        distanceCurrent = goal.transform.position.x - sensor.transform.position.x;
 
         progressValue = distanceCurrent / distanceMax;
 
