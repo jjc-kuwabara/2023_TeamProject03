@@ -26,8 +26,6 @@ public class PlayerController : MonoBehaviour
     public float y_Up = 0;
     public float y_Down = 0;
 
-    public int moveSE = 0;
-
     bool x_L_FLG = false;
     bool x_R_FLG = false;
     bool y_Up_FLG = false;
@@ -41,9 +39,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float attackTime = 1;
     float attackTimeCurrent;
     public bool fireFLG = false;
-    public int attackSE = 0;
-    public int attackFX_1 = 0;
-    public int attackFX_3 = 0;
+    int attackSE = 0;
+    int attackFX_1 = 0;
+    int attackFX_3 = 0;
 
     bool inputFLG = false;
 
@@ -184,8 +182,6 @@ public class PlayerController : MonoBehaviour
         }
 
         characon.Move(m_moveDistance * Time.deltaTime);
-
-        SoundManager.Instance.PlaySE_Game(moveSE);
     }
 
     public void FLGUpdate(int n, bool flg)

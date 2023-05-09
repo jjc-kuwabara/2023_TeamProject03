@@ -7,10 +7,10 @@ public class Bullet : MonoBehaviour
     public float bulletSpeed = 10;
     public float destoryTime = 3;
 
-    [Header("エフェクト・SEの番号")]
-    public int trajectoryFX = 0;
-    public int hitFX = 0;
-    public int hitSE = 0;
+    //エフェクト・SEの番号
+    int trajectoryFX = 0;
+    int hitFX = 0;
+    int hitSE = 1;
 
     Rigidbody rig;
 

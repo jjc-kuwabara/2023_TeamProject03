@@ -8,12 +8,11 @@ public class PlayerHitCheck : MonoBehaviour
     PlayerController controller;   //PlayerControllerのコンポーネント取得用
     EnemyController enemy;
 
-    [Header("SEの番号")]
-    public int airSE = 0;
-    public int damageSE = 1;
+    //SEの番号
+    int damageSE = 4;
 
-    [Header("エフェクトの番号")]
-    public int damageFX = 0;
+    //エフェクトの番号
+    int damageFX = 0;
 
     void Start()
     {
@@ -33,8 +32,6 @@ public class PlayerHitCheck : MonoBehaviour
         {
             GameManager.Instance.AirFLG(true);
             GameManager.Instance.FoundFLG(true);
-
-            SoundManager.Instance.PlaySE_Game(airSE);
         }
 
         //敵に衝突した時の処理

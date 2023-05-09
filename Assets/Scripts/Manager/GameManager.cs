@@ -25,12 +25,9 @@ public class GameManager : Singleton<GameManager>
     [SerializeField] PlayableDirector pd_gameOver;   //ゲームオーバーのデモ演出
     [SerializeField] PlayableDirector pd_gameOver_Found;   //ゲームオーバーのデモ演出
 
-    [Header("SEの番号")]
-    public int airSE = 0;
-    public int airGetSE = 3;
-    public int killSE = 2;
-    public int damageSE = 0;
-    public int airDamageSE = 0;
+    //SEの番号
+    int airGetSE = 7;
+    int airDamageSE = 9;
 
     [Header("PlayerのHP")]
     public float HPCurrent;
@@ -182,8 +179,6 @@ public class GameManager : Singleton<GameManager>
             else
             {
                 airCurrent += airHeal * Time.deltaTime;
-
-                SoundManager.Instance.PlaySE_Game(airSE);
             }
 
             AirCheck();
@@ -316,7 +311,6 @@ public class GameManager : Singleton<GameManager>
 
     public void Kill(float addScore)
     {
-        SoundManager.Instance.PlaySE_Game(killSE);
         resultScore += addScore;
         scoreCurrent = (int)resultScore;
         scoreText.text = scoreCurrent.ToString("0000");

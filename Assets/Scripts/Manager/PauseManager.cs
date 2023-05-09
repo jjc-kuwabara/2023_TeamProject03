@@ -31,11 +31,11 @@ public class PauseManager : MonoBehaviour
     GameObject currentFocus;   //Œ»İ
     GameObject previousFocus;  //‘OƒtƒŒ[ƒ€
 
-    [Header("SE‚Ì”Ô†")]
-    public int pauseSE = 0;
-    public int focusMoveSE = 0;
-    public int decisionSE = 0;
-    public int cancelSE = 0;
+    //SE‚Ì”Ô†
+    int pauseSE = 0;
+    int focusMoveSE = 1;
+    int decisionSE = 2;
+    int cancelSE = 3;
 
     void Start()
     {
