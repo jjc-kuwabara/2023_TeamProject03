@@ -294,7 +294,7 @@ public class GameManager : Singleton<GameManager>
             }
         }
 
-        if (firstFoundFLG && foundTimeCurrent >= 5 && !secondFoundFLG)
+        if (firstFoundFLG && foundTimeCurrent >= foundTime/2 && !secondFoundFLG)
         {
             secondFoundFLG = true;
 
