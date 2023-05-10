@@ -17,13 +17,13 @@ public class Bullet : MonoBehaviour
     void Start()
     {
         rig = GetComponent<Rigidbody>();
-        rig.AddForce(transform.forward * bulletSpeed, ForceMode.Impulse);
 
         Destroy(this.gameObject, destoryTime);
     }
 
     private void Update()
     {
+        transform.position += new Vector3(bulletSpeed, 0, 0) * Time.deltaTime;
         Instantiate(EffectManager.Instance.playerFX[trajectoryFX], transform.position, Quaternion.identity);
     }
 
