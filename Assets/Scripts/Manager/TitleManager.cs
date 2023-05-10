@@ -43,6 +43,11 @@ public class TitleManager : MonoBehaviour
         FadeManager.Instance.LoadSceneIndex(1, sceneMoveTime);
     }
 
+    public void ButtonOff()
+    {
+        focusTitle.SetActive(false);
+    }
+
     void FocusCheck()
     {
         //現在のフォーカスを格納
