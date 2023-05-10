@@ -14,6 +14,8 @@ public class TitleManager : MonoBehaviour
 
     int sceneMoveVoi = 0;
 
+    bool sceneMoveFLG = false;
+
     void Start()
     {
         SoundManager.Instance.PlayBGM(0);
@@ -28,9 +30,12 @@ public class TitleManager : MonoBehaviour
 
     public void SceneMove()
     {
-        SoundManager.Instance.PlaySE_Voi(sceneMoveVoi);
+        if (!sceneMoveFLG)
+        {
+            SoundManager.Instance.PlaySE_Voi(sceneMoveVoi);
 
-        Invoke(nameof(GameStart), 2f);
+            Invoke(nameof(GameStart), 2f);
+        }
     }
 
     void GameStart()
