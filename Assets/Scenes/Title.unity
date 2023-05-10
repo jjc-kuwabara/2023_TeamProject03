@@ -4714,7 +4714,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   underWaterParameters:
-    fogDensity: 0
+    fogDensity: 0.01
     fogColor: {r: 0.5518868, g: 1, b: 0.7751319, a: 0}
   gameObjects:
     mainCamera: {fileID: 1923108007}
