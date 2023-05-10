@@ -586,6 +586,11 @@ public class GameManager : Singleton<GameManager>
         }
     }
 
+    public void FocusChenge(int no)
+    {
+        EventSystem.current.SetSelectedGameObject(focusMainGame[no]);
+    }
+
     public void ResultCanvasChenge()
     {
         CanvasInit();
