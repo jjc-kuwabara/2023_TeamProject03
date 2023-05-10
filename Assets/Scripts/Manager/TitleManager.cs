@@ -23,6 +23,23 @@ public class TitleManager : MonoBehaviour
 
     void Update()
     {
+        FocusCheck();
+    }
+
+    public void SceneMove()
+    {
+        SoundManager.Instance.PlaySE_Voi(sceneMoveVoi);
+
+        Invoke(nameof(GameStart), 2f);
+    }
+
+    void GameStart()
+    {
+        FadeManager.Instance.LoadSceneIndex(1, sceneMoveTime);
+    }
+
+    void FocusCheck()
+    {
         //現在のフォーカスを格納
         currentFocus = EventSystem.current.currentSelectedGameObject;
 
@@ -39,17 +56,5 @@ public class TitleManager : MonoBehaviour
         //残された条件から、フォーカスが存在するのは確定
         //前フレームのフォーカスを更新
         previousFocus = EventSystem.current.currentSelectedGameObject;
-    }
-
-    public void SceneMove()
-    {
-        SoundManager.Instance.PlaySE_Voi(sceneMoveVoi);
-
-        Invoke(nameof(GameStart), 2.5f);
-    }
-
-    void GameStart()
-    {
-        FadeManager.Instance.LoadSceneIndex(1, sceneMoveTime);
     }
 }
