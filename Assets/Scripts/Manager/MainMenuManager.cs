@@ -36,6 +36,8 @@ public class MainMenuManager : MonoBehaviour
     int demoSE = 0;
     int demoVoice = 0;
 
+    bool playSEFLG = false;
+
     void Start()
     {
         //èâä˙âª
@@ -172,19 +174,27 @@ public class MainMenuManager : MonoBehaviour
 
     public void SEPlay()
     {
-        if (Input.GetKeyDown(KeyCode.J))
+        if (playSEFLG)
         {
-            SoundManager.Instance.PlaySE_Game(demoSE);
-        }
+            if (Input.GetKeyDown(KeyCode.J))
+            {
+                SoundManager.Instance.PlaySE_Game(demoSE);
+            }
 
-        if (Input.GetKeyDown(KeyCode.K))
-        {
-            SoundManager.Instance.PlaySE_Voi(demoVoice);
+            if (Input.GetKeyDown(KeyCode.K))
+            {
+                SoundManager.Instance.PlaySE_Voi(demoVoice);
+            }
         }
 
         if (Input.GetButtonDown("Horizontal") || Input.GetButtonDown("Vertical"))
         {
             SoundManager.Instance.PlaySE_Sys(focusMoveSE);
         }
+    }
+
+    public void SEPlayFLG(bool flg)
+    {
+        playSEFLG = flg;
     }
 }
