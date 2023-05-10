@@ -94,7 +94,7 @@ public class GameManager : Singleton<GameManager>
     //フォーカスが外れないようにする処理用
     GameObject currentFocus;   //現在
     GameObject previousFocus;  //前フレーム
-    [SerializeField] GameObject[] focusMainMenu;  //初期カーソル位置
+    [SerializeField] GameObject[] focusMainGame;  //初期カーソル位置
 
     float fadeTime = 1;
 
@@ -104,6 +104,7 @@ public class GameManager : Singleton<GameManager>
     float resultScore = 0;
     [SerializeField] int stageNo = 0;
     int score = 0;
+    [SerializeField] GameObject[] clearCanvas;
     [SerializeField] TextMeshProUGUI scoreCurrentText;
     [SerializeField] TextMeshProUGUI scoreHighText;
     [SerializeField] GameObject updateText;
@@ -176,10 +177,6 @@ public class GameManager : Singleton<GameManager>
             {
                 GameOver();
             }
-            else if (tutorialFLG)
-            {
-                HPUpdate(-2);
-            }
 
             //HPが0以下にならないように処理
             //Clamp(引数…現在値,最小値,最大値)                
@@ -230,6 +227,8 @@ public class GameManager : Singleton<GameManager>
         {
             DemoOverFoundSkip();
         }
+
+        FocusCheck();
     }
 
     void AirCheck()
@@ -247,7 +246,10 @@ public class GameManager : Singleton<GameManager>
         {
             if (airDamageTimeCullent >= airDamageTime)
             {
-                DTO(airDamage);
+                if (!tutorialFLG)
+                {
+                    DTO(airDamage);
+                }
                 SoundManager.Instance.PlaySE_Game(airDamageSE);
                 airDamageTimeCullent = 0;
             }
@@ -317,6 +319,11 @@ public class GameManager : Singleton<GameManager>
 
     public void HPUpdate(float n)
     {
+        if (HPCurrent - n <= 0 && tutorialFLG)
+        {
+            return;
+        }
+
         HPCurrent -= n;
 
         HPValue = HPCurrent / HPMax;
@@ -577,5 +584,46 @@ public class GameManager : Singleton<GameManager>
         {
             updateText.SetActive(true);
         }
+    }
+
+    public void FocusChenge(int no)
+    {
+        EventSystem.current.SetSelectedGameObject(focusMainGame[no]);
+    }
+
+    public void ResultCanvasChenge()
+    {
+        CanvasInit();
+
+        clearCanvas[0].SetActive(true);
+    }
+
+    //すべてのキャンバスを非表示に
+    void CanvasInit()
+    {
+        for (int i = 0; i < clearCanvas.Length; i++)
+        {
+            clearCanvas[i].SetActive(false);
+        }
+    }
+
+    void FocusCheck()
+    {
+        //現在のフォーカスを格納
+        currentFocus = EventSystem.current.currentSelectedGameObject;
+
+        //もし前回までのフォーカスと同じなら即終了
+        if (currentFocus == previousFocus) return;
+
+        //もしフォーカスが外れていたら前フレームのフォーカスに戻す
+        if (currentFocus == null)
+        {
+            EventSystem.current.SetSelectedGameObject(previousFocus);
+            return;
+        }
+
+        //残された条件から、フォーカスが存在するのは確定
+        //前フレームのフォーカスを更新
+        previousFocus = EventSystem.current.currentSelectedGameObject;
     }
 }
