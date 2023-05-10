@@ -176,10 +176,6 @@ public class GameManager : Singleton<GameManager>
             {
                 GameOver();
             }
-            else if (tutorialFLG)
-            {
-                HPUpdate(-2);
-            }
 
             //HPが0以下にならないように処理
             //Clamp(引数…現在値,最小値,最大値)                
@@ -247,7 +243,10 @@ public class GameManager : Singleton<GameManager>
         {
             if (airDamageTimeCullent >= airDamageTime)
             {
-                DTO(airDamage);
+                if (!tutorialFLG)
+                {
+                    DTO(airDamage);
+                }
                 SoundManager.Instance.PlaySE_Game(airDamageSE);
                 airDamageTimeCullent = 0;
             }
@@ -317,6 +316,11 @@ public class GameManager : Singleton<GameManager>
 
     public void HPUpdate(float n)
     {
+        if (HPCurrent - n <= 0 && tutorialFLG)
+        {
+            return;
+        }
+
         HPCurrent -= n;
 
         HPValue = HPCurrent / HPMax;
