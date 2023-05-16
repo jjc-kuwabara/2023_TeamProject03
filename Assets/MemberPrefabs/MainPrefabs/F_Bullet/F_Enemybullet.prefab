@@ -31,8 +31,8 @@ Transform:
   m_GameObject: {fileID: 4610340539835770293}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -18.4, y: 0.6, z: 30.1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 4951365258795205880}
   m_Father: {fileID: 0}
@@ -116,7 +116,7 @@ MonoBehaviour:
   bulletSpeed: 30
   destoryTime: 1
   effectExp: {fileID: 0}
-  effectAura: {fileID: 0}
+  effectAura: {fileID: 1536068471543047752, guid: 708284058b867cb4db533ee7493dae96, type: 3}
 --- !u!114 &7224525479347256305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,8 +150,6 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 1
   enemyATK: 1
-  damageSE: 0
-  deathFX: 0
 --- !u!54 &4045631052651543280
 Rigidbody:
   m_ObjectHideFlags: 0
