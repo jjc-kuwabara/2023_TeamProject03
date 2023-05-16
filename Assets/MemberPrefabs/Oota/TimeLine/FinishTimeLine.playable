@@ -540,7 +540,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: Refreshing_Morning
+    m_DisplayName: "\u30B2\u30FC\u30E0\u30AF\u30EA\u30A2\u3000\u97F3\u91CF\u6CE8\u610F"
   m_Markers:
     m_Objects: []
   m_TrackProperties:
