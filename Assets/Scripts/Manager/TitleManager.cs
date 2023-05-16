@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class TitleManager : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class TitleManager : MonoBehaviour
     GameObject currentFocus;   //現在
     GameObject previousFocus;  //前フレーム
     [SerializeField] GameObject focusTitle;  //初期カーソル位置
+    [SerializeField] Button buttonTitle;  //初期カーソル位置
 
     public float sceneMoveTime = 0;
 
@@ -45,7 +47,7 @@ public class TitleManager : MonoBehaviour
 
     public void ButtonOff()
     {
-        focusTitle.SetActive(false);
+        buttonTitle.GetComponent<Button>().interactable = false;
     }
 
     void FocusCheck()
