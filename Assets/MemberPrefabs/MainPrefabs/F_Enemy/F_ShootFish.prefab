@@ -169,8 +169,6 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 0
   enemyATK: 1
-  damageSE: 0
-  deathFX: 0
 --- !u!114 &9065537589690422221
 MonoBehaviour:
   m_ObjectHideFlags: 0
