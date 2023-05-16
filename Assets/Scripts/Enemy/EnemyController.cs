@@ -58,6 +58,7 @@ public class EnemyController : MonoBehaviour
         プレイヤーに当たったら消える,
         死んだら爆発する,
         ダメージを受けたら小さくなる,
+        壊したら爆発する,
     }
     [SerializeField] private ActionType actionType;
 
@@ -124,6 +125,17 @@ public class EnemyController : MonoBehaviour
 
     [Header("敵から受けるダメージ量")]
     public int enemyATK = 1;
+
+    [Header("破壊できるオブジェクトの処理用")]
+    public GameObject explodedPrefab;
+
+    public float explosionForce = 2.0f;
+    public float explosionRadius = 5.0f;
+    public float upForceMin = 0.0f;
+    public float upForceMax = 0.5f;
+
+    public bool autoDestroy = true;
+    public float lifeTime = 5.0f;
 
     //SEの番号
     int damageSE = 2;
@@ -470,6 +482,10 @@ public class EnemyController : MonoBehaviour
                     attack.SpreadAttack();
                     break;
 
+                case ActionType.壊したら爆発する:
+                    Destruction();
+                    break;
+
                 default:
                     break;
             }
@@ -506,5 +522,29 @@ public class EnemyController : MonoBehaviour
         }
 
         this.gameObject.transform.localScale = new Vector3(transform.localScale.x - scaleDown, transform.localScale.y - scaleDown, transform.localScale.z - scaleDown);
+    }
+
+    void Destruction()
+    {
+        // instantiate the exploding barrel
+        GameObject go = (GameObject)Instantiate(
+            explodedPrefab,
+            gameObject.transform.position,
+            gameObject.transform.rotation
+        );
+
+        // get the explosion component on the new object
+        ExplodeBarrel explodeComp = go.GetComponent<ExplodeBarrel>();
+
+        // set desired properties
+        explodeComp.explosionForce = explosionForce;
+        explodeComp.explosionRadius = explosionRadius;
+        explodeComp.upForceMin = upForceMin;
+        explodeComp.upForceMax = upForceMax;
+        explodeComp.autoDestroy = autoDestroy;
+        explodeComp.lifeTime = lifeTime;
+
+        // make the barrel explode
+        explodeComp.Explode();
     }
 }
