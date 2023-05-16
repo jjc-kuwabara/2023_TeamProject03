@@ -114,13 +114,13 @@ public class PlayerController : MonoBehaviour
                     timeCurrent_Cycle = 0;
                 }
 
-                gameObject.layer = LayerMask.NameToLayer("Player");
+                gameObject.layer = LayerMask.NameToLayer("Default");
             }
             else
             {
                 player.SetActive(true);
 
-                gameObject.layer = LayerMask.NameToLayer("Default");
+                gameObject.layer = LayerMask.NameToLayer("Player");
 
                 timeCurrent_Invincible = 0;
                 timeCurrent_Cycle = 0;
