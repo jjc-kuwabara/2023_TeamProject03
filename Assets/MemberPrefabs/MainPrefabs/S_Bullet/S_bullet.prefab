@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8439562076841247550}
   - component: {fileID: 5734202271195006584}
   - component: {fileID: -8405924409044302033}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: S_bullet
   m_TagString: PlayerAttack
   m_Icon: {fileID: 0}
@@ -114,8 +114,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletSpeed: 40
   destoryTime: 1.5
-  trajectoryFX: 1
-  hitFX: 2
 --- !u!54 &-8405924409044302033
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -141,7 +139,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7650605340863720577}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Bone1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -174,7 +172,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7650605340863720579}
   - component: {fileID: 7650605340852256163}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: amberjack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -270,7 +268,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7650605340863720581}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Bone3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -302,7 +300,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7650605340863720583}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Bone2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -334,7 +332,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7650605340863720585}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Bone5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -366,7 +364,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7650605340863720587}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Bone4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -398,7 +396,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7650605340863720589}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Bone7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -430,7 +428,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7650605340863720591}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Bone6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -462,7 +460,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7650605340863720593}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -493,7 +491,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7650605340863720595}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Bone8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -524,7 +522,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7650605340863720597}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: main
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -560,7 +558,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7650605340863720599}
   - component: {fileID: 7650605340856517475}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: leervis
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -614,7 +612,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7650605340863720601}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: pec right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -645,7 +643,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7650605340863720603}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: pec left
   m_TagString: Untagged
   m_Icon: {fileID: 0}

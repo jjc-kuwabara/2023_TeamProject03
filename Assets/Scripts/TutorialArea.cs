@@ -13,6 +13,7 @@ public class TutorialArea : MonoBehaviour
             flg = true;
 
             this.gameObject.SetActive(false);
+            Debug.Log("a");
         }
     }
 }
