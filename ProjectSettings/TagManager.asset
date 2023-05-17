@@ -20,6 +20,7 @@ TagManager:
   - Scroll
   - Tutorial
   - Sensor
+  - Ukai
   layers:
   - Default
   - TransparentFX
