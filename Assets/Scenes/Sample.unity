@@ -450,6 +450,13 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 0
   enemyATK: 1
+  explodedPrefab: {fileID: 0}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5
 --- !u!65 &26306545
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -631,6 +638,13 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 0
   enemyATK: 1
+  explodedPrefab: {fileID: 0}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5
 --- !u!65 &28298917
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -995,6 +1009,13 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 0
   enemyATK: 1
+  explodedPrefab: {fileID: 0}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5
 --- !u!65 &41346684
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1208,6 +1229,13 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 0
   enemyATK: 1
+  explodedPrefab: {fileID: 0}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5
 --- !u!65 &46865575
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2381,6 +2409,13 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 0
   enemyATK: 1
+  explodedPrefab: {fileID: 0}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5
 --- !u!65 &120289239
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2683,6 +2718,13 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 0
   enemyATK: 1
+  explodedPrefab: {fileID: 0}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5
 --- !u!65 &139275947
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3078,6 +3120,13 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 0
   enemyATK: 1
+  explodedPrefab: {fileID: 0}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5
 --- !u!65 &163313724
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3327,6 +3376,13 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 0
   enemyATK: 1
+  explodedPrefab: {fileID: 0}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5
 --- !u!65 &174010712
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4861,6 +4917,13 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 0
   enemyATK: 0
+  explodedPrefab: {fileID: 0}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5
 --- !u!65 &284506272
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5176,6 +5239,13 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 0
   enemyATK: 0
+  explodedPrefab: {fileID: 0}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5
 --- !u!65 &287236751
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5507,6 +5577,13 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 0
   enemyATK: 1
+  explodedPrefab: {fileID: 0}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5
 --- !u!65 &301593113
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5783,6 +5860,13 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 0
   enemyATK: 1
+  explodedPrefab: {fileID: 0}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5
 --- !u!65 &306400339
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6083,6 +6167,13 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 0
   enemyATK: 1
+  explodedPrefab: {fileID: 0}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5
 --- !u!65 &312858255
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6379,6 +6470,13 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 0
   enemyATK: 1
+  explodedPrefab: {fileID: 0}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5
 --- !u!65 &323618544
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7102,6 +7200,13 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 0
   enemyATK: 0
+  explodedPrefab: {fileID: 0}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5
 --- !u!65 &350121995
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7391,6 +7496,13 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 0
   enemyATK: 1
+  explodedPrefab: {fileID: 0}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5
 --- !u!65 &361473437
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8189,6 +8301,13 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 0
   enemyATK: 1
+  explodedPrefab: {fileID: 0}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5
 --- !u!65 &410484740
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9099,6 +9218,13 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 0
   enemyATK: 1
+  explodedPrefab: {fileID: 0}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5
 --- !u!65 &470067316
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9896,6 +10022,13 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 0
   enemyATK: 1
+  explodedPrefab: {fileID: 0}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5
 --- !u!65 &517544736
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10289,6 +10422,13 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 0
   enemyATK: 1
+  explodedPrefab: {fileID: 0}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5
 --- !u!65 &535674530
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11106,6 +11246,13 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 0
   enemyATK: 1
+  explodedPrefab: {fileID: 0}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5
 --- !u!65 &569613615
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12224,6 +12371,13 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 0
   enemyATK: 1
+  explodedPrefab: {fileID: 0}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5
 --- !u!65 &640799521
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12373,6 +12527,13 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 0
   enemyATK: 1
+  explodedPrefab: {fileID: 0}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5
 --- !u!65 &640953119
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14085,53 +14246,6 @@ Transform:
   m_Father: {fileID: 1838284499}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &713578296
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 713578297}
-  - component: {fileID: 713578298}
-  m_Layer: 0
-  m_Name: VolManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &713578297
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 713578296}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 965014656}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &713578298
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 713578296}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bae524d9d3bef7e4b95766975fcf2140, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bgmSlider: {fileID: 0}
-  seSlider: {fileID: 0}
-  voiSlider: {fileID: 0}
 --- !u!1 &717190309
 GameObject:
   m_ObjectHideFlags: 0
@@ -14582,6 +14696,13 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 0
   enemyATK: 0
+  explodedPrefab: {fileID: 0}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5
 --- !u!65 &726069874
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15069,6 +15190,13 @@ MonoBehaviour:
   scaleDown: 1
   childNo: 0
   enemyATK: 1
+  explodedPrefab: {fileID: 0}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5
 --- !u!65 &752136616
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15251,6 +15379,13 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 0
   enemyATK: 1
+  explodedPrefab: {fileID: 0}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5
 --- !u!65 &761734933
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17239,6 +17374,13 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 0
   enemyATK: 1
+  explodedPrefab: {fileID: 0}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5
 --- !u!65 &861742297
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19033,8 +19175,6 @@ Transform:
   - {fileID: 1520734951}
   - {fileID: 2125692384}
   - {fileID: 1771565166}
-  - {fileID: 713578297}
-  - {fileID: 2128226645}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -19164,6 +19304,13 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 0
   enemyATK: 1
+  explodedPrefab: {fileID: 0}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5
 --- !u!65 &976548100
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19395,8 +19542,8 @@ RectTransform:
   m_Father: {fileID: 246417249}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -19706,6 +19853,13 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 0
   enemyATK: 1
+  explodedPrefab: {fileID: 0}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5
 --- !u!65 &997085197
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20147,6 +20301,13 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 0
   enemyATK: 1
+  explodedPrefab: {fileID: 0}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5
 --- !u!65 &1022613474
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20329,6 +20490,13 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 0
   enemyATK: 1
+  explodedPrefab: {fileID: 0}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5
 --- !u!65 &1025232091
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21287,6 +21455,13 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 0
   enemyATK: 1
+  explodedPrefab: {fileID: 0}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5
 --- !u!65 &1064140148
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22647,6 +22822,13 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 0
   enemyATK: 1
+  explodedPrefab: {fileID: 0}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5
 --- !u!65 &1110883143
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22920,7 +23102,7 @@ GameObject:
   - component: {fileID: 1133758164}
   - component: {fileID: 1133758169}
   - component: {fileID: 1133758170}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Body
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -23152,6 +23334,13 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 0
   enemyATK: 1
+  explodedPrefab: {fileID: 0}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5
 --- !u!65 &1137701795
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25273,6 +25462,13 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 0
   enemyATK: 1
+  explodedPrefab: {fileID: 0}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5
 --- !u!65 &1245848579
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25658,6 +25854,13 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 0
   enemyATK: 1
+  explodedPrefab: {fileID: 0}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5
 --- !u!65 &1259136386
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25808,6 +26011,13 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 0
   enemyATK: 1
+  explodedPrefab: {fileID: 0}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5
 --- !u!65 &1259352478
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26164,6 +26374,13 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 0
   enemyATK: 1
+  explodedPrefab: {fileID: 0}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5
 --- !u!65 &1271393527
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26346,6 +26563,13 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 0
   enemyATK: 1
+  explodedPrefab: {fileID: 0}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5
 --- !u!65 &1273930220
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27097,6 +27321,13 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 0
   enemyATK: 1
+  explodedPrefab: {fileID: 0}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5
 --- !u!65 &1310176181
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27549,6 +27780,13 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 0
   enemyATK: 0
+  explodedPrefab: {fileID: 0}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5
 --- !u!65 &1327716906
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28882,7 +29120,7 @@ GameObject:
   - component: {fileID: 1396653729}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Sensor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30709,6 +30947,13 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 0
   enemyATK: 1
+  explodedPrefab: {fileID: 0}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5
 --- !u!54 &1494371396
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -31312,6 +31557,13 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 0
   enemyATK: 0
+  explodedPrefab: {fileID: 0}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5
 --- !u!65 &1529679254
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31703,6 +31955,13 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 0
   enemyATK: 1
+  explodedPrefab: {fileID: 0}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5
 --- !u!65 &1547334923
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31944,8 +32203,8 @@ RectTransform:
   m_Father: {fileID: 540663803}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -33283,6 +33542,13 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 0
   enemyATK: 1
+  explodedPrefab: {fileID: 0}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5
 --- !u!65 &1623400350
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33823,6 +34089,13 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 0
   enemyATK: 1
+  explodedPrefab: {fileID: 0}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5
 --- !u!65 &1635223279
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33993,6 +34266,13 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 0
   enemyATK: 1
+  explodedPrefab: {fileID: 0}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5
 --- !u!65 &1636415000
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34323,6 +34603,13 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 0
   enemyATK: 1
+  explodedPrefab: {fileID: 0}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5
 --- !u!65 &1646370221
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35737,6 +36024,13 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 0
   enemyATK: 1
+  explodedPrefab: {fileID: 0}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5
 --- !u!65 &1733305653
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35981,6 +36275,13 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 0
   enemyATK: 1
+  explodedPrefab: {fileID: 0}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5
 --- !u!65 &1760650079
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36407,6 +36708,13 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 0
   enemyATK: 1
+  explodedPrefab: {fileID: 0}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5
 --- !u!65 &1771420261
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36756,6 +37064,13 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 0
   enemyATK: 1
+  explodedPrefab: {fileID: 0}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5
 --- !u!65 &1789122127
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -38147,6 +38462,13 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 0
   enemyATK: 1
+  explodedPrefab: {fileID: 0}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5
 --- !u!65 &1871248658
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -38536,6 +38858,13 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 0
   enemyATK: 1
+  explodedPrefab: {fileID: 0}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5
 --- !u!65 &1883965242
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -38868,6 +39197,13 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 0
   enemyATK: 1
+  explodedPrefab: {fileID: 0}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5
 --- !u!65 &1908969793
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -40023,6 +40359,13 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 0
   enemyATK: 1
+  explodedPrefab: {fileID: 0}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5
 --- !u!65 &1979516762
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41727,7 +42070,7 @@ Animator:
   m_GameObject: {fileID: 2044807855}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c26ee807f5a4dfb4dae1f8a5cfa20d46, type: 2}
+  m_Controller: {fileID: 9100000, guid: d8201c6b249fccb4f8447c2669c93963, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -42554,6 +42897,13 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 0
   enemyATK: 0
+  explodedPrefab: {fileID: 0}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5
 --- !u!54 &2083399033
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -42853,6 +43203,13 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 0
   enemyATK: 1
+  explodedPrefab: {fileID: 0}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5
 --- !u!54 &2092504986
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -43166,7 +43523,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2109593934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43406,6 +43763,13 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 0
   enemyATK: 1
+  explodedPrefab: {fileID: 0}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5
 --- !u!65 &2116873411
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -43588,6 +43952,13 @@ MonoBehaviour:
   scaleDown: 0.1
   childNo: 0
   enemyATK: 1
+  explodedPrefab: {fileID: 0}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5
 --- !u!65 &2120319843
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -43794,62 +44165,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: a6171cd304b965340aced2cc71cf80b9, type: 3}
   - {fileID: 8300000, guid: a6171cd304b965340aced2cc71cf80b9, type: 3}
   - {fileID: 8300000, guid: a6171cd304b965340aced2cc71cf80b9, type: 3}
---- !u!1 &2128226644
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2128226645}
-  - component: {fileID: 2128226646}
-  m_Layer: 0
-  m_Name: PauseManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2128226645
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2128226644}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 965014656}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2128226646
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2128226644}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d2d5d9c6373d2546a1800e895c94037, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pauseFLG: 0
-  hitStopFLG: 0
-  canvas:
-  - {fileID: 2109593933}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  focusPausemenu: {fileID: 0}
-  focusInstructions: {fileID: 0}
-  focusVolumeChange: {fileID: 0}
-  timeScale: 0.1
-  slowTime: 1
 --- !u!1 &2128426684
 GameObject:
   m_ObjectHideFlags: 0
@@ -51987,8 +52302,8 @@ RectTransform:
   m_Father: {fileID: 1427369162562624033}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.8, y: 0}
+  m_AnchorMax: {x: 0.8, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -52269,8 +52584,8 @@ RectTransform:
   m_Father: {fileID: 1427369163136080313}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.8, y: 0}
+  m_AnchorMax: {x: 0.8, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -52901,7 +53216,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0.8, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -53101,8 +53416,8 @@ RectTransform:
   m_Father: {fileID: 1427369161339118228}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.8, y: 0}
+  m_AnchorMax: {x: 0.8, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -53471,7 +53786,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0.8, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -54127,7 +54442,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!225 &1427369162824612134
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -54659,7 +54974,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0.8, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -73870,11 +74185,11 @@ MonoBehaviour:
   canvas:
   - {fileID: 2109593933}
   - {fileID: 5752636282766767828}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1427369162824612132}
+  - {fileID: 1837367676245126549}
   focusPausemenu: {fileID: 5752636282155114557}
-  focusInstructions: {fileID: 0}
-  focusVolumeChange: {fileID: 0}
+  focusInstructions: {fileID: 1837367676283501870}
+  focusVolumeChange: {fileID: 1427369161134561421}
   timeScale: 0.1
   slowTime: 1
 --- !u!1 &7224372038513055774

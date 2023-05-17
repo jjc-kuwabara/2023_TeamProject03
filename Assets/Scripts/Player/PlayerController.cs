@@ -57,12 +57,18 @@ public class PlayerController : MonoBehaviour
 
     CharacterController characon;  //CharacterControllerのコンポーネント取得用
 
+    //アニメーション用変数
     Animator animator;  //Animatorのコンポーネント取得用
+    bool upFLG = false;
+    bool downFLG = false;
+    bool clearFLG = false;
+    bool DeathFLG = false;
+    bool airFLG = false;
 
     void Start()
     {
         characon = GetComponent<CharacterController>();   //CharacterControllerのコンポーネント取得
-        animator = GetComponent<Animator>();
+        animator = player.GetComponent<Animator>();
         m_speedCurrent = m_speedStart;
     }
 
@@ -70,6 +76,7 @@ public class PlayerController : MonoBehaviour
     {
         InputCheck();
         DamageCheck();
+        Animation();
 
         if (inputFLG)
         {
@@ -179,6 +186,23 @@ public class PlayerController : MonoBehaviour
             {
                 m_moveDistance.y = 0;
             }
+        }
+
+        if (y < 0)
+        {
+            downFLG = true;
+        }
+        else
+        {
+            downFLG = false;
+        }
+        if (y > 0)
+        {
+            upFLG = true;
+        }
+        else
+        {
+            upFLG = false;
         }
 
         characon.Move(m_moveDistance * Time.deltaTime);
@@ -303,5 +327,68 @@ public class PlayerController : MonoBehaviour
         }
         m_speedCurrent = m_speedStart;
         m_speedCurrent -= speed;
+    }
+
+    void Animation()
+    {
+        if (GameManager.Instance.gameOver && !DeathFLG)
+        {
+            animator.SetTrigger("Death");
+            return;
+        }
+
+        if (GameManager.Instance.gameClear && !clearFLG)
+        {
+            animator.SetTrigger("Clear");
+            return;
+        }
+
+        if (upFLG && fireFLG)
+        {
+            animator.SetTrigger("UpEat");
+            return;
+        }
+
+        if (downFLG && fireFLG)
+        {
+            animator.SetTrigger("DownEat");
+            return;
+        }
+
+        if (upFLG)
+        {
+            animator.SetBool("Up", true);
+            return;
+        }
+        animator.SetBool("Up", false);
+
+        if (downFLG)
+        {
+            animator.SetBool("Down", true);
+            return;
+        }
+        animator.SetBool("Down", false);
+
+        if (fireFLG)
+        {
+            animator.SetTrigger("Eat");
+            return;
+        }
+
+        if (GameManager.Instance.airFLG && !airFLG)
+        {
+            animator.SetBool("Swim", false);
+            animator.SetTrigger("Air");
+            airFLG = true;
+            return;
+        }else if (!GameManager.Instance.airFLG && airFLG)
+        {
+            airFLG = false;
+        }else if (GameManager.Instance.airFLG && airFLG)
+        {
+            return;
+        }
+
+        animator.SetBool("Swim" , true);
     }
 }

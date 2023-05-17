@@ -69,8 +69,8 @@ public class GameManager : Singleton<GameManager>
     [Header("âLéîÇÃèàóù")]
     [System.NonSerialized] public bool foundFLG = false;
 
-    bool firstFoundFLG = false;
-    bool secondFoundFLG = false;
+    [System.NonSerialized] public bool firstFoundFLG = false;
+    [System.NonSerialized] public bool secondFoundFLG = false;
 
     public float foundTime;
     public float foundTimeCurrent;
@@ -207,25 +207,10 @@ public class GameManager : Singleton<GameManager>
         {
             DemoSkip();
         }
-        
-        if (pd_gameClear.state == PlayState.Playing && Input.GetButtonDown("Jump") && !mainGameFLG)
-        {
-            DemoClearSkip();
-        }
 
         if (pd_gameClear.state == PlayState.Playing && !mainGameFLG)
         {
             PlayerMove();
-        }
-
-        if (pd_gameOver.state == PlayState.Playing && Input.GetButtonDown("Jump") && !mainGameFLG)
-        {
-            DemoOverSkip();
-        }
-
-        if (pd_gameOver_Found.state == PlayState.Playing && Input.GetButtonDown("Jump") && !mainGameFLG)
-        {
-            DemoOverFoundSkip();
         }
 
         FocusCheck();
@@ -442,7 +427,7 @@ public class GameManager : Singleton<GameManager>
     {
         mainGameFLG = false;
         scrollM.ScrollFLGChange(false);
-        gameOver = true;
+        //gameOver = true;
 
         SoundManager.Instance.PlaySE_Voi(captureVoi);
 
