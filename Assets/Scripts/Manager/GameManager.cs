@@ -489,6 +489,7 @@ public class GameManager : Singleton<GameManager>
 
         //初期状態の設定
         canvasMainGame.SetActive(true);    //メインUI
+        ukaiCamera.SetActive(true);
         canvasStartDemo.SetActive(false);  //デモ中UI
 
         if(startDemoUsed.Length > 0)
@@ -512,6 +513,7 @@ public class GameManager : Singleton<GameManager>
         pd_gameClear.Stop();
 
         canvasMainGame.SetActive(false);    //メインUI
+        ukaiCamera.SetActive(false);
         canvasClearDemo.SetActive(true);  //デモ中UI
 
         player.SetActive(false);
@@ -527,6 +529,7 @@ public class GameManager : Singleton<GameManager>
         pd_gameOver.Stop();
 
         canvasMainGame.SetActive(false);    //メインUI
+        ukaiCamera.SetActive(false);
         canvasOverDemo.SetActive(true);  //デモ中UI
 
         PlayBGMChange(2);
@@ -539,6 +542,7 @@ public class GameManager : Singleton<GameManager>
         pd_gameOver_Found.Stop();
 
         canvasMainGame.SetActive(false);    //メインUI
+        ukaiCamera.SetActive(false);
         canvasOverFoundDemo.SetActive(true);  //デモ中UI
         pd_overParent_Found.SetActive(true);  //デモ中カメラ
 
