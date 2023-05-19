@@ -1098,7 +1098,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 6ff7c6f88375323448180f3e426ea165, type: 3}
   se_GameClip: []
   voiClip:
-  - {fileID: 8300000, guid: 2c84fd10921b0b54c8bb35beb6bee1df, type: 3}
+  - {fileID: 8300000, guid: 864579f6308b0924c9bec6023211bd3b, type: 3}
 --- !u!4 &1184787513
 Transform:
   m_ObjectHideFlags: 0
