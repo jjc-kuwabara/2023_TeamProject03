@@ -74,6 +74,7 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
+        PositionCheck();
         InputCheck();
         DamageCheck();
         Animation();
@@ -84,6 +85,15 @@ public class PlayerController : MonoBehaviour
 
             Attack();
             Move();
+        }
+    }
+
+    void PositionCheck()
+    {
+        if (transform.position.z != 0)
+        {
+            Vector3 pos = new Vector3(transform.position.x, transform.position.y, 0);
+            transform.position = pos;
         }
     }
 
