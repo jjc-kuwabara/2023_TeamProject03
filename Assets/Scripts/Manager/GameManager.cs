@@ -269,11 +269,13 @@ public class GameManager : Singleton<GameManager>
 
             if (secondFoundFLG)
             {
+                secondFoundFLG = false;
                 int no = Random.Range(0, 3);
                 SoundManager.Instance.PlaySE_Voi(secondVoi[no]);
             }
             else if (firstFoundFLG)
             {
+                firstFoundFLG = false;
                 int no = Random.Range(0, 2);
                 SoundManager.Instance.PlaySE_Voi(firstVoi[no]);
             }
@@ -285,6 +287,7 @@ public class GameManager : Singleton<GameManager>
 
         if (firstFoundFLG && foundTimeCurrent >= foundTime/2 && !secondFoundFLG)
         {
+            firstFoundFLG = false;
             secondFoundFLG = true;
 
             SoundManager.Instance.PlaySE_Voi(foundVoi_2);
@@ -294,7 +297,11 @@ public class GameManager : Singleton<GameManager>
     public void FoundFLG(bool flg)
     {
         foundFLG = flg;
-        firstFoundFLG = flg;
+
+        if (flg)
+        {
+            firstFoundFLG = flg;
+        }
 
         if (firstFoundFLG)
         {
