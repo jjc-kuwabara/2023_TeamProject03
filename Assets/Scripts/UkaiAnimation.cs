@@ -33,11 +33,12 @@ public class UkaiAnimation : MonoBehaviour
         if (GameManager.Instance.secondFoundFLG && !look)
         {
             animator.SetBool("Seek", false);
-            animator.SetTrigger("Look");
+            animator.SetBool("Look",true);
             look = true;
             return;
         }else if (!GameManager.Instance.secondFoundFLG && look)
         {
+            animator.SetBool("Look", false);
             look = false;
             return;
         }
