@@ -14,11 +14,11 @@ public class VolumeManager : Singleton<VolumeManager>
     float seVolCurrent;
     float voiVolCurrent;
 
-    public void First()
+    public void First(int vol1, int vol2, int vol3)
     {
-        bgmSlider.value = PlayerPrefs.GetInt("Vol_BG", 8);
-        seSlider.value = PlayerPrefs.GetInt("Vol_SE", 8);
-        voiSlider.value = PlayerPrefs.GetInt("Vol_Voice", 8);
+        bgmSlider.value = vol1;
+        seSlider.value = vol2;
+        voiSlider.value = vol3;
 
         bgmVolCurrent = bgmSlider.value;
         seVolCurrent = seSlider.value;
