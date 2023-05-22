@@ -93,7 +93,7 @@ public class PlayerController : MonoBehaviour
         if (transform.position.z != 0)
         {
             Vector3 pos = new Vector3(transform.position.x, transform.position.y, 0);
-            transform.position = pos;
+            characon.Move(pos);
         }
     }
 
