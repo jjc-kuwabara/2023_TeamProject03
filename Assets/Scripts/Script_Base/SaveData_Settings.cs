@@ -41,7 +41,10 @@ namespace SaveData_Settings
         public static void All()
         {
             Debug.Log("全データを初期化しました");
-            PlayerPrefs.DeleteAll();
+            PlayerPrefs.SetInt("Vol_BG", 8);
+            PlayerPrefs.SetInt("Vol_SE", 8);
+            PlayerPrefs.SetInt("Vol_Voice", 8);
+            PlayerPrefs.Save();
 
             Load.Audio();       //初期状態の音量設定をロード
         }
