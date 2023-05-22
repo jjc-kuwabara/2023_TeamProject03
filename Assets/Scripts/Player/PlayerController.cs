@@ -343,32 +343,6 @@ public class PlayerController : MonoBehaviour
             return;
         }
 
-        if (upFLG && fireFLG)
-        {
-            animator.SetTrigger("UpEat");
-            return;
-        }
-
-        if (downFLG && fireFLG)
-        {
-            animator.SetTrigger("DownEat");
-            return;
-        }
-
-        if (upFLG)
-        {
-            animator.SetBool("Up", true);
-            return;
-        }
-        animator.SetBool("Up", false);
-
-        if (downFLG)
-        {
-            animator.SetBool("Down", true);
-            return;
-        }
-        animator.SetBool("Down", false);
-
         if (fireFLG)
         {
             animator.SetTrigger("Eat");
