@@ -94,8 +94,6 @@ public class SoundManager : Singleton<SoundManager>
                 SE_GameSource[i].outputAudioMixerGroup = SEGroup;
             }
         }
-
-        VolumeManager.Instance.First();
     }
 
     //BGM‚ğŠO•”‚©‚çŒÄ‚Ño‚·
@@ -133,6 +131,8 @@ public class SoundManager : Singleton<SoundManager>
         mixer.SetFloat("VoiceVol", vol_Voice[vol3]);
 
         bgmVol = vol_BGM[vol1];
+
+        VolumeManager.Instance.First(vol1, vol2, vol3);
     }
 
     //Silder‚É‚æ‚é‰¹—Ê‚Ì’²®
