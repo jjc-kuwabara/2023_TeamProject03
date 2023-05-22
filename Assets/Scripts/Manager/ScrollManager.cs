@@ -13,7 +13,7 @@ public class ScrollManager : MonoBehaviour
     GameObject player;
     PlayerController controller;
 
-    bool scrollFLG = false;
+    public bool scrollFLG = false;
 
     void Start()
     {
