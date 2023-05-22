@@ -134,6 +134,8 @@ public class PauseManager : MonoBehaviour
             Time.timeScale = 0;
             canvas[1].SetActive(true);
 
+            GameManager.Instance.ukaiCamera.SetActive(false);
+
             //初期カーソル位置設定
             EventSystem.current.SetSelectedGameObject(focusPausemenu);
         }
@@ -141,6 +143,8 @@ public class PauseManager : MonoBehaviour
         {
             Time.timeScale = 1;
             canvas[0].SetActive(true);
+
+            GameManager.Instance.ukaiCamera.SetActive(true);
 
             GameManager.Instance.MainGameFLG(true);
         }
