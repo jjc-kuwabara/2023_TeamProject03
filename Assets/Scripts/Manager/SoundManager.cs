@@ -103,6 +103,12 @@ public class SoundManager : Singleton<SoundManager>
         BGMSource.Play();
     }
 
+    //BGMを外部から呼び出す時
+    public void StopBGM()
+    {
+        BGMSource.Stop();
+    }
+
     //SytemSEを外部から呼び出す時
     public void PlaySE_Sys(int i)
     {
